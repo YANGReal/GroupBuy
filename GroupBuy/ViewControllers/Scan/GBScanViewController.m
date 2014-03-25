@@ -36,7 +36,7 @@
     
    // bottomView.layer.frame = bottomView.frame;
     //[_readerView.layer addSublayer:bottomView.layer];
-    ///
+    
     _readerView.readerDelegate = self;
     [self.readerView start];
    
