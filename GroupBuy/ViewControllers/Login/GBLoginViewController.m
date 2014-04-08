@@ -6,6 +6,8 @@
 //  Copyright (c) 2014年 YANGReal. All rights reserved.
 //
 
+#define kLogin_url @"http://www.tuanyifa.com/login_ios.php"
+
 #import "GBLoginViewController.h"
 #import "GBAppDelegate.h"
 #import "gbRegisterViewController.h"
@@ -73,6 +75,13 @@
 {
     if ([self checkInput])
     {
+        NSDictionary *params = @{@"username":accountField.text,@"userpwd":passwordField.text};
+        DLog(@"params = %@",params);
+        [NBNetworkEngine  loadDataWithURL:kLogin_url params:params completeHander:^(id jsonObject, BOOL success) {
+            DLog(@"json obj = %@",jsonObject);
+            
+        }];
+        return;
         GBAppDelegate *app = [[UIApplication sharedApplication] delegate];
         app.mainVC = [[GBMainViewController alloc] init];
         app.mainVC.tabBar.hidden = YES;

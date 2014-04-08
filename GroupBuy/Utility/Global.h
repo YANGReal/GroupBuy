@@ -3,7 +3,7 @@
 //  iCareer
 //
 //  Created by YANGRui on 14-2-27.
-//  Copyright (c) 2014年 LJ. All rights reserved.
+//  Copyright (c) 2014年 Tuanyifa. All rights reserved.
 //
 
 #ifndef iCareer_Global_h

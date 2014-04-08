@@ -6,6 +6,9 @@
 //  Copyright (c) 2014年 YANGReal. All rights reserved.
 //
 
+
+
+
 #import "GBRegisterViewController.h"
 
 @interface GBRegisterViewController ()<UITextFieldDelegate>
@@ -13,7 +16,7 @@
     IBOutlet UITextField *accountField;
     IBOutlet UITextField *passwordField;
     IBOutlet UITextField *repeatField;
-
+    
 }
 
 -(IBAction)registerButtonClicked:(id)sender;
@@ -54,8 +57,21 @@
 {
     if ([self checkInput])
     {
-        
+        [self doRigster];
     }
+}
+
+#pragma mark - 注册回调方法
+- (void)doRigster
+{
+    return;
+    /*
+    NSDictionary *params = @{@"username": accountField.text,@"userpwd":passwordField.text};
+    DLog(@"params = %@",params);
+    [NBNetworkEngine loadDataWithURL:kRegister_url params:params completeHander:^(id jsonObject, BOOL success) {
+        DLog(@"%@",jsonObject);
+    }];
+     */
 }
 
 
@@ -75,15 +91,14 @@
         return NO;
     }
     
-    if (repeatField.text.length == 0)
+    if (![repeatField.text isEqualToString:passwordField.text])
     {
         
-        NZAlertView *alert = [[NZAlertView alloc] initWithStyle:NZAlertStyleError title:@"提示" message:@"请确认密码"];
+        NZAlertView *alert = [[NZAlertView alloc] initWithStyle:NZAlertStyleError title:@"提示" message:@"两次输入的密码不一致"];
         [alert show];
         return NO;
-
     }
-    
+   
     return YES;
 }
 
