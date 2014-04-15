@@ -7,7 +7,11 @@
 //
 
 #import "GBAppDelegate.h"
+<<<<<<< HEAD
 
+=======
+#import "GBLoginViewController.h"
+>>>>>>> FETCH_HEAD
 @implementation GBAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -16,6 +20,32 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+<<<<<<< HEAD
+=======
+
+//    self.mainVC = [[GBMainViewController alloc] init];
+//    self.mainVC.tabBar.hidden = YES;
+//    self.window.rootViewController = self.mainVC;
+    
+    BOOL didLogin = [[NSUserDefaults standardUserDefaults] boolForKey:DID_LOGIN];
+    if (didLogin)
+    {
+        self.mainVC = [[GBMainViewController alloc] init];
+        self.mainVC.tabBar.hidden = YES;
+        self.window.rootViewController = self.mainVC;
+    }
+    else
+    {
+        GBLoginViewController *loginVC = [[GBLoginViewController alloc] initWithNibName:@"GBLoginViewController" bundle:nil];
+        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:loginVC];
+        self.window.rootViewController = nav;
+    }
+    
+    /*设置导航栏背景颜色*/
+    [[UINavigationBar appearance] setBarTintColor:GREEN];
+    /*设置导航栏字体颜色和字体*/
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor whiteColor],NSFontAttributeName:[UIFont boldSystemFontOfSize:20]}];
+>>>>>>> FETCH_HEAD
     return YES;
 }
 

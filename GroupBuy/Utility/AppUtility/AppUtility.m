@@ -138,6 +138,15 @@
     return avaliable;
 }
 
+<<<<<<< HEAD
 
+=======
+#pragma mark - 弹出一个提示视图
++(void)showAlertWithMessage:(NSString *)message
+{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:message delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
+    [alert show];
+}
+>>>>>>> FETCH_HEAD
 
 @end

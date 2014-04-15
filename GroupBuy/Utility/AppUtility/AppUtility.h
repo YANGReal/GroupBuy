@@ -46,6 +46,10 @@
 /*判断网络是否可用*/
 + (BOOL)isNetworkAvaliable;
 
+<<<<<<< HEAD
 
+=======
++(void)showAlertWithMessage:(NSString *)message;
+>>>>>>> FETCH_HEAD
 
 @end
