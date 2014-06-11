@@ -3,21 +3,18 @@
 //  iCareer
 //
 //  Created by YANGRui on 14-2-27.
-<<<<<<< HEAD
-//  Copyright (c) 2014年 LJ. All rights reserved.
-=======
+
+
+
 //  Copyright (c) 2014年 Tuanyifa. All rights reserved.
->>>>>>> FETCH_HEAD
-//
+
+
 
 #ifndef iCareer_Global_h
 #define iCareer_Global_h
 
 #pragma mark --导入头文件
-<<<<<<< HEAD
-=======
 
->>>>>>> FETCH_HEAD
 #import "AppUtility.h"
 #import "AFNetworking.h"
 #import "UIKit+AFNetworking.h"
@@ -36,10 +33,8 @@
 #import "ETActivityIndicatorView.h"
 #import "UIView+Flip.h"
 #import "NBBaseViewController.h"
-<<<<<<< HEAD
-=======
 #import "GBMainViewController.h"
->>>>>>> FETCH_HEAD
+
 #pragma mark --定义常用宏
 
 #define IS_FIRST_USE @"is_first_use"
@@ -47,10 +42,9 @@
 #define USER_NAME @"username"
 #define PASS_WORD @"password"
 #define UID @"uid"
-<<<<<<< HEAD
-=======
+
 #define DID_LOGIN @"login"
->>>>>>> FETCH_HEAD
+
 /*********************
  几何尺寸
  *********************/
@@ -71,15 +65,15 @@
 #define WHITE_COLOR   [UIColor whiteColor]                    //白色
 #define BLACK_COLOR   [UIColor blackColor]                    //黑色
 #define CLEAR_COLOR   [UIColor clearColor]                    //透明色
-<<<<<<< HEAD
+
 #define DEEP_BLUE     [UIColor colorWithHexString:@"#2c4484"] //深蓝色
 #define LIGHT_BLUE    [UIColor colorWithHexString:@"#26ace5"] //浅蓝色
 #define DEEP_PURPLE   [UIColor colorWithHexString:@"#702d88"] //深紫色
-=======
+
 #define GREEN         [UIColor colorWithHexString:@"#21ca95"] //草绿色
 #define LIGHT_GRAY    [UIColor colorWithHexString:@"#cdcdcd"] //浅灰色
 #define BG_COLOR   [UIColor colorWithHexString:@"#f1efee"]    //深灰色
->>>>>>> FETCH_HEAD
+
 #define LIGHT_PURPLE  [UIColor colorWithHexString:@"#c46096"] //浅紫色
 #define YELLOW_COLOR  [UIColor colorWithHexString:@"#feaa24"] //明黄色
 #define RED_COLOR     [UIColor colorWithHexString:@"#ff5a54"] //粉红色

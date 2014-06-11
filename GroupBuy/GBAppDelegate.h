@@ -11,9 +11,6 @@
 @interface GBAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-<<<<<<< HEAD
-
-=======
 @property (strong , nonatomic) GBMainViewController *mainVC;
->>>>>>> FETCH_HEAD
+
 @end

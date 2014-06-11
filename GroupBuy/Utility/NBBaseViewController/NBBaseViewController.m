@@ -27,10 +27,9 @@
 {
     [super viewDidLoad];
     self.view.frame = IP5ORIP4FRAME;
-<<<<<<< HEAD
-=======
+
     self.view.backgroundColor = BG_COLOR;
->>>>>>> FETCH_HEAD
+
     [self setupLeftBarButtonItem];
 	// Do any additional setup after loading the view.
 }
@@ -39,7 +38,7 @@
 - (void)setupLeftBarButtonItem
 {
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-<<<<<<< HEAD
+
     btn.frame = RECT(0, 0, 40, 40);
     //[btn setTitle:@"返回" forState:UIControlStateNormal];
 //    [btn setBackgroundImage:[UIImage imageFromMainBundleFile:@"back.png"] forState:UIControlStateNormal];
@@ -48,7 +47,7 @@
     [imageView setImage:[UIImage imageFromMainBundleFile:@"back.png"]];
 
     [btn addSubview:imageView];
-=======
+
     btn.frame = RECT(0, 0, 30, 30);
     //[btn setTitle:@"返回" forState:UIControlStateNormal];
     [btn setBackgroundImage:[UIImage imageFromMainBundleFile:@"back.png"] forState:UIControlStateNormal];
@@ -57,7 +56,7 @@
     //[imageView setImage:[UIImage imageFromMainBundleFile:@"back.png"]];
 
     //[btn addSubview:imageView];
->>>>>>> FETCH_HEAD
+
     
     [btn addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btn];

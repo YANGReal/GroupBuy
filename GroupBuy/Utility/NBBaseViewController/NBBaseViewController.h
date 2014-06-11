@@ -10,9 +10,7 @@
 
 @interface NBBaseViewController : UIViewController
 
-<<<<<<< HEAD
-=======
 - (void)setupLeftBarButtonItem;
 - (void)back;
->>>>>>> FETCH_HEAD
+
 @end
