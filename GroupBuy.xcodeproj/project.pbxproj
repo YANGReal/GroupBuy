@@ -100,6 +100,20 @@
 		6E6851F718E1C976003DC5CB /* zbar-help.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E6851F218E1C976003DC5CB /* zbar-help.html */; };
 		6E6851F818E1C976003DC5CB /* zbar-helpicons.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E6851F318E1C976003DC5CB /* zbar-helpicons.png */; };
 		6E6851F918E1C976003DC5CB /* zbar-samples.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E6851F418E1C976003DC5CB /* zbar-samples.png */; };
+		6E97D86C1949CDE50061DAA7 /* key.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E97D85D1949CDE50061DAA7 /* key.png */; };
+		6E97D86D1949CDE50061DAA7 /* qq.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E97D85E1949CDE50061DAA7 /* qq.png */; };
+		6E97D86E1949CDE50061DAA7 /* qq_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E97D85F1949CDE50061DAA7 /* qq_btn.png */; };
+		6E97D86F1949CDE50061DAA7 /* qq_btn_s.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E97D8601949CDE50061DAA7 /* qq_btn_s.png */; };
+		6E97D8701949CDE50061DAA7 /* renren.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E97D8611949CDE50061DAA7 /* renren.png */; };
+		6E97D8711949CDE50061DAA7 /* renren_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E97D8621949CDE50061DAA7 /* renren_btn.png */; };
+		6E97D8721949CDE50061DAA7 /* renren_btn_s.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E97D8631949CDE50061DAA7 /* renren_btn_s.png */; };
+		6E97D8731949CDE50061DAA7 /* userName.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E97D8641949CDE50061DAA7 /* userName.png */; };
+		6E97D8741949CDE50061DAA7 /* weibo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E97D8651949CDE50061DAA7 /* weibo.png */; };
+		6E97D8751949CDE50061DAA7 /* weibo_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E97D8661949CDE50061DAA7 /* weibo_btn.png */; };
+		6E97D8761949CDE50061DAA7 /* weibo_btn_s.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E97D8671949CDE50061DAA7 /* weibo_btn_s.png */; };
+		6E97D8771949CDE50061DAA7 /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E97D8691949CDE50061DAA7 /* check.png */; };
+		6E97D8781949CDE50061DAA7 /* checked.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E97D86A1949CDE50061DAA7 /* checked.png */; };
+		6E97D8791949CDE50061DAA7 /* mailIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E97D86B1949CDE50061DAA7 /* mailIcon.png */; };
 		6E99483218DB088400C04106 /* GBMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E99483118DB088400C04106 /* GBMainViewController.m */; };
 		6E99484018DB0A2500C04106 /* local.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E99483618DB0A2500C04106 /* local.png */; };
 		6E99484118DB0A2500C04106 /* local_s.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E99483718DB0A2500C04106 /* local_s.png */; };
@@ -313,6 +327,20 @@
 		6E6851F218E1C976003DC5CB /* zbar-help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "zbar-help.html"; sourceTree = "<group>"; };
 		6E6851F318E1C976003DC5CB /* zbar-helpicons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-helpicons.png"; sourceTree = "<group>"; };
 		6E6851F418E1C976003DC5CB /* zbar-samples.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-samples.png"; sourceTree = "<group>"; };
+		6E97D85D1949CDE50061DAA7 /* key.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = key.png; sourceTree = "<group>"; };
+		6E97D85E1949CDE50061DAA7 /* qq.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qq.png; sourceTree = "<group>"; };
+		6E97D85F1949CDE50061DAA7 /* qq_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qq_btn.png; sourceTree = "<group>"; };
+		6E97D8601949CDE50061DAA7 /* qq_btn_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qq_btn_s.png; sourceTree = "<group>"; };
+		6E97D8611949CDE50061DAA7 /* renren.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = renren.png; sourceTree = "<group>"; };
+		6E97D8621949CDE50061DAA7 /* renren_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = renren_btn.png; sourceTree = "<group>"; };
+		6E97D8631949CDE50061DAA7 /* renren_btn_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = renren_btn_s.png; sourceTree = "<group>"; };
+		6E97D8641949CDE50061DAA7 /* userName.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = userName.png; sourceTree = "<group>"; };
+		6E97D8651949CDE50061DAA7 /* weibo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weibo.png; sourceTree = "<group>"; };
+		6E97D8661949CDE50061DAA7 /* weibo_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weibo_btn.png; sourceTree = "<group>"; };
+		6E97D8671949CDE50061DAA7 /* weibo_btn_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weibo_btn_s.png; sourceTree = "<group>"; };
+		6E97D8691949CDE50061DAA7 /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check.png; sourceTree = "<group>"; };
+		6E97D86A1949CDE50061DAA7 /* checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checked.png; sourceTree = "<group>"; };
+		6E97D86B1949CDE50061DAA7 /* mailIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mailIcon.png; sourceTree = "<group>"; };
 		6E99483018DB088400C04106 /* GBMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBMainViewController.h; path = GBMainViewController/GBMainViewController.h; sourceTree = "<group>"; };
 		6E99483118DB088400C04106 /* GBMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBMainViewController.m; path = GBMainViewController/GBMainViewController.m; sourceTree = "<group>"; };
 		6E99483618DB0A2500C04106 /* local.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = local.png; sourceTree = "<group>"; };
@@ -907,6 +935,34 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		6E97D85C1949CDE50061DAA7 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				6E97D85D1949CDE50061DAA7 /* key.png */,
+				6E97D85E1949CDE50061DAA7 /* qq.png */,
+				6E97D85F1949CDE50061DAA7 /* qq_btn.png */,
+				6E97D8601949CDE50061DAA7 /* qq_btn_s.png */,
+				6E97D8611949CDE50061DAA7 /* renren.png */,
+				6E97D8621949CDE50061DAA7 /* renren_btn.png */,
+				6E97D8631949CDE50061DAA7 /* renren_btn_s.png */,
+				6E97D8641949CDE50061DAA7 /* userName.png */,
+				6E97D8651949CDE50061DAA7 /* weibo.png */,
+				6E97D8661949CDE50061DAA7 /* weibo_btn.png */,
+				6E97D8671949CDE50061DAA7 /* weibo_btn_s.png */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		6E97D8681949CDE50061DAA7 /* register */ = {
+			isa = PBXGroup;
+			children = (
+				6E97D8691949CDE50061DAA7 /* check.png */,
+				6E97D86A1949CDE50061DAA7 /* checked.png */,
+				6E97D86B1949CDE50061DAA7 /* mailIcon.png */,
+			);
+			path = register;
+			sourceTree = "<group>";
+		};
 		6E99483318DB088900C04106 /* GBMainViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -919,6 +975,8 @@
 		6E99483418DB0A2500C04106 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				6E97D85C1949CDE50061DAA7 /* login */,
+				6E97D8681949CDE50061DAA7 /* register */,
 				6EEEE25818DB261F00030C86 /* Profile */,
 				6E99485618DB19FE00C04106 /* Global */,
 				6E99483518DB0A2500C04106 /* TabBarIcon */,
@@ -1108,12 +1166,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E97D8781949CDE50061DAA7 /* checked.png in Resources */,
 				140BDBF318DAD84E009881F9 /* InfoPlist.strings in Resources */,
+				6E97D8751949CDE50061DAA7 /* weibo_btn.png in Resources */,
 				6E99484818DB0A2500C04106 /* ticket.png in Resources */,
 				6E99484018DB0A2500C04106 /* local.png in Resources */,
+				6E97D86D1949CDE50061DAA7 /* qq.png in Resources */,
 				6E581A6D1948824400FBA739 /* NZAlertView.xib in Resources */,
 				6E278B2018E1A5A7001814F6 /* user.png in Resources */,
 				6E99484118DB0A2500C04106 /* local_s.png in Resources */,
+				6E97D8761949CDE50061DAA7 /* weibo_btn_s.png in Resources */,
 				6E278B2218E1A5CB001814F6 /* box.png in Resources */,
 				6E278B2A18E1A6AC001814F6 /* loginBox.png in Resources */,
 				6E6851C718E1C532003DC5CB /* barCodeIcon.png in Resources */,
@@ -1124,18 +1186,23 @@
 				6EEEE26018DB261F00030C86 /* background.png in Resources */,
 				6E278B1F18E1A5A7001814F6 /* password.png in Resources */,
 				6EEEE26418DB261F00030C86 /* sms.png in Resources */,
+				6E97D86E1949CDE50061DAA7 /* qq_btn.png in Resources */,
 				6E6851F618E1C976003DC5CB /* zbar-back.png in Resources */,
 				6E278B2F18E1B33F001814F6 /* GBUserViewController.xib in Resources */,
+				6E97D8741949CDE50061DAA7 /* weibo.png in Resources */,
 				6E278B2818E1A66F001814F6 /* line.png in Resources */,
 				6E99484718DB0A2500C04106 /* profile_s.png in Resources */,
 				6E278B3918E1B891001814F6 /* GBOrderViewController.xib in Resources */,
+				6E97D8771949CDE50061DAA7 /* check.png in Resources */,
 				6E99486918DB1C2000C04106 /* GBProfileViewController.xib in Resources */,
 				6EEEE26218DB261F00030C86 /* pay.png in Resources */,
 				6EEEE26718DB272B00030C86 /* arrow1.png in Resources */,
 				6E99485D18DB1AD400C04106 /* GBTicketViewController.xib in Resources */,
 				6E99484218DB0A2500C04106 /* merchant.png in Resources */,
 				140BDBF318DAD84E009881F9 /* InfoPlist.strings in Resources */,
+				6E97D8721949CDE50061DAA7 /* renren_btn_s.png in Resources */,
 				6E6851CD18E1C7A6003DC5CB /* GBScanViewController.xib in Resources */,
+				6E97D8701949CDE50061DAA7 /* renren.png in Resources */,
 				6E99484E18DB16AE00C04106 /* tabbar.png in Resources */,
 				6EEEE25F18DB261F00030C86 /* avatar.png in Resources */,
 				6E99484F18DB16AE00C04106 /* v_line.png in Resources */,
@@ -1150,6 +1217,8 @@
 				6E278B3318E1B43D001814F6 /* mail.png in Resources */,
 				6E278B1B18E1A484001814F6 /* GBLoginViewController.xib in Resources */,
 				6E99486F18DB1C5200C04106 /* GBMoreViewController.xib in Resources */,
+				6E97D8791949CDE50061DAA7 /* mailIcon.png in Resources */,
+				6E97D86C1949CDE50061DAA7 /* key.png in Resources */,
 				6E278B3418E1B43D001814F6 /* phone.png in Resources */,
 				6E99484618DB0A2500C04106 /* profile.png in Resources */,
 				6EEEE26818DB272B00030C86 /* arrow2.png in Resources */,
@@ -1160,10 +1229,13 @@
 				6E6851C818E1C532003DC5CB /* orderIcon.png in Resources */,
 				6E99485418DB194800C04106 /* GBLocalViewController.xib in Resources */,
 				6E581A6B1948824400FBA739 /* NZAlertView-Icons.bundle in Resources */,
+				6E97D8711949CDE50061DAA7 /* renren_btn.png in Resources */,
 				6E278B4618E1C10D001814F6 /* placeholder,jpg.jpg in Resources */,
 				6E278B1518E1A40B001814F6 /* GBRegisterViewController.xib in Resources */,
 				6E278B4418E1BE2F001814F6 /* GBOrderCell.xib in Resources */,
+				6E97D86F1949CDE50061DAA7 /* qq_btn_s.png in Resources */,
 				140BDBFB18DAD84E009881F9 /* Images.xcassets in Resources */,
+				6E97D8731949CDE50061DAA7 /* userName.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

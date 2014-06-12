@@ -15,6 +15,13 @@
 {
     IBOutlet UITextField *accountField;
     IBOutlet UITextField *passwordField;
+    IBOutlet UIView *bgView;
+    IBOutlet UIView *line1,*line2;
+    IBOutlet UIButton *loginBtn;
+    
+    IBOutlet UIView *qqView;
+    IBOutlet UIView *renrenView;
+    IBOutlet UIView *weiboView;
 }
 
 - (IBAction)loginButtonClicked:(id)sender;
@@ -40,13 +47,41 @@
     [super viewDidLoad];
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideKeyboard)];
     [self.view addGestureRecognizer:tap];
+    [self setupViews];
+    [self setupRightBarButtonItem];
     // Do any additional setup after loading the view from its nib.
 }
 
 
-- (void)setupLeftBarButtonItem
+- (void)setupViews
 {
-    //do nothing
+    [bgView setupBorder:LIGHT_GRAY cornerRadius:0];
+    line1.backgroundColor =line2.backgroundColor = LIGHT_GRAY;
+    line1.height = line2.height = 0.5;
+    
+    [loginBtn setupBorder:CLEAR_COLOR cornerRadius:19];
+    [loginBtn setTitleColor:C1 forState:UIControlStateNormal];
+    [loginBtn setTitleColor:C8 forState:UIControlStateHighlighted];
+    
+    qqView.backgroundColor = CLEAR_COLOR;
+    [qqView setupBorder:[UIColor colorWithHexString:@"#3e96d6"] cornerRadius:19];
+    renrenView.backgroundColor = CLEAR_COLOR;
+    [renrenView setupBorder:[UIColor colorWithHexString:@"#004ea2"] cornerRadius:19];
+    weiboView.backgroundColor = CLEAR_COLOR;
+    [weiboView setupBorder:[UIColor colorWithHexString:@"#e6162d"] cornerRadius:19];
+}
+
+
+- (void)setupRightBarButtonItem
+{
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = RECT(0, 0, 70, 40);
+    [btn setTitle:@"免费注册" forState:UIControlStateNormal];
+    [btn.titleLabel setFont:F5];
+    [btn setTitleColor:C1 forState:UIControlStateNormal];
+    [btn setTitleColor:C8 forState:UIControlStateHighlighted];
+    [btn addTarget:self action:@selector(registerButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btn];
 }
 
 #pragma mark - 隐藏键盘
@@ -64,11 +99,14 @@
     [self login];
 }
 
--(IBAction)registerButtonClicked:(id)sender
+-(void)registerButtonClicked:(id)sender
 {
     [self registerAccount];
 }
-
+- (void)setupLeftBarButtonItem
+{
+    //
+}
 
 #pragma mark - 登录
 - (void)login
@@ -129,6 +167,8 @@
         [self login];
     }
     return YES;
+    
+    
 }
 
 #pragma mark - 内存管理

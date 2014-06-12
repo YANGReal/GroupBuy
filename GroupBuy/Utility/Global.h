@@ -66,17 +66,26 @@
 #define BLACK_COLOR   [UIColor blackColor]                    //黑色
 #define CLEAR_COLOR   [UIColor clearColor]                    //透明色
 
-#define DEEP_BLUE     [UIColor colorWithHexString:@"#2c4484"] //深蓝色
-#define LIGHT_BLUE    [UIColor colorWithHexString:@"#26ace5"] //浅蓝色
-#define DEEP_PURPLE   [UIColor colorWithHexString:@"#702d88"] //深紫色
+#define C1            [UIColor whiteColor]                    //白色
+#define C2            [UIColor colorWithHexString:@"#c3c3c3"] //浅灰色
+#define C3            [UIColor colorWithHexString:@"#828282"] //灰色
+#define C4            [UIColor colorWithHexString:@"#565656"] //深灰色
+#define C5            [UIColor colorWithHexString:@"#000000"] //黑色
+#define C6            [UIColor colorWithHexString:@"#6bb600"] //绿色
+#define C7            [UIColor colorWithHexString:@"#5c9d00"] //深绿色
+#define C8            [UIColor colorWithHexString:@"#bcdb9f"] //浅绿色
 
-#define GREEN         [UIColor colorWithHexString:@"#21ca95"] //草绿色
-#define LIGHT_GRAY    [UIColor colorWithHexString:@"#cdcdcd"] //浅灰色
-#define BG_COLOR   [UIColor colorWithHexString:@"#f1efee"]    //深灰色
-
-#define LIGHT_PURPLE  [UIColor colorWithHexString:@"#c46096"] //浅紫色
+#define LIGHT_GRAY    [UIColor colorWithHexString:@"#e0e0e0"] //浅紫色
 #define YELLOW_COLOR  [UIColor colorWithHexString:@"#feaa24"] //明黄色
-#define RED_COLOR     [UIColor colorWithHexString:@"#ff5a54"] //粉红色
+#define BG_COLOR      [UIColor colorWithHexString:@"#ededed"] //粉红色
+
+//定义字体大小
+#define F1   [UIFont systemFontOfSize:9]
+#define F2   [UIFont systemFontOfSize:10]
+#define F3   [UIFont systemFontOfSize:12]
+#define F4   [UIFont systemFontOfSize:14]
+#define F5   [UIFont systemFontOfSize:17]
+#define F6   [UIFont systemFontOfSize:24]
 
 
 #pragma mark -- 定义APP沙盒路径
