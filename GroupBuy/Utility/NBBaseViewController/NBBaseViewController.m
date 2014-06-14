@@ -39,24 +39,18 @@
 {
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
 
-    btn.frame = RECT(0, 0, 40, 40);
+    btn.frame = RECT(0, 0, 12, 20);
     //[btn setTitle:@"返回" forState:UIControlStateNormal];
 //    [btn setBackgroundImage:[UIImage imageFromMainBundleFile:@"back.png"] forState:UIControlStateNormal];
     
-    UIImageView *imageView = [[UIImageView alloc] initWithFrame:RECT(0, 12, 9, 15)];
-    [imageView setImage:[UIImage imageFromMainBundleFile:@"back.png"]];
+   // UIImageView *imageView = [[UIImageView alloc] initWithFrame:RECT(0, 12, 9, 15)];
+   // [imageView setImage:[UIImage imageFromMainBundleFile:@"back.png"]];
 
-    [btn addSubview:imageView];
+  //  [btn addSubview:imageView];
 
-    btn.frame = RECT(0, 0, 30, 30);
+   // btn.frame = RECT(0, 0, 30, 30);
     //[btn setTitle:@"返回" forState:UIControlStateNormal];
     [btn setBackgroundImage:[UIImage imageFromMainBundleFile:@"back.png"] forState:UIControlStateNormal];
-    
-    //UIImageView *imageView = [[UIImageView alloc] initWithFrame:RECT(0, 12, 40, 40)];
-    //[imageView setImage:[UIImage imageFromMainBundleFile:@"back.png"]];
-
-    //[btn addSubview:imageView];
-
     
     [btn addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btn];

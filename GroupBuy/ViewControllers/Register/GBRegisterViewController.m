@@ -15,11 +15,18 @@
 {
     IBOutlet UITextField *accountField;
     IBOutlet UITextField *passwordField;
-    IBOutlet UITextField *repeatField;
+    IBOutlet UITextField *mailField;
+    
+    IBOutlet UIView *line1,*line2;
+    IBOutlet UIButton *loginBtn;
+    IBOutlet UIButton *checkBtn;
+    BOOL checked;
     
 }
 
--(IBAction)registerButtonClicked:(id)sender;
+- (IBAction)registerButtonClicked:(id)sender;
+
+- (IBAction)checkBtnClicked:(id)sender;
 
 @end
 
@@ -39,9 +46,23 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [self setupViews];
+}
+
+
+- (void)setupViews
+{
+    line1.backgroundColor =line2.backgroundColor = LIGHT_GRAY;
+    line1.height = line2.height = 0.5;
+    [loginBtn setupBorder:CLEAR_COLOR cornerRadius:19];
+    [loginBtn setTitleColor:C1 forState:UIControlStateNormal];
+    [loginBtn setTitleColor:C8 forState:UIControlStateHighlighted];
+    
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideKeyboard)];
     [self.view addGestureRecognizer:tap];
+
 }
+
 
 #pragma mark -IBAction method
 -(IBAction)registerButtonClicked:(id)sender
@@ -49,7 +70,18 @@
     [self registerAccount];
 }
 
-
+- (IBAction)checkBtnClicked:(id)sender
+{
+    if (!checked)
+    {
+        checkBtn.selected = YES;
+    }
+    else
+    {
+        checkBtn.selected = NO;
+    }
+    checked = !checked;
+}
 
 #pragma mark 注册
 
@@ -78,12 +110,20 @@
 #pragma mark -检查输入
 - (BOOL)checkInput
 {
-    if (accountField.text.length == 0)
+    if (mailField.text.length == 0)
+    {
+        NZAlertView *alert = [[NZAlertView alloc] initWithStyle:NZAlertStyleError title:@"提示" message:@"请输入邮箱"];
+        [alert show];
+        return NO;
+    }
+    
+    if(accountField.text.length == 0)
     {
         NZAlertView *alert = [[NZAlertView alloc] initWithStyle:NZAlertStyleError title:@"提示" message:@"请输入用户名"];
         [alert show];
         return NO;
     }
+    
     if (passwordField.text.length == 0)
     {
         NZAlertView *alert = [[NZAlertView alloc] initWithStyle:NZAlertStyleError title:@"提示" message:@"请输入密码"];
@@ -91,14 +131,7 @@
         return NO;
     }
     
-    if (![repeatField.text isEqualToString:passwordField.text])
-    {
-        
-        NZAlertView *alert = [[NZAlertView alloc] initWithStyle:NZAlertStyleError title:@"提示" message:@"两次输入的密码不一致"];
-        [alert show];
-        return NO;
-    }
-   
+    
     return YES;
 }
 
@@ -106,13 +139,13 @@
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
-    if (textField == accountField)
+    if (textField == mailField)
+    {
+        [accountField becomeFirstResponder];
+    }
+    else if (textField == accountField)
     {
         [passwordField becomeFirstResponder];
-    }
-    else if (textField == passwordField)
-    {
-        [repeatField becomeFirstResponder];
     }
     else
     {

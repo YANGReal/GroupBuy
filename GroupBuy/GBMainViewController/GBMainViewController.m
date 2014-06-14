@@ -18,7 +18,7 @@
 @interface GBMainViewController ()
 
 @property (strong , nonatomic) UIView *myTabBar;
-
+@property (strong , nonatomic) NSArray *titleArray;
 @end
 
 @implementation GBMainViewController
@@ -28,6 +28,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        self.title = @"团一发";
     }
     return self;
 }
@@ -45,39 +46,41 @@
 /*自定义UITabBar*/
 - (void)setupTabBar
 {
-    CGFloat iconSpace = 30;
+    CGFloat iconSpace = 34;
     CGRect rect = [[UIScreen mainScreen] bounds];
     self.myTabBar = [[UIView alloc] initWithFrame:RECT(0, DEVICE_HEIGHT-49, DEVICE_WIDTH, 49)];
     self.myTabBar.backgroundColor = WHITE_COLOR;
     [self.view addSubview:self.myTabBar];
-    
-    NSArray *iconArr1 = @[@"local.png",@"ticket.png",@"merchant.png",@"profile.png",@"more.png"];
-    NSArray *iconArr2 = @[@"local_s.png",@"ticket_s.png",@"merchant_s.png",@"profile_s.png",@"more_s.png"];
+    self.titleArray = @[@"主页",@"团购",@"票务",@"拍卖",@"个人信息"];
+    NSArray *iconArr1 = @[@"home.png",@"group.png",@"ticket.png",@"auction.png",@"profile.png"];
+    NSArray *iconArr2 = @[@"home_s.png",@"group_s.png",@"ticket_s.png",@"auction_s.png",@"profile_s.png"];
     CGFloat btnWidth = rect.size.width/5.0;
     for (int i = 0;i<5;i++)
     {
-        UIImageView *iconView = [[UIImageView alloc] initWithFrame:RECT(15+33*i+iconSpace*i, 5, 45,33)];
+        UIImageView *iconView = [[UIImageView alloc] initWithFrame:RECT(18+30*i+iconSpace*i, 5, 30,30)];
         iconView.tag = 100 + i;
         iconView.image = [UIImage imageFromMainBundleFile:iconArr1[i]];
         iconView.highlightedImage = [UIImage imageFromMainBundleFile:iconArr2[i]];
+              [self.myTabBar addSubview:iconView];
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+        button.tag = i + 100;
+        button.frame = RECT(i*btnWidth, 0, btnWidth, 49);
+        [button addTarget:self action:@selector(tabBarTapped:) forControlEvents:UIControlEventTouchUpInside];
+        [self.myTabBar addSubview:button];
+      
+        UILabel *titleLabel = [[UILabel alloc] initWithFrame:RECT(btnWidth*i, 30, btnWidth, 20)];
+        titleLabel.font = F2;
+        titleLabel.textColor = C3;
         if (i == 0)
         {
             iconView.highlighted = YES;
+            titleLabel.textColor = C6;
         }
-        [self.myTabBar addSubview:iconView];
-        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-        button.tag = i + 100;
-        button.frame = RECT(i*btnWidth, 0, rect.size.width/4.0, 49);
-        [button addTarget:self action:@selector(tabBarTapped:) forControlEvents:UIControlEventTouchUpInside];
-        [self.myTabBar addSubview:button];
-        UIImageView *verticalLine = [[UIImageView alloc] initWithFrame:RECT(68+33*i+iconSpace*i, 0, 1, 49)];
-        verticalLine.image = [UIImage imageFromMainBundleFile:@"v_line.png"];
-        //verticalLine.backgroundColor = RED_COLOR;
-        [self.myTabBar addSubview:verticalLine];
+        titleLabel.textAlignment = NSTextAlignmentCenter;
+        titleLabel.text = _titleArray[i];
+        titleLabel.tag = i+100;
+        [self.myTabBar addSubview:titleLabel];
     }
-    UIView *line = [[UIView alloc] initWithFrame:RECT(0, 0, DEVICE_WIDTH, 1)];
-    line.backgroundColor = LIGHT_GRAY;
-    [self.myTabBar addSubview:line];
     self.view.backgroundColor = BG_COLOR;
 }
 
@@ -86,28 +89,25 @@
 - (void)setupViewControllers
 {
     GBLocalViewController *localVC = [[GBLocalViewController alloc] initWithNibName:@"GBLocalViewController" bundle:nil];
-    NBNavigationController *nav1 = [[NBNavigationController alloc] initWithRootViewController:localVC];
     
     GBTicketViewController *ticketVC = [[GBTicketViewController alloc] initWithNibName:@"GBTicketViewController" bundle:nil];
-    NBNavigationController *nav2 = [[NBNavigationController alloc] initWithRootViewController:ticketVC];
+  
     
     GBMerchantViewController *merchantVC = [[GBMerchantViewController alloc] initWithNibName:@"GBMerchantViewController" bundle:nil];
-    NBNavigationController *nav3 = [[NBNavigationController alloc] initWithRootViewController:merchantVC];
     
     GBProfileViewController *profileVC = [[GBProfileViewController alloc] initWithNibName:@"GBProfileViewController" bundle:nil];
-    NBNavigationController *nav4 = [[NBNavigationController alloc] initWithRootViewController:profileVC];
     
     GBMoreViewController *moreVC = [[GBMoreViewController alloc] initWithNibName:@"GBMoreViewController" bundle:nil];
-    NBNavigationController *nav5 = [[NBNavigationController alloc] initWithRootViewController:moreVC];
     
-    self.viewControllers = @[nav1,nav2,nav3,nav4,nav5];
+    self.viewControllers = @[localVC,ticketVC,merchantVC,moreVC,profileVC];
 }
 
 
 #pragma mark - 点击tabBar时候调用
 - (void)tabBarTapped:(UIButton *)sender
 {
-    self.selectedIndex = sender.tag - 100;
+    NSInteger index = sender.tag - 100;
+    self.selectedIndex = index;
     
     for (UIView *view in self.myTabBar.subviews)
     {
@@ -118,14 +118,40 @@
             if (icon.tag == sender.tag)
             {
                 icon.highlighted = YES;
-                 NSLog(@"icon.tag = %d",icon.tag);
             }
             else
             {
                 icon.highlighted = NO;
             }
         }
+        
+        if ([view isKindOfClass:[UILabel class]])
+        {
+            UILabel *label = (UILabel *)view;
+            if (label.tag == sender.tag)
+            {
+                label.textColor = C6;
+            }
+            else
+            {
+                label.textColor = C3;
+            }
+        }
+        
+        
+        
+        
     }
+    
+    if (index == 0)
+    {
+        self.title = @"团一发";
+    }
+    else
+    {
+        self.title = _titleArray[index];
+    }
+    
 }
 
 

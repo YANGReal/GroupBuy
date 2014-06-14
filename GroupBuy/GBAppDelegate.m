@@ -24,11 +24,11 @@
 //    self.window.rootViewController = self.mainVC;
     
     BOOL didLogin = [[NSUserDefaults standardUserDefaults] boolForKey:DID_LOGIN];
-    if (didLogin)
+    if (!didLogin)
     {
         self.mainVC = [[GBMainViewController alloc] init];
         self.mainVC.tabBar.hidden = YES;
-        self.window.rootViewController = self.mainVC;
+        self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:self.mainVC];
     }
     else
     {
