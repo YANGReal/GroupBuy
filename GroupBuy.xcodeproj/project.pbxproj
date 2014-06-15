@@ -126,6 +126,7 @@
 		6E99486918DB1C2000C04106 /* GBProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E99486718DB1C2000C04106 /* GBProfileViewController.xib */; };
 		6E99486E18DB1C5200C04106 /* GBMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E99486C18DB1C5200C04106 /* GBMoreViewController.m */; };
 		6E99486F18DB1C5200C04106 /* GBMoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E99486D18DB1C5200C04106 /* GBMoreViewController.xib */; };
+		6EAC6891194DB86200DFE3EA /* nav.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EAC6890194DB86200DFE3EA /* nav.png */; };
 		6EE342DB194C304F001E86C0 /* auction_s.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EE342D0194C304F001E86C0 /* auction_s.png */; };
 		6EE342DC194C304F001E86C0 /* auction.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EE342D1194C304F001E86C0 /* auction.png */; };
 		6EE342DD194C304F001E86C0 /* group_s.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EE342D2194C304F001E86C0 /* group_s.png */; };
@@ -357,6 +358,7 @@
 		6E99486B18DB1C5200C04106 /* GBMoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBMoreViewController.h; path = ViewControllers/More/GBMoreViewController.h; sourceTree = "<group>"; };
 		6E99486C18DB1C5200C04106 /* GBMoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBMoreViewController.m; path = ViewControllers/More/GBMoreViewController.m; sourceTree = "<group>"; };
 		6E99486D18DB1C5200C04106 /* GBMoreViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GBMoreViewController.xib; path = ViewControllers/More/GBMoreViewController.xib; sourceTree = "<group>"; };
+		6EAC6890194DB86200DFE3EA /* nav.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav.png; sourceTree = "<group>"; };
 		6EE342D0194C304F001E86C0 /* auction_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = auction_s.png; sourceTree = "<group>"; };
 		6EE342D1194C304F001E86C0 /* auction.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = auction.png; sourceTree = "<group>"; };
 		6EE342D2194C304F001E86C0 /* group_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = group_s.png; sourceTree = "<group>"; };
@@ -1011,6 +1013,7 @@
 		6E99485618DB19FE00C04106 /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				6EAC6890194DB86200DFE3EA /* nav.png */,
 				6E278B4518E1C10D001814F6 /* placeholder,jpg.jpg */,
 				6E278B2918E1A6AC001814F6 /* loginBox.png */,
 				6E278B2718E1A66F001814F6 /* line.png */,
@@ -1205,6 +1208,7 @@
 				6E278B2518E1A603001814F6 /* btn_down.png in Resources */,
 				6E278B3318E1B43D001814F6 /* mail.png in Resources */,
 				6EE342DB194C304F001E86C0 /* auction_s.png in Resources */,
+				6EAC6891194DB86200DFE3EA /* nav.png in Resources */,
 				6E278B1B18E1A484001814F6 /* GBLoginViewController.xib in Resources */,
 				6E99486F18DB1C5200C04106 /* GBMoreViewController.xib in Resources */,
 				6E97D8791949CDE50061DAA7 /* mailIcon.png in Resources */,

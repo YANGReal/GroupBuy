@@ -7,8 +7,10 @@
 //
 
 #import "GBLocalViewController.h"
-
+#import "GBOrderViewController.h"
 @interface GBLocalViewController ()
+
+- (IBAction)btnClicked:(id)sender;
 
 @end
 
@@ -19,7 +21,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        self.title = @"本地团购";
+       
     }
     return self;
 }
@@ -27,7 +29,22 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+}
+
+
+//- (void)viewWillAppear:(BOOL)animated
+//{
+//    [super viewWillAppear:animated];
+//    [self.navigationController setNavigationBarHidden:YES animated:NO];
+//}
+
+
+- (IBAction)btnClicked:(id)sender
+{
+   
+  
+    GBOrderViewController *vc = [[GBOrderViewController alloc] initWithNibName:@"GBOrderViewController" bundle:nil];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)setupLeftBarButtonItem

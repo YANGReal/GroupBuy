@@ -38,7 +38,14 @@
     [super viewDidLoad];
     [self setupTabBar];
     [self setupViewControllers];
+    
     // Do any additional setup after loading the view.
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:NO];
 }
 
 
@@ -89,15 +96,16 @@
 - (void)setupViewControllers
 {
     GBLocalViewController *localVC = [[GBLocalViewController alloc] initWithNibName:@"GBLocalViewController" bundle:nil];
-    
+    localVC.title = @"团一发";
     GBTicketViewController *ticketVC = [[GBTicketViewController alloc] initWithNibName:@"GBTicketViewController" bundle:nil];
-  
+    ticketVC.title = @"团购";
     
     GBMerchantViewController *merchantVC = [[GBMerchantViewController alloc] initWithNibName:@"GBMerchantViewController" bundle:nil];
     
-    GBProfileViewController *profileVC = [[GBProfileViewController alloc] initWithNibName:@"GBProfileViewController" bundle:nil];
-    
     GBMoreViewController *moreVC = [[GBMoreViewController alloc] initWithNibName:@"GBMoreViewController" bundle:nil];
+    
+
+    GBProfileViewController *profileVC = [[GBProfileViewController alloc] initWithNibName:@"GBProfileViewController" bundle:nil];
     
     self.viewControllers = @[localVC,ticketVC,merchantVC,moreVC,profileVC];
 }
@@ -137,21 +145,7 @@
                 label.textColor = C3;
             }
         }
-        
-        
-        
-        
     }
-    
-    if (index == 0)
-    {
-        self.title = @"团一发";
-    }
-    else
-    {
-        self.title = _titleArray[index];
-    }
-    
 }
 
 
@@ -173,6 +167,8 @@
     }];
     
 }
+
+
 
 #pragma mark - 内存警告时调用
 - (void)didReceiveMemoryWarning

@@ -30,8 +30,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [(GBMainViewController *)self.tabBarController hideTabBar];
-    // Do any additional setup after loading the view from its nib.
+       // Do any additional setup after loading the view from its nib.
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 
 

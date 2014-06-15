@@ -41,13 +41,14 @@
 {
     [super viewDidLoad];
     [self setupRightBarButtonItem];
+   // [self.navigationController setNavigationBarHidden:YES animated:NO];
     // Do any additional setup after loading the view from its nib.
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-     [(GBMainViewController *)self.tabBarController revealTabBar];
+    
 }
 
 - (void)setupLeftBarButtonItem

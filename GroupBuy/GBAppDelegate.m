@@ -23,19 +23,21 @@
 //    self.mainVC.tabBar.hidden = YES;
 //    self.window.rootViewController = self.mainVC;
     
-    BOOL didLogin = [[NSUserDefaults standardUserDefaults] boolForKey:DID_LOGIN];
-    if (!didLogin)
+   // BOOL didLogin = [[NSUserDefaults standardUserDefaults] boolForKey:DID_LOGIN];
+//    if (!didLogin)
     {
         self.mainVC = [[GBMainViewController alloc] init];
         self.mainVC.tabBar.hidden = YES;
-        self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:self.mainVC];
-    }
-    else
-    {
-        GBLoginViewController *loginVC = [[GBLoginViewController alloc] initWithNibName:@"GBLoginViewController" bundle:nil];
-        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:loginVC];
+        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:self.mainVC];
+        [nav setNavigationBarHidden:YES animated:NO];
         self.window.rootViewController = nav;
     }
+//    else
+//    {
+//        GBLoginViewController *loginVC = [[GBLoginViewController alloc] initWithNibName:@"GBLoginViewController" bundle:nil];
+//        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:loginVC];
+//        self.window.rootViewController = nav;
+//    }
     
     /*设置导航栏背景颜色*/
     [[UINavigationBar appearance] setBarTintColor:C6];

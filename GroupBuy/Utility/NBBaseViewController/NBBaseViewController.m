@@ -31,25 +31,29 @@
     self.view.backgroundColor = BG_COLOR;
 
     [self setupLeftBarButtonItem];
+    [self setupTopViews];
 	// Do any additional setup after loading the view.
 }
 
+
+- (void)setupTopViews
+{
+    UIImageView *navBar = [[UIImageView alloc] initWithFrame:RECT(0, 0, self.view.width, 84)];
+    navBar.image = [UIImage imageFromMainBundleFile:@"nav.png"];
+    UILabel *titleLabel = [[UILabel alloc] initWithFrame:RECT(100, 30, 120, 24)];
+    titleLabel.font = F5;
+    titleLabel.textColor = C1;
+    titleLabel.textAlignment = NSTextAlignmentCenter;
+    titleLabel.text = self.title;
+    [self.view addSubview:navBar];
+     [self.view addSubview:titleLabel];
+}
 
 - (void)setupLeftBarButtonItem
 {
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
 
     btn.frame = RECT(0, 0, 12, 20);
-    //[btn setTitle:@"返回" forState:UIControlStateNormal];
-//    [btn setBackgroundImage:[UIImage imageFromMainBundleFile:@"back.png"] forState:UIControlStateNormal];
-    
-   // UIImageView *imageView = [[UIImageView alloc] initWithFrame:RECT(0, 12, 9, 15)];
-   // [imageView setImage:[UIImage imageFromMainBundleFile:@"back.png"]];
-
-  //  [btn addSubview:imageView];
-
-   // btn.frame = RECT(0, 0, 30, 30);
-    //[btn setTitle:@"返回" forState:UIControlStateNormal];
     [btn setBackgroundImage:[UIImage imageFromMainBundleFile:@"back.png"] forState:UIControlStateNormal];
     
     [btn addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
