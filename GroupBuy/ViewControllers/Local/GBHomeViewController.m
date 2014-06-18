@@ -6,15 +6,15 @@
 //  Copyright (c) 2014年 YANGReal. All rights reserved.
 //
 
-#import "GBLocalViewController.h"
+#import "GBHomeViewController.h"
 #import "GBOrderViewController.h"
-@interface GBLocalViewController ()
+@interface GBHomeViewController ()
 
 - (IBAction)btnClicked:(id)sender;
 
 @end
 
-@implementation GBLocalViewController
+@implementation GBHomeViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

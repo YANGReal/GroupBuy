@@ -44,6 +44,12 @@
 		140BDCBF18DADC40009881F9 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 140BDCBE18DADC40009881F9 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		140BDCC018DADC6C009881F9 /* Reachability.h in Sources */ = {isa = PBXBuildFile; fileRef = 140BDCBD18DADC40009881F9 /* Reachability.h */; };
 		140BDCC418DAE02C009881F9 /* NBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 140BDCC318DAE02C009881F9 /* NBBaseViewController.m */; };
+		6E1096161951C5A8000371EC /* my_collection.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1096101951C5A8000371EC /* my_collection.png */; };
+		6E1096171951C5A8000371EC /* paid.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1096111951C5A8000371EC /* paid.png */; };
+		6E1096181951C5A8000371EC /* profile_banner.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1096121951C5A8000371EC /* profile_banner.png */; };
+		6E1096191951C5A8000371EC /* profile_msg.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1096131951C5A8000371EC /* profile_msg.png */; };
+		6E10961A1951C5A8000371EC /* profile_setting.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1096141951C5A8000371EC /* profile_setting.png */; };
+		6E10961B1951C5A8000371EC /* unpay.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1096151951C5A8000371EC /* unpay.png */; };
 		6E278B1418E1A40B001814F6 /* GBRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E278B1218E1A40B001814F6 /* GBRegisterViewController.m */; };
 		6E278B1518E1A40B001814F6 /* GBRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E278B1318E1A40B001814F6 /* GBRegisterViewController.xib */; };
 		6E278B1A18E1A484001814F6 /* GBLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E278B1818E1A484001814F6 /* GBLoginViewController.m */; };
@@ -57,8 +63,6 @@
 		6E278B2A18E1A6AC001814F6 /* loginBox.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E278B2918E1A6AC001814F6 /* loginBox.png */; };
 		6E278B2E18E1B33F001814F6 /* GBUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E278B2C18E1B33F001814F6 /* GBUserViewController.m */; };
 		6E278B2F18E1B33F001814F6 /* GBUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E278B2D18E1B33F001814F6 /* GBUserViewController.xib */; };
-		6E278B3318E1B43D001814F6 /* mail.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E278B3118E1B43D001814F6 /* mail.png */; };
-		6E278B3418E1B43D001814F6 /* phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E278B3218E1B43D001814F6 /* phone.png */; };
 		6E278B3818E1B891001814F6 /* GBOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E278B3618E1B891001814F6 /* GBOrderViewController.m */; };
 		6E278B3918E1B891001814F6 /* GBOrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E278B3718E1B891001814F6 /* GBOrderViewController.xib */; };
 		6E278B3E18E1B9A1001814F6 /* GBOrderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E278B3C18E1B9A1001814F6 /* GBOrderCell.m */; };
@@ -87,8 +91,6 @@
 		6E581A6F1948829F00FBA739 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E581A6E1948829F00FBA739 /* main.m */; };
 		6E6851C218E1C40F003DC5CB /* GBOrderDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6851C018E1C40F003DC5CB /* GBOrderDetailViewController.m */; };
 		6E6851C318E1C40F003DC5CB /* GBOrderDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E6851C118E1C40F003DC5CB /* GBOrderDetailViewController.xib */; };
-		6E6851C718E1C532003DC5CB /* barCodeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E6851C518E1C532003DC5CB /* barCodeIcon.png */; };
-		6E6851C818E1C532003DC5CB /* orderIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E6851C618E1C532003DC5CB /* orderIcon.png */; };
 		6E6851CC18E1C7A6003DC5CB /* GBScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6851CA18E1C7A6003DC5CB /* GBScanViewController.m */; };
 		6E6851CD18E1C7A6003DC5CB /* GBScanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E6851CB18E1C7A6003DC5CB /* GBScanViewController.xib */; };
 		6E6851D018E1C920003DC5CB /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E6851CF18E1C920003DC5CB /* CoreMedia.framework */; };
@@ -115,17 +117,17 @@
 		6E97D8781949CDE50061DAA7 /* checked.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E97D86A1949CDE50061DAA7 /* checked.png */; };
 		6E97D8791949CDE50061DAA7 /* mailIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E97D86B1949CDE50061DAA7 /* mailIcon.png */; };
 		6E99483218DB088400C04106 /* GBMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E99483118DB088400C04106 /* GBMainViewController.m */; };
-		6E99485318DB194800C04106 /* GBLocalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E99485118DB194800C04106 /* GBLocalViewController.m */; };
-		6E99485418DB194800C04106 /* GBLocalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E99485218DB194800C04106 /* GBLocalViewController.xib */; };
+		6E99485318DB194800C04106 /* GBHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E99485118DB194800C04106 /* GBHomeViewController.m */; };
+		6E99485418DB194800C04106 /* GBHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E99485218DB194800C04106 /* GBHomeViewController.xib */; };
 		6E99485818DB19FE00C04106 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E99485718DB19FE00C04106 /* back.png */; };
 		6E99485C18DB1AD400C04106 /* GBTicketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E99485A18DB1AD400C04106 /* GBTicketViewController.m */; };
 		6E99485D18DB1AD400C04106 /* GBTicketViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E99485B18DB1AD400C04106 /* GBTicketViewController.xib */; };
-		6E99486218DB1BD500C04106 /* GBMerchantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E99486018DB1BD500C04106 /* GBMerchantViewController.m */; };
-		6E99486318DB1BD500C04106 /* GBMerchantViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E99486118DB1BD500C04106 /* GBMerchantViewController.xib */; };
+		6E99486218DB1BD500C04106 /* GBGroupbuyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E99486018DB1BD500C04106 /* GBGroupbuyViewController.m */; };
+		6E99486318DB1BD500C04106 /* GBGroupbuyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E99486118DB1BD500C04106 /* GBGroupbuyViewController.xib */; };
 		6E99486818DB1C2000C04106 /* GBProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E99486618DB1C2000C04106 /* GBProfileViewController.m */; };
 		6E99486918DB1C2000C04106 /* GBProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E99486718DB1C2000C04106 /* GBProfileViewController.xib */; };
-		6E99486E18DB1C5200C04106 /* GBMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E99486C18DB1C5200C04106 /* GBMoreViewController.m */; };
-		6E99486F18DB1C5200C04106 /* GBMoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E99486D18DB1C5200C04106 /* GBMoreViewController.xib */; };
+		6E99486E18DB1C5200C04106 /* GBAuctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E99486C18DB1C5200C04106 /* GBAuctionViewController.m */; };
+		6E99486F18DB1C5200C04106 /* GBAuctionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E99486D18DB1C5200C04106 /* GBAuctionViewController.xib */; };
 		6EAC6891194DB86200DFE3EA /* nav.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EAC6890194DB86200DFE3EA /* nav.png */; };
 		6EE342DB194C304F001E86C0 /* auction_s.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EE342D0194C304F001E86C0 /* auction_s.png */; };
 		6EE342DC194C304F001E86C0 /* auction.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EE342D1194C304F001E86C0 /* auction.png */; };
@@ -138,12 +140,6 @@
 		6EE342E3194C304F001E86C0 /* redDot.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EE342D8194C304F001E86C0 /* redDot.png */; };
 		6EE342E4194C304F001E86C0 /* ticket_s.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EE342D9194C304F001E86C0 /* ticket_s.png */; };
 		6EE342E5194C304F001E86C0 /* ticket.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EE342DA194C304F001E86C0 /* ticket.png */; };
-		6EEEE25F18DB261F00030C86 /* avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EEEE25918DB261F00030C86 /* avatar.png */; };
-		6EEEE26018DB261F00030C86 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EEEE25A18DB261F00030C86 /* background.png */; };
-		6EEEE26118DB261F00030C86 /* order.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EEEE25B18DB261F00030C86 /* order.png */; };
-		6EEEE26218DB261F00030C86 /* pay.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EEEE25C18DB261F00030C86 /* pay.png */; };
-		6EEEE26318DB261F00030C86 /* scan.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EEEE25D18DB261F00030C86 /* scan.png */; };
-		6EEEE26418DB261F00030C86 /* sms.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EEEE25E18DB261F00030C86 /* sms.png */; };
 		6EEEE26718DB272B00030C86 /* arrow1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EEEE26518DB272B00030C86 /* arrow1.png */; };
 		6EEEE26818DB272B00030C86 /* arrow2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EEEE26618DB272B00030C86 /* arrow2.png */; };
 		6EEEE26A18DB27DA00030C86 /* banner.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EEEE26918DB27DA00030C86 /* banner.png */; };
@@ -222,6 +218,12 @@
 		140BDCBE18DADC40009881F9 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		140BDCC218DAE02C009881F9 /* NBBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBBaseViewController.h; sourceTree = "<group>"; };
 		140BDCC318DAE02C009881F9 /* NBBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBBaseViewController.m; sourceTree = "<group>"; };
+		6E1096101951C5A8000371EC /* my_collection.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = my_collection.png; sourceTree = "<group>"; };
+		6E1096111951C5A8000371EC /* paid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paid.png; sourceTree = "<group>"; };
+		6E1096121951C5A8000371EC /* profile_banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile_banner.png; sourceTree = "<group>"; };
+		6E1096131951C5A8000371EC /* profile_msg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile_msg.png; sourceTree = "<group>"; };
+		6E1096141951C5A8000371EC /* profile_setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile_setting.png; sourceTree = "<group>"; };
+		6E1096151951C5A8000371EC /* unpay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unpay.png; sourceTree = "<group>"; };
 		6E278B1118E1A40B001814F6 /* GBRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBRegisterViewController.h; path = ViewControllers/Register/GBRegisterViewController.h; sourceTree = "<group>"; };
 		6E278B1218E1A40B001814F6 /* GBRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBRegisterViewController.m; path = ViewControllers/Register/GBRegisterViewController.m; sourceTree = "<group>"; };
 		6E278B1318E1A40B001814F6 /* GBRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GBRegisterViewController.xib; path = ViewControllers/Register/GBRegisterViewController.xib; sourceTree = "<group>"; };
@@ -238,8 +240,6 @@
 		6E278B2B18E1B33F001814F6 /* GBUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBUserViewController.h; path = ViewControllers/User/GBUserViewController.h; sourceTree = "<group>"; };
 		6E278B2C18E1B33F001814F6 /* GBUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBUserViewController.m; path = ViewControllers/User/GBUserViewController.m; sourceTree = "<group>"; };
 		6E278B2D18E1B33F001814F6 /* GBUserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GBUserViewController.xib; path = ViewControllers/User/GBUserViewController.xib; sourceTree = "<group>"; };
-		6E278B3118E1B43D001814F6 /* mail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mail.png; sourceTree = "<group>"; };
-		6E278B3218E1B43D001814F6 /* phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = phone.png; sourceTree = "<group>"; };
 		6E278B3518E1B891001814F6 /* GBOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBOrderViewController.h; path = ViewControllers/Order/GBOrderViewController.h; sourceTree = "<group>"; };
 		6E278B3618E1B891001814F6 /* GBOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBOrderViewController.m; path = ViewControllers/Order/GBOrderViewController.m; sourceTree = "<group>"; };
 		6E278B3718E1B891001814F6 /* GBOrderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GBOrderViewController.xib; path = ViewControllers/Order/GBOrderViewController.xib; sourceTree = "<group>"; };
@@ -292,8 +292,6 @@
 		6E6851BF18E1C40F003DC5CB /* GBOrderDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBOrderDetailViewController.h; path = ViewControllers/OrderDetail/GBOrderDetailViewController.h; sourceTree = "<group>"; };
 		6E6851C018E1C40F003DC5CB /* GBOrderDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBOrderDetailViewController.m; path = ViewControllers/OrderDetail/GBOrderDetailViewController.m; sourceTree = "<group>"; };
 		6E6851C118E1C40F003DC5CB /* GBOrderDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GBOrderDetailViewController.xib; path = ViewControllers/OrderDetail/GBOrderDetailViewController.xib; sourceTree = "<group>"; };
-		6E6851C518E1C532003DC5CB /* barCodeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = barCodeIcon.png; sourceTree = "<group>"; };
-		6E6851C618E1C532003DC5CB /* orderIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orderIcon.png; sourceTree = "<group>"; };
 		6E6851C918E1C7A6003DC5CB /* GBScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBScanViewController.h; path = ViewControllers/Scan/GBScanViewController.h; sourceTree = "<group>"; };
 		6E6851CA18E1C7A6003DC5CB /* GBScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBScanViewController.m; path = ViewControllers/Scan/GBScanViewController.m; sourceTree = "<group>"; };
 		6E6851CB18E1C7A6003DC5CB /* GBScanViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GBScanViewController.xib; path = ViewControllers/Scan/GBScanViewController.xib; sourceTree = "<group>"; };
@@ -342,22 +340,22 @@
 		6E97D86B1949CDE50061DAA7 /* mailIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mailIcon.png; sourceTree = "<group>"; };
 		6E99483018DB088400C04106 /* GBMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBMainViewController.h; path = GBMainViewController/GBMainViewController.h; sourceTree = "<group>"; };
 		6E99483118DB088400C04106 /* GBMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBMainViewController.m; path = GBMainViewController/GBMainViewController.m; sourceTree = "<group>"; };
-		6E99485018DB194800C04106 /* GBLocalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBLocalViewController.h; path = ViewControllers/Local/GBLocalViewController.h; sourceTree = "<group>"; };
-		6E99485118DB194800C04106 /* GBLocalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBLocalViewController.m; path = ViewControllers/Local/GBLocalViewController.m; sourceTree = "<group>"; };
-		6E99485218DB194800C04106 /* GBLocalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GBLocalViewController.xib; path = ViewControllers/Local/GBLocalViewController.xib; sourceTree = "<group>"; };
+		6E99485018DB194800C04106 /* GBHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBHomeViewController.h; path = ViewControllers/Local/GBHomeViewController.h; sourceTree = "<group>"; };
+		6E99485118DB194800C04106 /* GBHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBHomeViewController.m; path = ViewControllers/Local/GBHomeViewController.m; sourceTree = "<group>"; };
+		6E99485218DB194800C04106 /* GBHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GBHomeViewController.xib; path = ViewControllers/Local/GBHomeViewController.xib; sourceTree = "<group>"; };
 		6E99485718DB19FE00C04106 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		6E99485918DB1AD400C04106 /* GBTicketViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBTicketViewController.h; path = ViewControllers/Ticket/GBTicketViewController.h; sourceTree = "<group>"; };
 		6E99485A18DB1AD400C04106 /* GBTicketViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBTicketViewController.m; path = ViewControllers/Ticket/GBTicketViewController.m; sourceTree = "<group>"; };
 		6E99485B18DB1AD400C04106 /* GBTicketViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GBTicketViewController.xib; path = ViewControllers/Ticket/GBTicketViewController.xib; sourceTree = "<group>"; };
-		6E99485F18DB1BD500C04106 /* GBMerchantViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBMerchantViewController.h; path = ViewControllers/Merchant/GBMerchantViewController.h; sourceTree = "<group>"; };
-		6E99486018DB1BD500C04106 /* GBMerchantViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBMerchantViewController.m; path = ViewControllers/Merchant/GBMerchantViewController.m; sourceTree = "<group>"; };
-		6E99486118DB1BD500C04106 /* GBMerchantViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GBMerchantViewController.xib; path = ViewControllers/Merchant/GBMerchantViewController.xib; sourceTree = "<group>"; };
+		6E99485F18DB1BD500C04106 /* GBGroupbuyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBGroupbuyViewController.h; path = ViewControllers/Merchant/GBGroupbuyViewController.h; sourceTree = "<group>"; };
+		6E99486018DB1BD500C04106 /* GBGroupbuyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBGroupbuyViewController.m; path = ViewControllers/Merchant/GBGroupbuyViewController.m; sourceTree = "<group>"; };
+		6E99486118DB1BD500C04106 /* GBGroupbuyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GBGroupbuyViewController.xib; path = ViewControllers/Merchant/GBGroupbuyViewController.xib; sourceTree = "<group>"; };
 		6E99486518DB1C2000C04106 /* GBProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBProfileViewController.h; path = ViewControllers/Profile/GBProfileViewController.h; sourceTree = "<group>"; };
 		6E99486618DB1C2000C04106 /* GBProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBProfileViewController.m; path = ViewControllers/Profile/GBProfileViewController.m; sourceTree = "<group>"; };
 		6E99486718DB1C2000C04106 /* GBProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GBProfileViewController.xib; path = ViewControllers/Profile/GBProfileViewController.xib; sourceTree = "<group>"; };
-		6E99486B18DB1C5200C04106 /* GBMoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBMoreViewController.h; path = ViewControllers/More/GBMoreViewController.h; sourceTree = "<group>"; };
-		6E99486C18DB1C5200C04106 /* GBMoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBMoreViewController.m; path = ViewControllers/More/GBMoreViewController.m; sourceTree = "<group>"; };
-		6E99486D18DB1C5200C04106 /* GBMoreViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GBMoreViewController.xib; path = ViewControllers/More/GBMoreViewController.xib; sourceTree = "<group>"; };
+		6E99486B18DB1C5200C04106 /* GBAuctionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBAuctionViewController.h; path = ViewControllers/More/GBAuctionViewController.h; sourceTree = "<group>"; };
+		6E99486C18DB1C5200C04106 /* GBAuctionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBAuctionViewController.m; path = ViewControllers/More/GBAuctionViewController.m; sourceTree = "<group>"; };
+		6E99486D18DB1C5200C04106 /* GBAuctionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GBAuctionViewController.xib; path = ViewControllers/More/GBAuctionViewController.xib; sourceTree = "<group>"; };
 		6EAC6890194DB86200DFE3EA /* nav.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav.png; sourceTree = "<group>"; };
 		6EE342D0194C304F001E86C0 /* auction_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = auction_s.png; sourceTree = "<group>"; };
 		6EE342D1194C304F001E86C0 /* auction.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = auction.png; sourceTree = "<group>"; };
@@ -370,12 +368,6 @@
 		6EE342D8194C304F001E86C0 /* redDot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redDot.png; sourceTree = "<group>"; };
 		6EE342D9194C304F001E86C0 /* ticket_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ticket_s.png; sourceTree = "<group>"; };
 		6EE342DA194C304F001E86C0 /* ticket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ticket.png; sourceTree = "<group>"; };
-		6EEEE25918DB261F00030C86 /* avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar.png; sourceTree = "<group>"; };
-		6EEEE25A18DB261F00030C86 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
-		6EEEE25B18DB261F00030C86 /* order.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = order.png; sourceTree = "<group>"; };
-		6EEEE25C18DB261F00030C86 /* pay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pay.png; sourceTree = "<group>"; };
-		6EEEE25D18DB261F00030C86 /* scan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scan.png; sourceTree = "<group>"; };
-		6EEEE25E18DB261F00030C86 /* sms.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sms.png; sourceTree = "<group>"; };
 		6EEEE26518DB272B00030C86 /* arrow1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow1.png; sourceTree = "<group>"; };
 		6EEEE26618DB272B00030C86 /* arrow2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow2.png; sourceTree = "<group>"; };
 		6EEEE26918DB27DA00030C86 /* banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banner.png; sourceTree = "<group>"; };
@@ -469,11 +461,11 @@
 				140BDBF718DAD84E009881F9 /* GBAppDelegate.h */,
 				140BDBF818DAD84E009881F9 /* GBAppDelegate.m */,
 				6E99483318DB088900C04106 /* GBMainViewController */,
-				6E99485518DB195100C04106 /* GBLocalViewController */,
+				6E99485518DB195100C04106 /* GBHomeViewController */,
+				6E99486418DB1BDB00C04106 /* GBGroupbuyViewController */,
 				6E99485E18DB1ADB00C04106 /* GBTicketViewController */,
-				6E99486418DB1BDB00C04106 /* GBMerchantViewController */,
+				6E99487018DB1C5500C04106 /* GBAuctionViewController */,
 				6E99486A18DB1C2400C04106 /* GBProfileViewController */,
-				6E99487018DB1C5500C04106 /* GBMoreViewController */,
 				6E278B1C18E1A48F001814F6 /* GBLoginViewController */,
 				6E278B1618E1A411001814F6 /* GBRegisterViewController */,
 				6E278B3018E1B344001814F6 /* GBUserViewController */,
@@ -1000,14 +992,14 @@
 			path = TabBarIcon;
 			sourceTree = "<group>";
 		};
-		6E99485518DB195100C04106 /* GBLocalViewController */ = {
+		6E99485518DB195100C04106 /* GBHomeViewController */ = {
 			isa = PBXGroup;
 			children = (
-				6E99485018DB194800C04106 /* GBLocalViewController.h */,
-				6E99485118DB194800C04106 /* GBLocalViewController.m */,
-				6E99485218DB194800C04106 /* GBLocalViewController.xib */,
+				6E99485018DB194800C04106 /* GBHomeViewController.h */,
+				6E99485118DB194800C04106 /* GBHomeViewController.m */,
+				6E99485218DB194800C04106 /* GBHomeViewController.xib */,
 			);
-			name = GBLocalViewController;
+			name = GBHomeViewController;
 			sourceTree = "<group>";
 		};
 		6E99485618DB19FE00C04106 /* Global */ = {
@@ -1040,14 +1032,14 @@
 			name = GBTicketViewController;
 			sourceTree = "<group>";
 		};
-		6E99486418DB1BDB00C04106 /* GBMerchantViewController */ = {
+		6E99486418DB1BDB00C04106 /* GBGroupbuyViewController */ = {
 			isa = PBXGroup;
 			children = (
-				6E99485F18DB1BD500C04106 /* GBMerchantViewController.h */,
-				6E99486018DB1BD500C04106 /* GBMerchantViewController.m */,
-				6E99486118DB1BD500C04106 /* GBMerchantViewController.xib */,
+				6E99485F18DB1BD500C04106 /* GBGroupbuyViewController.h */,
+				6E99486018DB1BD500C04106 /* GBGroupbuyViewController.m */,
+				6E99486118DB1BD500C04106 /* GBGroupbuyViewController.xib */,
 			);
-			name = GBMerchantViewController;
+			name = GBGroupbuyViewController;
 			sourceTree = "<group>";
 		};
 		6E99486A18DB1C2400C04106 /* GBProfileViewController */ = {
@@ -1060,29 +1052,25 @@
 			name = GBProfileViewController;
 			sourceTree = "<group>";
 		};
-		6E99487018DB1C5500C04106 /* GBMoreViewController */ = {
+		6E99487018DB1C5500C04106 /* GBAuctionViewController */ = {
 			isa = PBXGroup;
 			children = (
-				6E99486B18DB1C5200C04106 /* GBMoreViewController.h */,
-				6E99486C18DB1C5200C04106 /* GBMoreViewController.m */,
-				6E99486D18DB1C5200C04106 /* GBMoreViewController.xib */,
+				6E99486B18DB1C5200C04106 /* GBAuctionViewController.h */,
+				6E99486C18DB1C5200C04106 /* GBAuctionViewController.m */,
+				6E99486D18DB1C5200C04106 /* GBAuctionViewController.xib */,
 			);
-			name = GBMoreViewController;
+			name = GBAuctionViewController;
 			sourceTree = "<group>";
 		};
 		6EEEE25818DB261F00030C86 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				6E6851C518E1C532003DC5CB /* barCodeIcon.png */,
-				6E6851C618E1C532003DC5CB /* orderIcon.png */,
-				6E278B3118E1B43D001814F6 /* mail.png */,
-				6E278B3218E1B43D001814F6 /* phone.png */,
-				6EEEE25918DB261F00030C86 /* avatar.png */,
-				6EEEE25A18DB261F00030C86 /* background.png */,
-				6EEEE25B18DB261F00030C86 /* order.png */,
-				6EEEE25C18DB261F00030C86 /* pay.png */,
-				6EEEE25D18DB261F00030C86 /* scan.png */,
-				6EEEE25E18DB261F00030C86 /* sms.png */,
+				6E1096101951C5A8000371EC /* my_collection.png */,
+				6E1096111951C5A8000371EC /* paid.png */,
+				6E1096121951C5A8000371EC /* profile_banner.png */,
+				6E1096131951C5A8000371EC /* profile_msg.png */,
+				6E1096141951C5A8000371EC /* profile_setting.png */,
+				6E1096151951C5A8000371EC /* unpay.png */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -1174,24 +1162,23 @@
 				6E97D8761949CDE50061DAA7 /* weibo_btn_s.png in Resources */,
 				6EE342E3194C304F001E86C0 /* redDot.png in Resources */,
 				6E278B2218E1A5CB001814F6 /* box.png in Resources */,
+				6E10961B1951C5A8000371EC /* unpay.png in Resources */,
 				6E278B2A18E1A6AC001814F6 /* loginBox.png in Resources */,
 				6EE342E4194C304F001E86C0 /* ticket_s.png in Resources */,
-				6E6851C718E1C532003DC5CB /* barCodeIcon.png in Resources */,
 				6E6851F818E1C976003DC5CB /* zbar-helpicons.png in Resources */,
 				6EE342E2194C304F001E86C0 /* profile.png in Resources */,
-				6EEEE26018DB261F00030C86 /* background.png in Resources */,
 				6E278B1F18E1A5A7001814F6 /* password.png in Resources */,
 				6EE342DD194C304F001E86C0 /* group_s.png in Resources */,
-				6EEEE26418DB261F00030C86 /* sms.png in Resources */,
 				6E97D86E1949CDE50061DAA7 /* qq_btn.png in Resources */,
 				6E6851F618E1C976003DC5CB /* zbar-back.png in Resources */,
 				6E278B2F18E1B33F001814F6 /* GBUserViewController.xib in Resources */,
+				6E10961A1951C5A8000371EC /* profile_setting.png in Resources */,
 				6E97D8741949CDE50061DAA7 /* weibo.png in Resources */,
+				6E1096191951C5A8000371EC /* profile_msg.png in Resources */,
 				6E278B2818E1A66F001814F6 /* line.png in Resources */,
 				6E278B3918E1B891001814F6 /* GBOrderViewController.xib in Resources */,
 				6E97D8771949CDE50061DAA7 /* check.png in Resources */,
 				6E99486918DB1C2000C04106 /* GBProfileViewController.xib in Resources */,
-				6EEEE26218DB261F00030C86 /* pay.png in Resources */,
 				6EEEE26718DB272B00030C86 /* arrow1.png in Resources */,
 				6E99485D18DB1AD400C04106 /* GBTicketViewController.xib in Resources */,
 				140BDBF318DAD84E009881F9 /* InfoPlist.strings in Resources */,
@@ -1199,29 +1186,25 @@
 				6E97D8721949CDE50061DAA7 /* renren_btn_s.png in Resources */,
 				6E6851CD18E1C7A6003DC5CB /* GBScanViewController.xib in Resources */,
 				6E97D8701949CDE50061DAA7 /* renren.png in Resources */,
-				6EEEE25F18DB261F00030C86 /* avatar.png in Resources */,
 				6E278B2618E1A603001814F6 /* btn.png in Resources */,
 				6E6851F718E1C976003DC5CB /* zbar-help.html in Resources */,
 				6EEEE26A18DB27DA00030C86 /* banner.png in Resources */,
 				6E99485818DB19FE00C04106 /* back.png in Resources */,
 				6E6851F918E1C976003DC5CB /* zbar-samples.png in Resources */,
+				6E1096161951C5A8000371EC /* my_collection.png in Resources */,
 				6E278B2518E1A603001814F6 /* btn_down.png in Resources */,
-				6E278B3318E1B43D001814F6 /* mail.png in Resources */,
 				6EE342DB194C304F001E86C0 /* auction_s.png in Resources */,
 				6EAC6891194DB86200DFE3EA /* nav.png in Resources */,
 				6E278B1B18E1A484001814F6 /* GBLoginViewController.xib in Resources */,
-				6E99486F18DB1C5200C04106 /* GBMoreViewController.xib in Resources */,
+				6E99486F18DB1C5200C04106 /* GBAuctionViewController.xib in Resources */,
+				6E1096181951C5A8000371EC /* profile_banner.png in Resources */,
 				6E97D8791949CDE50061DAA7 /* mailIcon.png in Resources */,
 				6E97D86C1949CDE50061DAA7 /* key.png in Resources */,
-				6E278B3418E1B43D001814F6 /* phone.png in Resources */,
 				6EEEE26818DB272B00030C86 /* arrow2.png in Resources */,
-				6E99486318DB1BD500C04106 /* GBMerchantViewController.xib in Resources */,
+				6E99486318DB1BD500C04106 /* GBGroupbuyViewController.xib in Resources */,
 				6E6851C318E1C40F003DC5CB /* GBOrderDetailViewController.xib in Resources */,
-				6EEEE26118DB261F00030C86 /* order.png in Resources */,
 				6EE342DC194C304F001E86C0 /* auction.png in Resources */,
-				6EEEE26318DB261F00030C86 /* scan.png in Resources */,
-				6E6851C818E1C532003DC5CB /* orderIcon.png in Resources */,
-				6E99485418DB194800C04106 /* GBLocalViewController.xib in Resources */,
+				6E99485418DB194800C04106 /* GBHomeViewController.xib in Resources */,
 				6E581A6B1948824400FBA739 /* NZAlertView-Icons.bundle in Resources */,
 				6E97D8711949CDE50061DAA7 /* renren_btn.png in Resources */,
 				6E278B4618E1C10D001814F6 /* placeholder,jpg.jpg in Resources */,
@@ -1231,6 +1214,7 @@
 				140BDBFB18DAD84E009881F9 /* Images.xcassets in Resources */,
 				6EE342E5194C304F001E86C0 /* ticket.png in Resources */,
 				6EE342DF194C304F001E86C0 /* home_s.png in Resources */,
+				6E1096171951C5A8000371EC /* paid.png in Resources */,
 				6E97D8731949CDE50061DAA7 /* userName.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1256,8 +1240,8 @@
 				6E99486818DB1C2000C04106 /* GBProfileViewController.m in Sources */,
 				140BDCC018DADC6C009881F9 /* Reachability.h in Sources */,
 				6E278B2E18E1B33F001814F6 /* GBUserViewController.m in Sources */,
-				6E99486218DB1BD500C04106 /* GBMerchantViewController.m in Sources */,
-				6E99486E18DB1C5200C04106 /* GBMoreViewController.m in Sources */,
+				6E99486218DB1BD500C04106 /* GBGroupbuyViewController.m in Sources */,
+				6E99486E18DB1C5200C04106 /* GBAuctionViewController.m in Sources */,
 				6E278B3818E1B891001814F6 /* GBOrderViewController.m in Sources */,
 				140BDCC418DAE02C009881F9 /* NBBaseViewController.m in Sources */,
 				140BDC7418DADA05009881F9 /* UIView+Joggle.m in Sources */,
@@ -1277,7 +1261,7 @@
 				6E581A59194881B200FBA739 /* AFURLResponseSerialization.m in Sources */,
 				6E581A62194881B200FBA739 /* UIWebView+AFNetworking.m in Sources */,
 				6E6851CC18E1C7A6003DC5CB /* GBScanViewController.m in Sources */,
-				6E99485318DB194800C04106 /* GBLocalViewController.m in Sources */,
+				6E99485318DB194800C04106 /* GBHomeViewController.m in Sources */,
 				6E581A5F194881B200FBA739 /* UIImageView+AFNetworking.m in Sources */,
 				140BDC6418DADA05009881F9 /* AppUtility.m in Sources */,
 				6E581A53194881B200FBA739 /* AFHTTPRequestOperationManager.m in Sources */,

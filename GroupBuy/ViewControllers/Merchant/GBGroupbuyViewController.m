@@ -1,25 +1,25 @@
 //
-//  GBMoreViewController.m
+//  GBMerchantViewController.m
 //  GroupBuy
 //
 //  Created by YANGReal on 14-3-20.
 //  Copyright (c) 2014年 YANGReal. All rights reserved.
 //
 
-#import "GBMoreViewController.h"
+#import "GBGroupbuyViewController.h"
 
-@interface GBMoreViewController ()
+@interface GBGroupbuyViewController ()
 
 @end
 
-@implementation GBMoreViewController
+@implementation GBGroupbuyViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        self.title = @"更多";
+        self.title = @"商家";
     }
     return self;
 }
@@ -32,7 +32,7 @@
 
 - (void)setupLeftBarButtonItem
 {
-    
+    //Do nothing
 }
 
 

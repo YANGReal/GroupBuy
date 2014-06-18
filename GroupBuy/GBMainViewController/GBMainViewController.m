@@ -7,11 +7,11 @@
 //
 
 #import "GBMainViewController.h"
-#import "GBLocalViewController.h"
+#import "GBHomeViewController.h"
 #import "GBTicketViewController.h"
-#import "GBMerchantViewController.h"
+#import "GBGroupbuyViewController.h"
 #import "GBProfileViewController.h"
-#import "GBMoreViewController.h"
+#import "GBAuctionViewController.h"
 
 
 
@@ -95,19 +95,21 @@
 
 - (void)setupViewControllers
 {
-    GBLocalViewController *localVC = [[GBLocalViewController alloc] initWithNibName:@"GBLocalViewController" bundle:nil];
-    localVC.title = @"团一发";
+    GBHomeViewController *homeVC = [[GBHomeViewController alloc] initWithNibName:@"GBHomeViewController" bundle:nil];
+    homeVC.title = @"团一发";
     GBTicketViewController *ticketVC = [[GBTicketViewController alloc] initWithNibName:@"GBTicketViewController" bundle:nil];
-    ticketVC.title = @"团购";
+    ticketVC.title = @"票务";
     
-    GBMerchantViewController *merchantVC = [[GBMerchantViewController alloc] initWithNibName:@"GBMerchantViewController" bundle:nil];
+    GBGroupbuyViewController *gbVC = [[GBGroupbuyViewController alloc] initWithNibName:@"GBGroupbuyViewController" bundle:nil];
+    gbVC.title = @"团购";
     
-    GBMoreViewController *moreVC = [[GBMoreViewController alloc] initWithNibName:@"GBMoreViewController" bundle:nil];
-    
+    GBAuctionViewController *auctionVC = [[GBAuctionViewController alloc] initWithNibName:@"GBMoreViewController" bundle:nil];
+    auctionVC.title = @"拍卖";
 
     GBProfileViewController *profileVC = [[GBProfileViewController alloc] initWithNibName:@"GBProfileViewController" bundle:nil];
+    profileVC.title = @"个人信息";
     
-    self.viewControllers = @[localVC,ticketVC,merchantVC,moreVC,profileVC];
+    self.viewControllers = @[homeVC,gbVC,ticketVC,auctionVC,profileVC];
 }
 
 

@@ -1,5 +1,5 @@
 //
-//  GBMerchantViewController.h
+//  GBMoreViewController.h
 //  GroupBuy
 //
 //  Created by YANGReal on 14-3-20.
@@ -8,6 +8,6 @@
 
 #import "NBBaseViewController.h"
 
-@interface GBMerchantViewController : NBBaseViewController
+@interface GBAuctionViewController : NBBaseViewController
 
 @end

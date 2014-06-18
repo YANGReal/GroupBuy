@@ -1,5 +1,5 @@
 //
-//  GBMoreViewController.h
+//  GBLocalViewController.h
 //  GroupBuy
 //
 //  Created by YANGReal on 14-3-20.
@@ -8,6 +8,6 @@
 
 #import "NBBaseViewController.h"
 
-@interface GBMoreViewController : NBBaseViewController
+@interface GBHomeViewController : NBBaseViewController
 
 @end
