@@ -12,5 +12,5 @@
 
 - (void)setupLeftBarButtonItem;
 - (void)back;
-
+- (void)hideBanner;
 @end

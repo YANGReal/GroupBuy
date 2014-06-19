@@ -10,6 +10,7 @@
 #import "GBUserViewController.h"
 #import "GBOrderViewController.h"
 #import "GBScanViewController.h"
+#import "GBMessageViewController.h"
 @interface GBProfileViewController ()<UITableViewDataSource,UITableViewDelegate>
 
 @property (weak , nonatomic) IBOutlet UITableView *tableView;
@@ -99,10 +100,8 @@
 #pragma mark - 进入通知界面
 - (void)msgBtnClicked:(UIButton *)sender
 {
-    return;
-    GBScanViewController *scanVC = [[GBScanViewController alloc] initWithNibName:@"GBScanViewController" bundle:nil];
-    [self.navigationController pushViewController:scanVC animated:YES];
-    [(GBMainViewController *)self.tabBarController hideTabBar];
+    GBMessageViewController *messageVC = [[GBMessageViewController alloc] initWithNibName:@"GBMessageViewController" bundle:nil];
+    [self.navigationController pushViewController:messageVC animated:YES];
 }
 
 #pragma mark - 进入设置界面

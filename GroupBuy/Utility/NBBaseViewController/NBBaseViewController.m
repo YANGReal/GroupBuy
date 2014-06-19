@@ -9,7 +9,7 @@
 #import "NBBaseViewController.h"
 
 @interface NBBaseViewController ()
-
+@property (strong , nonatomic) UIImageView *navBanner;
 @end
 
 @implementation NBBaseViewController
@@ -38,14 +38,14 @@
 
 - (void)setupTopViews
 {
-    UIImageView *navBar = [[UIImageView alloc] initWithFrame:RECT(0, 0, self.view.width, 84)];
-    navBar.image = [UIImage imageFromMainBundleFile:@"nav.png"];
+    self.navBanner = [[UIImageView alloc] initWithFrame:RECT(0, 0, self.view.width, 84)];
+    self.navBanner.image = [UIImage imageFromMainBundleFile:@"nav.png"];
     UILabel *titleLabel = [[UILabel alloc] initWithFrame:RECT(100, 30, 120, 24)];
     titleLabel.font = F5;
     titleLabel.textColor = C1;
     titleLabel.textAlignment = NSTextAlignmentCenter;
     titleLabel.text = self.title;
-    [self.view addSubview:navBar];
+    [self.view addSubview:self.navBanner];
      [self.view addSubview:titleLabel];
 }
 
@@ -60,6 +60,10 @@
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btn];
 }
 
+- (void)hideBanner
+{
+    self.navBanner.hidden = YES;
+}
 
 - (void)back
 {
@@ -71,5 +75,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
 
 @end

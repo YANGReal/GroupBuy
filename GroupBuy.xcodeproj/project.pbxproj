@@ -102,6 +102,10 @@
 		6E6851F718E1C976003DC5CB /* zbar-help.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E6851F218E1C976003DC5CB /* zbar-help.html */; };
 		6E6851F818E1C976003DC5CB /* zbar-helpicons.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E6851F318E1C976003DC5CB /* zbar-helpicons.png */; };
 		6E6851F918E1C976003DC5CB /* zbar-samples.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E6851F418E1C976003DC5CB /* zbar-samples.png */; };
+		6E74304B1953113F00FA404F /* GBMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7430491953113F00FA404F /* GBMessageViewController.m */; };
+		6E74304C1953113F00FA404F /* GBMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E74304A1953113F00FA404F /* GBMessageViewController.xib */; };
+		6E7430501953148900FA404F /* GBMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E74304E1953148900FA404F /* GBMessageCell.m */; };
+		6E7430511953148900FA404F /* GBMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E74304F1953148900FA404F /* GBMessageCell.xib */; };
 		6E97D86C1949CDE50061DAA7 /* key.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E97D85D1949CDE50061DAA7 /* key.png */; };
 		6E97D86D1949CDE50061DAA7 /* qq.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E97D85E1949CDE50061DAA7 /* qq.png */; };
 		6E97D86E1949CDE50061DAA7 /* qq_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E97D85F1949CDE50061DAA7 /* qq_btn.png */; };
@@ -324,6 +328,12 @@
 		6E6851F218E1C976003DC5CB /* zbar-help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "zbar-help.html"; sourceTree = "<group>"; };
 		6E6851F318E1C976003DC5CB /* zbar-helpicons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-helpicons.png"; sourceTree = "<group>"; };
 		6E6851F418E1C976003DC5CB /* zbar-samples.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-samples.png"; sourceTree = "<group>"; };
+		6E7430481953113F00FA404F /* GBMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBMessageViewController.h; sourceTree = "<group>"; };
+		6E7430491953113F00FA404F /* GBMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBMessageViewController.m; sourceTree = "<group>"; };
+		6E74304A1953113F00FA404F /* GBMessageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GBMessageViewController.xib; sourceTree = "<group>"; };
+		6E74304D1953148900FA404F /* GBMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBMessageCell.h; sourceTree = "<group>"; };
+		6E74304E1953148900FA404F /* GBMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBMessageCell.m; sourceTree = "<group>"; };
+		6E74304F1953148900FA404F /* GBMessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GBMessageCell.xib; sourceTree = "<group>"; };
 		6E97D85D1949CDE50061DAA7 /* key.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = key.png; sourceTree = "<group>"; };
 		6E97D85E1949CDE50061DAA7 /* qq.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qq.png; sourceTree = "<group>"; };
 		6E97D85F1949CDE50061DAA7 /* qq_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qq_btn.png; sourceTree = "<group>"; };
@@ -471,6 +481,7 @@
 				6E278B3018E1B344001814F6 /* GBUserViewController */,
 				6E278B3A18E1B894001814F6 /* GBOrderViewController */,
 				6E6851C418E1C414003DC5CB /* GBOrderDetailViewController */,
+				6E7430471953108100FA404F /* Message */,
 				6E6851CE18E1C7A9003DC5CB /* GBScanViewController */,
 				140BDBFA18DAD84E009881F9 /* Images.xcassets */,
 				140BDBEF18DAD84E009881F9 /* Supporting Files */,
@@ -925,6 +936,28 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		6E7430471953108100FA404F /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				6E7430481953113F00FA404F /* GBMessageViewController.h */,
+				6E7430491953113F00FA404F /* GBMessageViewController.m */,
+				6E74304A1953113F00FA404F /* GBMessageViewController.xib */,
+				6E7430521953148C00FA404F /* GBMessageCell */,
+			);
+			name = Message;
+			path = ViewControllers/Message;
+			sourceTree = "<group>";
+		};
+		6E7430521953148C00FA404F /* GBMessageCell */ = {
+			isa = PBXGroup;
+			children = (
+				6E74304D1953148900FA404F /* GBMessageCell.h */,
+				6E74304E1953148900FA404F /* GBMessageCell.m */,
+				6E74304F1953148900FA404F /* GBMessageCell.xib */,
+			);
+			name = GBMessageCell;
+			sourceTree = "<group>";
+		};
 		6E97D85C1949CDE50061DAA7 /* login */ = {
 			isa = PBXGroup;
 			children = (
@@ -1162,6 +1195,7 @@
 				6E97D8761949CDE50061DAA7 /* weibo_btn_s.png in Resources */,
 				6EE342E3194C304F001E86C0 /* redDot.png in Resources */,
 				6E278B2218E1A5CB001814F6 /* box.png in Resources */,
+				6E74304C1953113F00FA404F /* GBMessageViewController.xib in Resources */,
 				6E10961B1951C5A8000371EC /* unpay.png in Resources */,
 				6E278B2A18E1A6AC001814F6 /* loginBox.png in Resources */,
 				6EE342E4194C304F001E86C0 /* ticket_s.png in Resources */,
@@ -1202,6 +1236,7 @@
 				6E97D86C1949CDE50061DAA7 /* key.png in Resources */,
 				6EEEE26818DB272B00030C86 /* arrow2.png in Resources */,
 				6E99486318DB1BD500C04106 /* GBGroupbuyViewController.xib in Resources */,
+				6E7430511953148900FA404F /* GBMessageCell.xib in Resources */,
 				6E6851C318E1C40F003DC5CB /* GBOrderDetailViewController.xib in Resources */,
 				6EE342DC194C304F001E86C0 /* auction.png in Resources */,
 				6E99485418DB194800C04106 /* GBHomeViewController.xib in Resources */,
@@ -1264,6 +1299,7 @@
 				6E99485318DB194800C04106 /* GBHomeViewController.m in Sources */,
 				6E581A5F194881B200FBA739 /* UIImageView+AFNetworking.m in Sources */,
 				140BDC6418DADA05009881F9 /* AppUtility.m in Sources */,
+				6E7430501953148900FA404F /* GBMessageCell.m in Sources */,
 				6E581A53194881B200FBA739 /* AFHTTPRequestOperationManager.m in Sources */,
 				140BDC6D18DADA05009881F9 /* NSDictionary+JSON.m in Sources */,
 				6E581A58194881B200FBA739 /* AFURLRequestSerialization.m in Sources */,
@@ -1271,6 +1307,7 @@
 				6E6851C218E1C40F003DC5CB /* GBOrderDetailViewController.m in Sources */,
 				6E99485C18DB1AD400C04106 /* GBTicketViewController.m in Sources */,
 				140BDC7718DADA05009881F9 /* UIView+ModifyFrame.m in Sources */,
+				6E74304B1953113F00FA404F /* GBMessageViewController.m in Sources */,
 				6E581A6F1948829F00FBA739 /* main.m in Sources */,
 				140BDC6A18DADA05009881F9 /* MMLocationManager.m in Sources */,
 				140BDC6B18DADA05009881F9 /* NBNavigationController.m in Sources */,
