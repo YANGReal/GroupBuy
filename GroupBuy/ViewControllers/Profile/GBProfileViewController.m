@@ -11,11 +11,15 @@
 #import "GBOrderViewController.h"
 #import "GBScanViewController.h"
 #import "GBMessageViewController.h"
+#import "GBUserInfoViewController.h"
 @interface GBProfileViewController ()<UITableViewDataSource,UITableViewDelegate>
 
 @property (weak , nonatomic) IBOutlet UITableView *tableView;
 @property (weak , nonatomic) IBOutlet UIView *headerView;
 @property (strong , nonatomic) NSArray *configData;
+
+- (IBAction)gotoUserInfo:(id)sender;
+
 @end
 
 @implementation GBProfileViewController
@@ -31,9 +35,6 @@
         NSArray *arr1 = @[dict1];
         NSArray *arr2 = @[dict2,dict3];
         self.configData = @[arr1,arr2];
-        DLog(@"config = %@",_configData);
-        
-        
     }
     return self;
 }
@@ -76,11 +77,18 @@
 }
 
 #pragma mark - 进入个人账户
-- (IBAction)userButtonClicked:(id)sender
+- (IBAction)gotoUserInfo:(id)sender
 {
-    GBUserViewController *userVC = [[GBUserViewController alloc] initWithNibName:@"GBUserViewController" bundle:nil];
-    [self.navigationController pushViewController:userVC animated:YES];
+    GBUserInfoViewController *userInfoVC = [[GBUserInfoViewController alloc] initWithNibName:@"GBUserInfoViewController" bundle:nil];
+    [self.navigationController pushViewController:userInfoVC animated:YES];
 }
+
+//#pragma mark - 进入个人账户
+//- (IBAction)userButtonClicked:(id)sender
+//{
+//    GBUserViewController *userVC = [[GBUserViewController alloc] initWithNibName:@"GBUserViewController" bundle:nil];
+//    [self.navigationController pushViewController:userVC animated:YES];
+//}
 
 #pragma mark - 查询全部订单
 - (IBAction)orderButtonClicked:(id)sender
