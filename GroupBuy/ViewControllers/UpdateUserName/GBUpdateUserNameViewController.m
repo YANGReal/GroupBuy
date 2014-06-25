@@ -9,7 +9,9 @@
 #import "GBUpdateUserNameViewController.h"
 
 @interface GBUpdateUserNameViewController ()
-
+@property (weak , nonatomic) IBOutlet UIView *bgView;
+@property (weak , nonatomic) IBOutlet UIButton *button;
+@property (weak , nonatomic) IBOutlet UITextField *textField;
 @end
 
 @implementation GBUpdateUserNameViewController
@@ -28,9 +30,28 @@
 {
     [super viewDidLoad];
     [self hideBanner];
+    [self setupViews];
     // Do any additional setup after loading the view from its nib.
 }
 
+- (void)setupViews
+{
+    [self.bgView setupBorder:C2 cornerRadius:0];
+    [self.button setupBorder:CLEAR_COLOR cornerRadius:19];
+    [self.button setTitleColor:C1 forState:UIControlStateNormal];
+    [self.button setTitleColor:C8 forState:UIControlStateHighlighted];
+}
+
+
+#pragma mark - 收回键盘
+
+- (void)touchesBegan:(NSSet *)touches
+           withEvent:(UIEvent *)event
+{
+    [self.textField resignFirstResponder];
+}
+
+#pragma mark - 内存管理
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

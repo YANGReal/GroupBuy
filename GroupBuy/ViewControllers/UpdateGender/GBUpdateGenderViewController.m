@@ -9,6 +9,11 @@
 #import "GBUpdateGenderViewController.h"
 
 @interface GBUpdateGenderViewController ()
+@property (weak , nonatomic) IBOutlet UIView *bgView;
+@property (weak , nonatomic) IBOutlet UIView *line;
+@property (weak , nonatomic) IBOutlet UIButton *maleBtn,*femaleBtn;
+
+- (IBAction)btnClicked:(id)sender;
 
 @end
 
@@ -28,7 +33,30 @@
 {
     [super viewDidLoad];
      [self hideBanner];
+    [self setupViews];
     // Do any additional setup after loading the view from its nib.
+}
+
+- (void)setupViews
+{
+    [self.bgView setupBorder:C2 cornerRadius:0];
+    self.line.height = 0.5;
+    self.line.backgroundColor = C2;
+    self.maleBtn.selected = YES;
+}
+
+- (IBAction)btnClicked:(id)sender
+{
+    if (sender == _maleBtn)
+    {
+        _maleBtn.selected = YES;
+        _femaleBtn.selected = NO;
+    }
+    else
+    {
+        _maleBtn.selected = NO;
+        _femaleBtn.selected = YES;
+    }
 }
 
 - (void)didReceiveMemoryWarning

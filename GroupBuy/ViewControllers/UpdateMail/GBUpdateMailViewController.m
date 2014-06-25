@@ -9,7 +9,12 @@
 #import "GBUpdateMailViewController.h"
 
 @interface GBUpdateMailViewController ()
-
+@property (weak , nonatomic) IBOutlet UIView *bgView;
+@property (weak , nonatomic) IBOutlet UIView *line1,*line2;
+@property (weak , nonatomic) IBOutlet UIButton *button;
+@property (weak , nonatomic) IBOutlet UITextField *oldMailField;
+@property (weak , nonatomic) IBOutlet UITextField *newlyMailField;
+@property (weak , nonatomic) IBOutlet UITextField *codeField;
 @end
 
 @implementation GBUpdateMailViewController
@@ -27,10 +32,31 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self hideBanner];
+    [self setupViews];
     // Do any additional setup after loading the view from its nib.
-     [self hideBanner];
 }
 
+- (void)setupViews
+{
+    [self.bgView setupBorder:C2 cornerRadius:0];
+    self.line1.height = self.line2.height = 0.5;
+    self.line1.backgroundColor = self.line2.backgroundColor = C2;
+    [self.button setupBorder:CLEAR_COLOR cornerRadius:19];
+    [self.button setTitleColor:C1 forState:UIControlStateNormal];
+    [self.button setTitleColor:C8 forState:UIControlStateHighlighted];
+}
+
+#pragma mark - 收回键盘
+- (void)touchesBegan:(NSSet *)touches
+           withEvent:(UIEvent *)event
+{
+    [self.oldMailField resignFirstResponder];
+    [self.newlyMailField resignFirstResponder];
+    [self.codeField resignFirstResponder];
+}
+
+#pragma mark - 内存管理
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
