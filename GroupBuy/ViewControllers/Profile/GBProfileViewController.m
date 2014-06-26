@@ -7,11 +7,12 @@
 //
 
 #import "GBProfileViewController.h"
-#import "GBUserViewController.h"
+
 #import "GBOrderViewController.h"
 #import "GBScanViewController.h"
 #import "GBMessageViewController.h"
 #import "GBUserInfoViewController.h"
+#import "GBMyCollectionViewController.h"
 @interface GBProfileViewController ()<UITableViewDataSource,UITableViewDelegate>
 
 @property (weak , nonatomic) IBOutlet UITableView *tableView;
@@ -82,13 +83,6 @@
     GBUserInfoViewController *userInfoVC = [[GBUserInfoViewController alloc] initWithNibName:@"GBUserInfoViewController" bundle:nil];
     [self.navigationController pushViewController:userInfoVC animated:YES];
 }
-
-//#pragma mark - 进入个人账户
-//- (IBAction)userButtonClicked:(id)sender
-//{
-//    GBUserViewController *userVC = [[GBUserViewController alloc] initWithNibName:@"GBUserViewController" bundle:nil];
-//    [self.navigationController pushViewController:userVC animated:YES];
-//}
 
 #pragma mark - 查询全部订单
 - (IBAction)orderButtonClicked:(id)sender
@@ -186,6 +180,12 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    if (indexPath.section == 0)
+    {
+        GBMyCollectionViewController *collectionVC = [[GBMyCollectionViewController alloc] initWithNibName:@"GBMyCollectionViewController" bundle:nil];
+        [self.navigationController pushViewController:collectionVC animated:YES];
+    }
+    
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 

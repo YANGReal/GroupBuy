@@ -34,7 +34,7 @@
 #import "UIView+Flip.h"
 #import "NBBaseViewController.h"
 #import "GBMainViewController.h"
-
+#import "YRSegmentControl.h"
 #pragma mark --定义常用宏
 
 #define IS_FIRST_USE @"is_first_use"
@@ -74,6 +74,8 @@
 #define C6            [UIColor colorWithHexString:@"#6bb600"] //绿色
 #define C7            [UIColor colorWithHexString:@"#5c9d00"] //深绿色
 #define C8            [UIColor colorWithHexString:@"#bcdb9f"] //浅绿色
+
+#define NAVBAR_COLOR  [UIColor colorWithHexString:@"#80bf26"]//导航栏颜色
 
 #define LIGHT_GRAY    [UIColor colorWithHexString:@"#e0e0e0"] //浅紫色
 #define YELLOW_COLOR  [UIColor colorWithHexString:@"#feaa24"] //明黄色
