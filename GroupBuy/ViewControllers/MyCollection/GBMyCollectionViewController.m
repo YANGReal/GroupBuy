@@ -8,8 +8,11 @@
 
 #import "GBMyCollectionViewController.h"
 #import "GBMyCollectionCell.h"
+#import "GBCollectionAuctionCell.h"
 @interface GBMyCollectionViewController ()<UITableViewDataSource,UITableViewDelegate,YRSegmentControlDelegate>
-
+{
+    BOOL isAuction;
+}
 @property (weak , nonatomic) IBOutlet UITableView *tableView;
 @property (weak , nonatomic) IBOutlet UIView *headerView;
 - (IBAction)backBtnClicked:(id)sender;
@@ -67,6 +70,17 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    if (isAuction)
+    {
+        static NSString *identifier = @"auctionCell";
+        GBCollectionAuctionCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+        if (cell == nil)
+        {
+            cell = [[[NSBundle mainBundle] loadNibNamed:@"GBCollectionAuctionCell" owner:self options:nil] lastObject];
+            
+        }
+        return cell;
+    }
     static NSString *identifier = @"cell";
     GBMyCollectionCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     if (cell == nil)
@@ -79,7 +93,7 @@
 - (CGFloat)tableView:(UITableView *)tableView
 heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 108;
+    return isAuction?130:94;
 }
 
 - (void)tableView:(UITableView *)tableView
@@ -93,8 +107,10 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 - (void)segmentControl:(YRSegmentControl *)segment
         didSelectIndex:(NSInteger)index
 {
-    DLog(@"index = %d",index);
+    isAuction = index == 2;
+    [_tableView reloadData];
 }
+
 
 
 #pragma mark - 内存警告

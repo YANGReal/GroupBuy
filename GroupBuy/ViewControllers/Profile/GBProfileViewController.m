@@ -13,6 +13,7 @@
 #import "GBMessageViewController.h"
 #import "GBUserInfoViewController.h"
 #import "GBMyCollectionViewController.h"
+#import "GBUnpayViewController.h"
 @interface GBProfileViewController ()<UITableViewDataSource,UITableViewDelegate>
 
 @property (weak , nonatomic) IBOutlet UITableView *tableView;
@@ -184,6 +185,20 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath
     {
         GBMyCollectionViewController *collectionVC = [[GBMyCollectionViewController alloc] initWithNibName:@"GBMyCollectionViewController" bundle:nil];
         [self.navigationController pushViewController:collectionVC animated:YES];
+        
+    }
+    if (indexPath.section == 1&&indexPath.row == 0)
+    {
+        GBUnpayViewController *unPayVC = [[GBUnpayViewController alloc] initWithNibName:@"GBUnpayViewController" bundle:nil];
+        [self.navigationController pushViewController:unPayVC animated:YES];
+        
+    }
+    if (indexPath.section == 1&&indexPath.row == 1)
+    {
+        
+        GBUnpayViewController *unPayVC = [[GBUnpayViewController alloc] initWithNibName:@"GBUnpayViewController" bundle:nil];
+        unPayVC.didPay = YES;
+        [self.navigationController pushViewController:unPayVC animated:YES];
     }
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
