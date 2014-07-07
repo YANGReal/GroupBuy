@@ -10,11 +10,18 @@
 #import "ZBarSDK.h"
 @interface GBScanViewController ()<ZBarReaderViewDelegate>
 {
-    IBOutlet UIView *bottomView;
+   
 }
 
 @property (retain , nonatomic) IBOutlet  ZBarReaderView *readerView;
 
+@property (weak , nonatomic) IBOutlet UIImageView *backView;
+@property (weak , nonatomic) IBOutlet UIButton *backBtn;
+@property (weak , nonatomic) IBOutlet UIImageView *frameView;
+@property (weak , nonatomic) IBOutlet UILabel *descLabel;
+@property (weak , nonatomic) IBOutlet UIImageView *greenLine;
+
+- (IBAction)backBtnClicked:(id)sender;
 @end
 
 @implementation GBScanViewController
@@ -24,7 +31,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        self.title = @"扫描二维码";
+       // self.title = @"扫描二维码";
     }
     return self;
 }
@@ -32,19 +39,57 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self setupViews];
+}
+
+- (void)setupViews
+{
+    [self hideBanner];
     [ZBarReaderView class];
-    
-   // bottomView.layer.frame = bottomView.frame;
-    //[_readerView.layer addSublayer:bottomView.layer];
-    
     _readerView.readerDelegate = self;
     [self.readerView start];
-   
-      // Do any additional setup after loading the view from its nib.
+    self.frameView.center = self.view.center;
+    [_readerView.layer addSublayer:_backView.layer];
+    [_readerView.layer addSublayer:_backBtn.layer];
+    [_readerView.layer addSublayer:_frameView.layer];
+    [_readerView.layer addSublayer:_descLabel.layer];
+    [_readerView.layer addSublayer:_greenLine.layer];
+    
+    [UIView animateWithDuration:1.0 animations:^{
+        self.greenLine.y =  _frameView.y+_frameView.height-28;
+    } completion:^(BOOL finished) {
+        [self animate];
+    }];
+
 }
 
 
-- (void) readerView: (ZBarReaderView*) readerView
+- (void)animate
+{
+    [UIView animateWithDuration:1.0 animations:^{
+        // self.line.frame = RECT(2, 20, 258, 1);
+        self.greenLine.y = _frameView.y+20;
+    } completion:^(BOOL finished) {
+        
+        [UIView animateWithDuration:1.0 animations:^{
+           
+            self.greenLine.y = _frameView.y+_frameView.height-28;
+        } completion:^(BOOL finished) {
+            [self animate];
+        }];
+    }];
+}
+
+
+
+
+- (IBAction)backBtnClicked:(id)sender
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+#pragma mark - ZBarReaderViewDelegate method
+- (void)readerView: (ZBarReaderView*) readerView
      didReadSymbols: (ZBarSymbolSet*) symbols
           fromImage: (UIImage*) image;
 {
