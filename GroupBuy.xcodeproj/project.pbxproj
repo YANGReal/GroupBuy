@@ -130,6 +130,23 @@
 		6E99486918DB1C2000C04106 /* GBProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E99486718DB1C2000C04106 /* GBProfileViewController.xib */; };
 		6E99486E18DB1C5200C04106 /* GBAuctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E99486C18DB1C5200C04106 /* GBAuctionViewController.m */; };
 		6E99486F18DB1C5200C04106 /* GBAuctionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E99486D18DB1C5200C04106 /* GBAuctionViewController.xib */; };
+		6EAC19AF196C13BF0032ACD9 /* GBSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAC19AD196C13BF0032ACD9 /* GBSettingViewController.m */; };
+		6EAC19B0196C13BF0032ACD9 /* GBSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EAC19AE196C13BF0032ACD9 /* GBSettingViewController.xib */; };
+		6EAC19B5196C17DF0032ACD9 /* GBSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAC19B3196C17DF0032ACD9 /* GBSettingCell.m */; };
+		6EAC19B6196C17DF0032ACD9 /* GBSettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EAC19B4196C17DF0032ACD9 /* GBSettingCell.xib */; };
+		6EAC19BE196C25D60032ACD9 /* GBAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAC19BC196C25D60032ACD9 /* GBAboutViewController.m */; };
+		6EAC19BF196C25D60032ACD9 /* GBAboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EAC19BD196C25D60032ACD9 /* GBAboutViewController.xib */; };
+		6EAC19C3196C26030032ACD9 /* GBFeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAC19C1196C26030032ACD9 /* GBFeedbackViewController.m */; };
+		6EAC19C4196C26030032ACD9 /* GBFeedbackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EAC19C2196C26030032ACD9 /* GBFeedbackViewController.xib */; };
+		6EAC19C8196C26220032ACD9 /* GBInviteFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAC19C6196C26220032ACD9 /* GBInviteFriendViewController.m */; };
+		6EAC19C9196C26220032ACD9 /* GBInviteFriendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EAC19C7196C26220032ACD9 /* GBInviteFriendViewController.xib */; };
+		6EAC19CB196C293C0032ACD9 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EAC19CA196C293C0032ACD9 /* logo.png */; };
+		6EAC19D3196C31C90032ACD9 /* qq_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EAC19CD196C31C90032ACD9 /* qq_icon.png */; };
+		6EAC19D4196C31C90032ACD9 /* qzone_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EAC19CE196C31C90032ACD9 /* qzone_icon.png */; };
+		6EAC19D5196C31C90032ACD9 /* renren_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EAC19CF196C31C90032ACD9 /* renren_icon.png */; };
+		6EAC19D6196C31C90032ACD9 /* wechat.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EAC19D0196C31C90032ACD9 /* wechat.png */; };
+		6EAC19D7196C31C90032ACD9 /* wechat_circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EAC19D1196C31C90032ACD9 /* wechat_circle.png */; };
+		6EAC19D8196C31C90032ACD9 /* weibo_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EAC19D2196C31C90032ACD9 /* weibo_icon.png */; };
 		6EAC6891194DB86200DFE3EA /* nav.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EAC6890194DB86200DFE3EA /* nav.png */; };
 		6EC253741959AFE600FC2CB6 /* GBUserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC253721959AFE600FC2CB6 /* GBUserInfoViewController.m */; };
 		6EC253751959AFE600FC2CB6 /* GBUserInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EC253731959AFE600FC2CB6 /* GBUserInfoViewController.xib */; };
@@ -402,6 +419,28 @@
 		6E99486B18DB1C5200C04106 /* GBAuctionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBAuctionViewController.h; path = ViewControllers/More/GBAuctionViewController.h; sourceTree = "<group>"; };
 		6E99486C18DB1C5200C04106 /* GBAuctionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBAuctionViewController.m; path = ViewControllers/More/GBAuctionViewController.m; sourceTree = "<group>"; };
 		6E99486D18DB1C5200C04106 /* GBAuctionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GBAuctionViewController.xib; path = ViewControllers/More/GBAuctionViewController.xib; sourceTree = "<group>"; };
+		6EAC19AC196C13BF0032ACD9 /* GBSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBSettingViewController.h; path = ViewControllers/Setting/GBSettingViewController.h; sourceTree = "<group>"; };
+		6EAC19AD196C13BF0032ACD9 /* GBSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBSettingViewController.m; path = ViewControllers/Setting/GBSettingViewController.m; sourceTree = "<group>"; };
+		6EAC19AE196C13BF0032ACD9 /* GBSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GBSettingViewController.xib; path = ViewControllers/Setting/GBSettingViewController.xib; sourceTree = "<group>"; };
+		6EAC19B2196C17DF0032ACD9 /* GBSettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBSettingCell.h; path = ViewControllers/Setting/GBSettingCell.h; sourceTree = "<group>"; };
+		6EAC19B3196C17DF0032ACD9 /* GBSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBSettingCell.m; path = ViewControllers/Setting/GBSettingCell.m; sourceTree = "<group>"; };
+		6EAC19B4196C17DF0032ACD9 /* GBSettingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GBSettingCell.xib; path = ViewControllers/Setting/GBSettingCell.xib; sourceTree = "<group>"; };
+		6EAC19BB196C25D60032ACD9 /* GBAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBAboutViewController.h; sourceTree = "<group>"; };
+		6EAC19BC196C25D60032ACD9 /* GBAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBAboutViewController.m; sourceTree = "<group>"; };
+		6EAC19BD196C25D60032ACD9 /* GBAboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GBAboutViewController.xib; sourceTree = "<group>"; };
+		6EAC19C0196C26030032ACD9 /* GBFeedbackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBFeedbackViewController.h; sourceTree = "<group>"; };
+		6EAC19C1196C26030032ACD9 /* GBFeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBFeedbackViewController.m; sourceTree = "<group>"; };
+		6EAC19C2196C26030032ACD9 /* GBFeedbackViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GBFeedbackViewController.xib; sourceTree = "<group>"; };
+		6EAC19C5196C26220032ACD9 /* GBInviteFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBInviteFriendViewController.h; sourceTree = "<group>"; };
+		6EAC19C6196C26220032ACD9 /* GBInviteFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBInviteFriendViewController.m; sourceTree = "<group>"; };
+		6EAC19C7196C26220032ACD9 /* GBInviteFriendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GBInviteFriendViewController.xib; sourceTree = "<group>"; };
+		6EAC19CA196C293C0032ACD9 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		6EAC19CD196C31C90032ACD9 /* qq_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qq_icon.png; sourceTree = "<group>"; };
+		6EAC19CE196C31C90032ACD9 /* qzone_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qzone_icon.png; sourceTree = "<group>"; };
+		6EAC19CF196C31C90032ACD9 /* renren_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = renren_icon.png; sourceTree = "<group>"; };
+		6EAC19D0196C31C90032ACD9 /* wechat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wechat.png; sourceTree = "<group>"; };
+		6EAC19D1196C31C90032ACD9 /* wechat_circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wechat_circle.png; sourceTree = "<group>"; };
+		6EAC19D2196C31C90032ACD9 /* weibo_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weibo_icon.png; sourceTree = "<group>"; };
 		6EAC6890194DB86200DFE3EA /* nav.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav.png; sourceTree = "<group>"; };
 		6EC253711959AFE600FC2CB6 /* GBUserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBUserInfoViewController.h; sourceTree = "<group>"; };
 		6EC253721959AFE600FC2CB6 /* GBUserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBUserInfoViewController.m; sourceTree = "<group>"; };
@@ -1077,6 +1116,7 @@
 		6E99483418DB0A2500C04106 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				6EAC19CC196C31C90032ACD9 /* InviteFriend */,
 				6EC4C453196AD186009BF08D /* home */,
 				6E97D85C1949CDE50061DAA7 /* login */,
 				6E97D8681949CDE50061DAA7 /* register */,
@@ -1119,6 +1159,7 @@
 		6E99485618DB19FE00C04106 /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				6EAC19CA196C293C0032ACD9 /* logo.png */,
 				6EAC6890194DB86200DFE3EA /* nav.png */,
 				6E278B4518E1C10D001814F6 /* placeholder.jpg */,
 				6E278B2918E1A6AC001814F6 /* loginBox.png */,
@@ -1174,6 +1215,73 @@
 				6E99486D18DB1C5200C04106 /* GBAuctionViewController.xib */,
 			);
 			name = GBAuctionViewController;
+			sourceTree = "<group>";
+		};
+		6EAC19B1196C14020032ACD9 /* GBSettingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6EAC19AC196C13BF0032ACD9 /* GBSettingViewController.h */,
+				6EAC19AD196C13BF0032ACD9 /* GBSettingViewController.m */,
+				6EAC19AE196C13BF0032ACD9 /* GBSettingViewController.xib */,
+				6EAC19B7196C17E30032ACD9 /* GBSettingCell */,
+			);
+			name = GBSettingViewController;
+			sourceTree = "<group>";
+		};
+		6EAC19B7196C17E30032ACD9 /* GBSettingCell */ = {
+			isa = PBXGroup;
+			children = (
+				6EAC19B2196C17DF0032ACD9 /* GBSettingCell.h */,
+				6EAC19B3196C17DF0032ACD9 /* GBSettingCell.m */,
+				6EAC19B4196C17DF0032ACD9 /* GBSettingCell.xib */,
+			);
+			name = GBSettingCell;
+			sourceTree = "<group>";
+		};
+		6EAC19B8196C25BC0032ACD9 /* GBAboutViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6EAC19BB196C25D60032ACD9 /* GBAboutViewController.h */,
+				6EAC19BC196C25D60032ACD9 /* GBAboutViewController.m */,
+				6EAC19BD196C25D60032ACD9 /* GBAboutViewController.xib */,
+			);
+			name = GBAboutViewController;
+			path = ViewControllers/AboutUS;
+			sourceTree = "<group>";
+		};
+		6EAC19B9196C25BC0032ACD9 /* GBFeedbackViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6EAC19C0196C26030032ACD9 /* GBFeedbackViewController.h */,
+				6EAC19C1196C26030032ACD9 /* GBFeedbackViewController.m */,
+				6EAC19C2196C26030032ACD9 /* GBFeedbackViewController.xib */,
+			);
+			name = GBFeedbackViewController;
+			path = ViewControllers/Feedback;
+			sourceTree = "<group>";
+		};
+		6EAC19BA196C25BC0032ACD9 /* GBInviteFriendViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6EAC19C5196C26220032ACD9 /* GBInviteFriendViewController.h */,
+				6EAC19C6196C26220032ACD9 /* GBInviteFriendViewController.m */,
+				6EAC19C7196C26220032ACD9 /* GBInviteFriendViewController.xib */,
+			);
+			name = GBInviteFriendViewController;
+			path = ViewControllers/InviteFriend;
+			sourceTree = "<group>";
+		};
+		6EAC19CC196C31C90032ACD9 /* InviteFriend */ = {
+			isa = PBXGroup;
+			children = (
+				6EAC19CD196C31C90032ACD9 /* qq_icon.png */,
+				6EAC19CE196C31C90032ACD9 /* qzone_icon.png */,
+				6EAC19CF196C31C90032ACD9 /* renren_icon.png */,
+				6EAC19D0196C31C90032ACD9 /* wechat.png */,
+				6EAC19D1196C31C90032ACD9 /* wechat_circle.png */,
+				6EAC19D2196C31C90032ACD9 /* weibo_icon.png */,
+			);
+			path = InviteFriend;
 			sourceTree = "<group>";
 		};
 		6EC253701959AF8700FC2CB6 /* GBUserInfoViewController */ = {
@@ -1289,6 +1397,10 @@
 				6E7430471953108100FA404F /* GBMessageViewController */,
 				6EC2EC57195C3C2D005B629C /* GBMyCollectionViewController */,
 				6EC4C44719698EDD009BF08D /* GBUnpayViewController */,
+				6EAC19B1196C14020032ACD9 /* GBSettingViewController */,
+				6EAC19B8196C25BC0032ACD9 /* GBAboutViewController */,
+				6EAC19B9196C25BC0032ACD9 /* GBFeedbackViewController */,
+				6EAC19BA196C25BC0032ACD9 /* GBInviteFriendViewController */,
 			);
 			name = "个人中心模块";
 			sourceTree = "<group>";
@@ -1525,9 +1637,11 @@
 				6E10961B1951C5A8000371EC /* unpay.png in Resources */,
 				6EC4C45E196AD186009BF08D /* entertainment_icon.png in Resources */,
 				6EC253931959BD5B00FC2CB6 /* GBUpdatePasswordViewController.xib in Resources */,
+				6EAC19D6196C31C90032ACD9 /* wechat.png in Resources */,
 				6EC2EC67195C4029005B629C /* GBMyCollectionCell.xib in Resources */,
 				6E278B2A18E1A6AC001814F6 /* loginBox.png in Resources */,
 				6EC4C477196AEDAC009BF08D /* searrch_gray.png in Resources */,
+				6EAC19D8196C31C90032ACD9 /* weibo_icon.png in Resources */,
 				6EE342E4194C304F001E86C0 /* ticket_s.png in Resources */,
 				6E6851F818E1C976003DC5CB /* zbar-helpicons.png in Resources */,
 				6EC253751959AFE600FC2CB6 /* GBUserInfoViewController.xib in Resources */,
@@ -1535,14 +1649,17 @@
 				6EE342E2194C304F001E86C0 /* profile.png in Resources */,
 				6E278B1F18E1A5A7001814F6 /* password.png in Resources */,
 				6EE342DD194C304F001E86C0 /* group_s.png in Resources */,
+				6EAC19D5196C31C90032ACD9 /* renren_icon.png in Resources */,
 				6E97D86E1949CDE50061DAA7 /* qq_btn.png in Resources */,
 				6EC253991959BDEB00FC2CB6 /* GBUpdateMailViewController.xib in Resources */,
 				6EC4C465196AD186009BF08D /* search_icon.png in Resources */,
 				6E6851F618E1C976003DC5CB /* zbar-back.png in Resources */,
 				6E10961A1951C5A8000371EC /* profile_setting.png in Resources */,
+				6EAC19BF196C25D60032ACD9 /* GBAboutViewController.xib in Resources */,
 				6E97D8741949CDE50061DAA7 /* weibo.png in Resources */,
 				6EC4C45F196AD186009BF08D /* food_icon.png in Resources */,
 				6EC4C45119699095009BF08D /* GBUnpayCell.xib in Resources */,
+				6EAC19D4196C31C90032ACD9 /* qzone_icon.png in Resources */,
 				6E1096191951C5A8000371EC /* profile_msg.png in Resources */,
 				6E278B2818E1A66F001814F6 /* line.png in Resources */,
 				6E278B3918E1B891001814F6 /* GBOrderViewController.xib in Resources */,
@@ -1550,6 +1667,8 @@
 				6E99486918DB1C2000C04106 /* GBProfileViewController.xib in Resources */,
 				6EEEE26718DB272B00030C86 /* arrow1.png in Resources */,
 				6EC4C461196AD186009BF08D /* life_icon.png in Resources */,
+				6EAC19C9196C26220032ACD9 /* GBInviteFriendViewController.xib in Resources */,
+				6EAC19CB196C293C0032ACD9 /* logo.png in Resources */,
 				6EC2537B1959BAA400FC2CB6 /* GBUpdateUserNameViewController.xib in Resources */,
 				6E99485D18DB1AD400C04106 /* GBTicketViewController.xib in Resources */,
 				140BDBF318DAD84E009881F9 /* InfoPlist.strings in Resources */,
@@ -1563,12 +1682,16 @@
 				6EC4C44C19698F01009BF08D /* GBUnpayViewController.xib in Resources */,
 				6E6851F718E1C976003DC5CB /* zbar-help.html in Resources */,
 				6EEEE26A18DB27DA00030C86 /* banner.png in Resources */,
+				6EAC19C4196C26030032ACD9 /* GBFeedbackViewController.xib in Resources */,
 				6E99485818DB19FE00C04106 /* back.png in Resources */,
 				6E6851F918E1C976003DC5CB /* zbar-samples.png in Resources */,
 				6E1096161951C5A8000371EC /* my_collection.png in Resources */,
 				6E278B2518E1A603001814F6 /* btn_down.png in Resources */,
+				6EAC19B6196C17DF0032ACD9 /* GBSettingCell.xib in Resources */,
 				6EC4C464196AD186009BF08D /* new_order_icon.png in Resources */,
+				6EAC19B0196C13BF0032ACD9 /* GBSettingViewController.xib in Resources */,
 				6EE342DB194C304F001E86C0 /* auction_s.png in Resources */,
+				6EAC19D3196C31C90032ACD9 /* qq_icon.png in Resources */,
 				6EAC6891194DB86200DFE3EA /* nav.png in Resources */,
 				6E278B1B18E1A484001814F6 /* GBLoginViewController.xib in Resources */,
 				6EC4C46F196AE512009BF08D /* scan_frame.png in Resources */,
@@ -1578,6 +1701,7 @@
 				6E97D86C1949CDE50061DAA7 /* key.png in Resources */,
 				6EC253871959BC9700FC2CB6 /* GBUpdateGenderViewController.xib in Resources */,
 				6EEEE26818DB272B00030C86 /* arrow2.png in Resources */,
+				6EAC19D7196C31C90032ACD9 /* wechat_circle.png in Resources */,
 				6E99486318DB1BD500C04106 /* GBGroupbuyViewController.xib in Resources */,
 				6E7430511953148900FA404F /* GBMessageCell.xib in Resources */,
 				6EC4C474196AE910009BF08D /* GBSearchViewController.xib in Resources */,
@@ -1626,6 +1750,7 @@
 				6EC253741959AFE600FC2CB6 /* GBUserInfoViewController.m in Sources */,
 				6E278B3818E1B891001814F6 /* GBOrderViewController.m in Sources */,
 				140BDCC418DAE02C009881F9 /* NBBaseViewController.m in Sources */,
+				6EAC19AF196C13BF0032ACD9 /* GBSettingViewController.m in Sources */,
 				140BDC7418DADA05009881F9 /* UIView+Joggle.m in Sources */,
 				6E581A55194881B200FBA739 /* AFNetworkReachabilityManager.m in Sources */,
 				6EC2EC6C195C4858005B629C /* YRSegmentControl.m in Sources */,
@@ -1637,6 +1762,7 @@
 				6E278B1418E1A40B001814F6 /* GBRegisterViewController.m in Sources */,
 				140BDC7018DADA05009881F9 /* UIColor+HexString.m in Sources */,
 				6E581A5E194881B200FBA739 /* UIButton+AFNetworking.m in Sources */,
+				6EAC19C8196C26220032ACD9 /* GBInviteFriendViewController.m in Sources */,
 				6E278B3E18E1B9A1001814F6 /* GBOrderCell.m in Sources */,
 				6EC4C44B19698F01009BF08D /* GBUnpayViewController.m in Sources */,
 				140BDC6F18DADA05009881F9 /* RegexKitLite.m in Sources */,
@@ -1645,6 +1771,7 @@
 				140BDCBF18DADC40009881F9 /* Reachability.m in Sources */,
 				140BDC7218DADA05009881F9 /* UIView+Border.m in Sources */,
 				6E581A59194881B200FBA739 /* AFURLResponseSerialization.m in Sources */,
+				6EAC19C3196C26030032ACD9 /* GBFeedbackViewController.m in Sources */,
 				6EC2EC5B195C3C45005B629C /* GBMyCollectionViewController.m in Sources */,
 				6E581A62194881B200FBA739 /* UIWebView+AFNetworking.m in Sources */,
 				6E6851CC18E1C7A6003DC5CB /* GBScanViewController.m in Sources */,
@@ -1668,6 +1795,7 @@
 				140BDC6B18DADA05009881F9 /* NBNavigationController.m in Sources */,
 				6EC4C45019699095009BF08D /* GBUnpayCell.m in Sources */,
 				6EC2EC66195C4029005B629C /* GBMyCollectionCell.m in Sources */,
+				6EAC19B5196C17DF0032ACD9 /* GBSettingCell.m in Sources */,
 				140BDC6718DADA05009881F9 /* ETActivityIndicatorView.m in Sources */,
 				6EC2539E1959BEA700FC2CB6 /* GBAccountBalanceViewController.m in Sources */,
 				140BDC6618DADA05009881F9 /* Circle.m in Sources */,
@@ -1675,6 +1803,7 @@
 				6E581A5A194881B200FBA739 /* AFURLSessionManager.m in Sources */,
 				6EC253981959BDEB00FC2CB6 /* GBUpdateMailViewController.m in Sources */,
 				6E581A54194881B200FBA739 /* AFHTTPSessionManager.m in Sources */,
+				6EAC19BE196C25D60032ACD9 /* GBAboutViewController.m in Sources */,
 				140BDC6C18DADA05009881F9 /* NBNetworkEngine.m in Sources */,
 				140BDBF918DAD84E009881F9 /* GBAppDelegate.m in Sources */,
 				6E581A5D194881B200FBA739 /* UIAlertView+AFNetworking.m in Sources */,

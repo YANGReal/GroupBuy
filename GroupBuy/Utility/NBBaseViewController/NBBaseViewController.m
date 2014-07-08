@@ -63,6 +63,7 @@
 - (void)hideBanner
 {
     self.navBanner.hidden = YES;
+    [self.navigationController setNavigationBarHidden:NO];
 }
 
 - (void)back

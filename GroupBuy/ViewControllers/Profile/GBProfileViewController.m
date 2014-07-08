@@ -7,7 +7,7 @@
 //
 
 #import "GBProfileViewController.h"
-
+ #import "GBSettingViewController.h"
 #import "GBOrderViewController.h"
 #import "GBScanViewController.h"
 #import "GBMessageViewController.h"
@@ -110,7 +110,8 @@
 #pragma mark - 进入设置界面
 - (void)settingBtnClicked:(UIButton *)sender
 {
-    DLog(@"sms")
+    GBSettingViewController *settingVC = [[GBSettingViewController alloc] initWithNibName:@"GBSettingViewController" bundle:nil];
+    [self.navigationController pushViewController:settingVC animated:YES];
 }
 
 #pragma mark - UITableView delegate method 
