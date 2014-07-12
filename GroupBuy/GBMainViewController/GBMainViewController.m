@@ -104,7 +104,7 @@
     GBGroupbuyViewController *gbVC = [[GBGroupbuyViewController alloc] initWithNibName:@"GBGroupbuyViewController" bundle:nil];
     gbVC.title = @"团购";
     
-    GBAuctionViewController *auctionVC = [[GBAuctionViewController alloc] initWithNibName:@"GBMoreViewController" bundle:nil];
+    GBAuctionViewController *auctionVC = [[GBAuctionViewController alloc] initWithNibName:@"GBAuctionViewController" bundle:nil];
     auctionVC.title = @"拍卖";
 
     GBProfileViewController *profileVC = [[GBProfileViewController alloc] initWithNibName:@"GBProfileViewController" bundle:nil];

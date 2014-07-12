@@ -66,6 +66,7 @@
 		6E278B3E18E1B9A1001814F6 /* GBOrderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E278B3C18E1B9A1001814F6 /* GBOrderCell.m */; };
 		6E278B4418E1BE2F001814F6 /* GBOrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E278B4318E1BE2F001814F6 /* GBOrderCell.xib */; };
 		6E278B4618E1C10D001814F6 /* placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6E278B4518E1C10D001814F6 /* placeholder.jpg */; };
+		6E35805C19717C42006FD6B4 /* add_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E35805B19717C42006FD6B4 /* add_icon.png */; };
 		6E581A52194881B200FBA739 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E581A2E194881B200FBA739 /* AFHTTPRequestOperation.m */; };
 		6E581A53194881B200FBA739 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E581A30194881B200FBA739 /* AFHTTPRequestOperationManager.m */; };
 		6E581A54194881B200FBA739 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E581A32194881B200FBA739 /* AFHTTPSessionManager.m */; };
@@ -310,6 +311,7 @@
 		6E278B3C18E1B9A1001814F6 /* GBOrderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBOrderCell.m; path = ViewControllers/Order/GBOrderCell.m; sourceTree = "<group>"; };
 		6E278B4318E1BE2F001814F6 /* GBOrderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GBOrderCell.xib; path = ViewControllers/Order/GBOrderCell.xib; sourceTree = "<group>"; };
 		6E278B4518E1C10D001814F6 /* placeholder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = placeholder.jpg; sourceTree = "<group>"; };
+		6E35805B19717C42006FD6B4 /* add_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_icon.png; sourceTree = "<group>"; };
 		6E581A2D194881B200FBA739 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		6E581A2E194881B200FBA739 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
 		6E581A2F194881B200FBA739 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
@@ -907,6 +909,14 @@
 			name = GBOrderCell;
 			sourceTree = "<group>";
 		};
+		6E35805A19717C42006FD6B4 /* Auction */ = {
+			isa = PBXGroup;
+			children = (
+				6E35805B19717C42006FD6B4 /* add_icon.png */,
+			);
+			path = Auction;
+			sourceTree = "<group>";
+		};
 		6E581A2C194881B200FBA739 /* AFNetworking */ = {
 			isa = PBXGroup;
 			children = (
@@ -1131,6 +1141,7 @@
 		6E99483418DB0A2500C04106 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				6E35805A19717C42006FD6B4 /* Auction */,
 				6ECC0811197026C40015E867 /* GroupBuy */,
 				6EAC19CC196C31C90032ACD9 /* InviteFriend */,
 				6EC4C453196AD186009BF08D /* home */,
@@ -1748,6 +1759,7 @@
 				6EC4C474196AE910009BF08D /* GBSearchViewController.xib in Resources */,
 				6E6851C318E1C40F003DC5CB /* GBOrderDetailViewController.xib in Resources */,
 				6EE342DC194C304F001E86C0 /* auction.png in Resources */,
+				6E35805C19717C42006FD6B4 /* add_icon.png in Resources */,
 				6E99485418DB194800C04106 /* GBHomeViewController.xib in Resources */,
 				6EC4C46E196AE512009BF08D /* greenLine.png in Resources */,
 				6E581A6B1948824400FBA739 /* NZAlertView-Icons.bundle in Resources */,

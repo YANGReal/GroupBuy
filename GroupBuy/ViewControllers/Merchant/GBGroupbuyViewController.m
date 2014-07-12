@@ -7,10 +7,11 @@
 //
 
 #import "GBGroupbuyViewController.h"
-
-@interface GBGroupbuyViewController ()<DropDownChooseDataSource,DropDownChooseDelegate>
+#import "GBMyCollectionCell.h"
+#import "GBSearchViewController.h"
+@interface GBGroupbuyViewController ()<DropDownChooseDataSource,DropDownChooseDelegate,UITableViewDataSource,UITableViewDelegate>
 @property (strong , nonatomic) NSArray *itemArray;
-
+@property (weak , nonatomic) IBOutlet UITableView *tableView;
 @end
 
 @implementation GBGroupbuyViewController
@@ -32,6 +33,7 @@
                        @[@"全城",@"士嘉宝",@"列治文山",@"北约克",@"万锦",@"多伦多市区",@"密西加沙"],
                        @[@"默认排序",@"价格",@"距离",@"人气",@"最新",@"评价"]];
     [self setupViews];
+    [self setRightButton];
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -41,11 +43,27 @@
     dropDownView.mSuperView = self.view;
     dropDownView.backgroundColor = self.view.backgroundColor;
     [self.view insertSubview:dropDownView atIndex:0];
+    self.tableView.y = dropDownView.y+dropDownView.height;
+    self.tableView.height = self.view.height-49-self.tableView.y;
 }
 
 - (void)setupLeftBarButtonItem
 {
     //Do nothing
+}
+- (void)setRightButton
+{
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.frame = RECT(self.view.width-25-15, 30, 25, 25);
+    [button setBackgroundImage:[UIImage imageFromMainBundleFile:@"search_icon.png"] forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(searchBtnClicked) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
+}
+
+- (void)searchBtnClicked
+{
+    GBSearchViewController *vc = [[GBSearchViewController alloc] initWithNibName:@"GBSearchViewController" bundle:nil];
+    [self .navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark - DropDownChooseDataSource,DropDownChooseDelegate method
@@ -79,6 +97,30 @@
                      @"sort_icon.png"];
     return [UIImage imageFromMainBundleFile:arr[section]];
 }
+
+#pragma mark - UITableViewDataSource,UITableViewDelegate method
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 10;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *identifier = @"cell";
+    GBMyCollectionCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    if (cell == nil)
+    {
+        cell = [[[NSBundle mainBundle] loadNibNamed:@"GBMyCollectionCell" owner:self options:nil] lastObject];
+    }
+    return cell;
+}
+- (CGFloat)tableView:(UITableView *)tableView
+heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 94;
+}
+
 
 #pragma mark - 内存管理
 - (void)didReceiveMemoryWarning

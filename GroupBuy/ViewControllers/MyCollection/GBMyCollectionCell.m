@@ -22,6 +22,7 @@
     self.bgView.backgroundColor = WHITE_COLOR;
     self.backgroundColor = CLEAR_COLOR;
     self.mediaView.clipsToBounds = YES;
+    self.selectionStyle = UITableViewCellSelectionStyleNone;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
