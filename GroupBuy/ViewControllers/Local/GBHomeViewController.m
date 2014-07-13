@@ -7,10 +7,11 @@
 //
 
 #import "GBHomeViewController.h"
-#import "GBOrderViewController.h"
+
 #import "GBHomeCell.h"
 #import "GBScanViewController.h"
 #import "GBSearchViewController.h"
+#import "GBGoodsDetailViewController.h"
 @interface GBHomeViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (weak , nonatomic) IBOutlet UITableView *tableView;
@@ -104,6 +105,13 @@
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView
+didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    GBGoodsDetailViewController *detailVC = [[GBGoodsDetailViewController alloc] initWithNibName:@"GBGoodsDetailViewController" bundle:nil];
+    detailVC.title = @"详情";
+    [self.navigationController pushViewController:detailVC animated:YES];
+}
 
 - (CGFloat)tableView:(UITableView *)tableView
 heightForRowAtIndexPath:(NSIndexPath *)indexPath

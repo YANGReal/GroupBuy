@@ -121,6 +121,12 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath
     return 94;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    GBGoodsDetailViewController *vc = [[GBGoodsDetailViewController alloc] initWithNibName:@"GBGoodsDetailViewController" bundle:nil];
+    [self.navigationController pushViewController:vc animated:YES];
+    
+}
 
 #pragma mark - 内存管理
 - (void)didReceiveMemoryWarning

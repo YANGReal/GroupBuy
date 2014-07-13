@@ -36,6 +36,10 @@
 #import "GBMainViewController.h"
 #import "YRSegmentControl.h"
 #import "DropDownListView.h"
+#import "RatingView.h"
+#import "GBGoodsDetailViewController.h"
+
+
 #pragma mark --定义常用宏
 
 #define IS_FIRST_USE @"is_first_use"

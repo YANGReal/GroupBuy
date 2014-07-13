@@ -8,7 +8,7 @@
 
 #import "GBProfileViewController.h"
  #import "GBSettingViewController.h"
-#import "GBOrderViewController.h"
+
 #import "GBScanViewController.h"
 #import "GBMessageViewController.h"
 #import "GBUserInfoViewController.h"
@@ -85,20 +85,6 @@
     [self.navigationController pushViewController:userInfoVC animated:YES];
 }
 
-#pragma mark - 查询全部订单
-- (IBAction)orderButtonClicked:(id)sender
-{
-    GBOrderViewController *orderVC = [[GBOrderViewController alloc] initWithNibName:@"GBOrderViewController" bundle:nil];
-    [self.navigationController pushViewController:orderVC animated:YES];
-}
-
-
-- (IBAction)preOrderButtonClicked:(id)sender
-{
-    GBOrderViewController *orderVC = [[GBOrderViewController alloc] initWithNibName:@"GBOrderViewController" bundle:nil];
-    [self.navigationController pushViewController:orderVC animated:YES];
-
-}
 
 #pragma mark - 进入通知界面
 - (void)msgBtnClicked:(UIButton *)sender
