@@ -12,6 +12,8 @@
 @property (weak , nonatomic) IBOutlet UIView *bgView;
 @property (weak , nonatomic) IBOutlet RatingView *rationView1,*rationView2,*rationView3;
 
+- (IBAction)btnClicked:(id)sender;
+
 @end
 
 @implementation GBGoodsCommentsInfoCell
@@ -60,6 +62,15 @@
 + (CGFloat)cellHeight
 {
     return 191;
+}
+
+
+- (IBAction)btnClicked:(id)sender
+{
+    if ([self.delegate respondsToSelector:@selector(commentsInfoCell:didClickCommentButton:)])
+    {
+        [self.delegate commentsInfoCell:self didClickCommentButton:sender];
+    }
 }
 
 @end

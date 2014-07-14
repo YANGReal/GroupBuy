@@ -8,6 +8,8 @@
 
 #import "NBBaseViewController.h"
 
+
+
 @interface GBGoodsDetailViewController : NBBaseViewController
 
 @end

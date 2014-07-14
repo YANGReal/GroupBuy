@@ -8,6 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
+
+@class GBGoodsCommentsInfoCell;
+
+@protocol GBGoodsCommentsInfoCellDelegate <NSObject>
+
+@optional
+
+- (void)commentsInfoCell:(GBGoodsCommentsInfoCell *)cell didClickCommentButton:(UIButton *)sender;
+
+@end
+
+
 @interface GBGoodsCommentsInfoCell : UITableViewCell
+@property (assign , nonatomic) id<GBGoodsCommentsInfoCellDelegate>delegate;
 + (CGFloat)cellHeight;
 @end

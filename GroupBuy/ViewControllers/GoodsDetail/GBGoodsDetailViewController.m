@@ -13,7 +13,8 @@
 #import "GBPackageInfoCell.h"
 #import "GBGoodsRulesCell.h"
 #import "GBGoodsCommentsInfoCell.h"
-@interface GBGoodsDetailViewController ()<UITableViewDelegate,UITableViewDataSource,UIScrollViewDelegate>
+#import "GBCommentsViewController.h"
+@interface GBGoodsDetailViewController ()<UITableViewDelegate,UITableViewDataSource,UIScrollViewDelegate,GBShareViewDelegate,GBGoodsCommentsInfoCellDelegate>
 {
     BOOL didCollection;
 }
@@ -93,6 +94,9 @@
 - (void)share
 {
     DLog(@"share");
+    GBShareView *shareView = [[[NSBundle mainBundle] loadNibNamed:@"GBShareView" owner:self options:nil] lastObject];
+    shareView.delegate = self;
+    [shareView showInView:self.navigationController.view];
 }
 - (void)collectionBtnClicked:(UIButton *)sender
 {
@@ -110,7 +114,13 @@
 
 - (void)imgViewTapped:(UITapGestureRecognizer *)sender
 {
-    DLog(@"index = %d",sender.view.tag);
+   // DLog(@"index = %d",sender.view.tag);
+    NSArray *imgArr = @[@"001.jpg",@"002.jpg",@"003.jpg"];
+    GBPictureViewController *vc = [[GBPictureViewController alloc] initWithNibName:@"GBPictureViewController" bundle:nil];
+    vc.dataArray = imgArr;
+    vc.currentIndex = 0;
+    [self.navigationController pushViewController:vc animated:YES];
+    
 }
 
 
@@ -154,6 +164,7 @@
         case 5:
         {
             GBGoodsCommentsInfoCell *cell = [[[NSBundle mainBundle] loadNibNamed:@"GBGoodsCommentsInfoCell" owner:self options:nil] lastObject];
+            cell.delegate = self;
             return cell;
         }
           default:
@@ -208,6 +219,25 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath
         DLog(@"page = %d",page);
     }
 }
+
+
+#pragma mark - GBShareViewDelegate method
+
+- (void)shareView:(GBShareView *)view
+didClickButtonAtIndex:(NSInteger)index
+{
+    DLog(@"index = %d",index);
+}
+
+
+#pragma mark  GBGoodsCommentsInfoCellDelegate method
+
+- (void)commentsInfoCell:(GBGoodsCommentsInfoCell *)cell didClickCommentButton:(UIButton *)sender
+{
+    GBCommentsViewController *vc = [[GBCommentsViewController alloc] initWithNibName:@"GBCommentsViewController" bundle:nil];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
 
 #pragma mark -内存管理
 - (void)didReceiveMemoryWarning
