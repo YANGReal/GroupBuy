@@ -9,6 +9,7 @@
 #import "GBAuctionViewController.h"
 #import "GBSearchViewController.h"
 #import "GBCollectionAuctionCell.h"
+#import "GBAddGoodViewController.h"
 @interface GBAuctionViewController ()<DropDownChooseDataSource,DropDownChooseDelegate,UITableViewDataSource,UITableViewDelegate>
 @property (strong , nonatomic) NSArray *itemArray;
 @property (weak , nonatomic) IBOutlet UITableView *tableView;
@@ -63,7 +64,7 @@
 
 - (void)searchBtnClicked
 {
-    GBSearchViewController *vc = [[GBSearchViewController alloc] initWithNibName:@"GBSearchViewController" bundle:nil];
+    GBAddGoodViewController *vc = [[GBAddGoodViewController alloc] initWithNibName:@"GBAddGoodViewController" bundle:nil];
     [self .navigationController pushViewController:vc animated:YES];
 }
 

@@ -223,6 +223,12 @@
 		6EC4C473196AE910009BF08D /* GBSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC4C471196AE910009BF08D /* GBSearchViewController.m */; };
 		6EC4C474196AE910009BF08D /* GBSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EC4C472196AE910009BF08D /* GBSearchViewController.xib */; };
 		6EC4C477196AEDAC009BF08D /* searrch_gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EC4C476196AEDAC009BF08D /* searrch_gray.png */; };
+		6ECAF879197A9F5A00380771 /* GBAddGoodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ECAF877197A9F5A00380771 /* GBAddGoodViewController.m */; };
+		6ECAF87A197A9F5A00380771 /* GBAddGoodViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ECAF878197A9F5A00380771 /* GBAddGoodViewController.xib */; };
+		6ECAF87E197AA0B500380771 /* GBAddGoodCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ECAF87C197AA0B500380771 /* GBAddGoodCell.m */; };
+		6ECAF87F197AA0B500380771 /* GBAddGoodCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ECAF87D197AA0B500380771 /* GBAddGoodCell.xib */; };
+		6ECAF884197AA56200380771 /* GBAddImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ECAF882197AA56200380771 /* GBAddImageCell.m */; };
+		6ECAF885197AA56200380771 /* GBAddImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ECAF883197AA56200380771 /* GBAddImageCell.xib */; };
 		6ECC080F19701EE10015E867 /* down_dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ECC080B19701EE10015E867 /* down_dark.png */; };
 		6ECC081019701EE10015E867 /* DropDownListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ECC080E19701EE10015E867 /* DropDownListView.m */; };
 		6ECC0815197026C40015E867 /* all_cate_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ECC0812197026C40015E867 /* all_cate_icon.png */; };
@@ -583,6 +589,15 @@
 		6EC4C471196AE910009BF08D /* GBSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBSearchViewController.m; path = ViewControllers/Local/GBSearchViewController.m; sourceTree = "<group>"; };
 		6EC4C472196AE910009BF08D /* GBSearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GBSearchViewController.xib; path = ViewControllers/Local/GBSearchViewController.xib; sourceTree = "<group>"; };
 		6EC4C476196AEDAC009BF08D /* searrch_gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = searrch_gray.png; sourceTree = "<group>"; };
+		6ECAF876197A9F5A00380771 /* GBAddGoodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBAddGoodViewController.h; sourceTree = "<group>"; };
+		6ECAF877197A9F5A00380771 /* GBAddGoodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBAddGoodViewController.m; sourceTree = "<group>"; };
+		6ECAF878197A9F5A00380771 /* GBAddGoodViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GBAddGoodViewController.xib; sourceTree = "<group>"; };
+		6ECAF87B197AA0B500380771 /* GBAddGoodCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBAddGoodCell.h; sourceTree = "<group>"; };
+		6ECAF87C197AA0B500380771 /* GBAddGoodCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBAddGoodCell.m; sourceTree = "<group>"; };
+		6ECAF87D197AA0B500380771 /* GBAddGoodCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GBAddGoodCell.xib; sourceTree = "<group>"; };
+		6ECAF881197AA56200380771 /* GBAddImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBAddImageCell.h; sourceTree = "<group>"; };
+		6ECAF882197AA56200380771 /* GBAddImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBAddImageCell.m; sourceTree = "<group>"; };
+		6ECAF883197AA56200380771 /* GBAddImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GBAddImageCell.xib; sourceTree = "<group>"; };
 		6ECC080B19701EE10015E867 /* down_dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down_dark.png; sourceTree = "<group>"; };
 		6ECC080C19701EE10015E867 /* DropDownChooseProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropDownChooseProtocol.h; sourceTree = "<group>"; };
 		6ECC080D19701EE10015E867 /* DropDownListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropDownListView.h; sourceTree = "<group>"; };
@@ -704,6 +719,7 @@
 				6E35805D1972704C006FD6B4 /* 商品详情 */,
 				6E2FF8AF19740F7E0045E29D /* 图片浏览 */,
 				6E2FF8BD197416A10045E29D /* 评论 */,
+				6ECAF875197A9F0200380771 /* 添加商品 */,
 				140BDBFA18DAD84E009881F9 /* Images.xcassets */,
 				140BDBEF18DAD84E009881F9 /* Supporting Files */,
 			);
@@ -1776,6 +1792,39 @@
 			name = GBSearchViewController;
 			sourceTree = "<group>";
 		};
+		6ECAF875197A9F0200380771 /* 添加商品 */ = {
+			isa = PBXGroup;
+			children = (
+				6ECAF876197A9F5A00380771 /* GBAddGoodViewController.h */,
+				6ECAF877197A9F5A00380771 /* GBAddGoodViewController.m */,
+				6ECAF878197A9F5A00380771 /* GBAddGoodViewController.xib */,
+				6ECAF886197AA56500380771 /* GBAddImageCell */,
+				6ECAF880197AA0B800380771 /* GBAddGoodCell */,
+			);
+			name = "添加商品";
+			path = ViewControllers/AddGoods;
+			sourceTree = "<group>";
+		};
+		6ECAF880197AA0B800380771 /* GBAddGoodCell */ = {
+			isa = PBXGroup;
+			children = (
+				6ECAF87B197AA0B500380771 /* GBAddGoodCell.h */,
+				6ECAF87C197AA0B500380771 /* GBAddGoodCell.m */,
+				6ECAF87D197AA0B500380771 /* GBAddGoodCell.xib */,
+			);
+			name = GBAddGoodCell;
+			sourceTree = "<group>";
+		};
+		6ECAF886197AA56500380771 /* GBAddImageCell */ = {
+			isa = PBXGroup;
+			children = (
+				6ECAF881197AA56200380771 /* GBAddImageCell.h */,
+				6ECAF882197AA56200380771 /* GBAddImageCell.m */,
+				6ECAF883197AA56200380771 /* GBAddImageCell.xib */,
+			);
+			name = GBAddImageCell;
+			sourceTree = "<group>";
+		};
 		6ECC080A19701EE10015E867 /* DropDownListView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1909,6 +1958,7 @@
 				6EC2539F1959BEA700FC2CB6 /* GBAccountBalanceViewController.xib in Resources */,
 				6ECC0817197026C40015E867 /* sort_icon.png in Resources */,
 				6E10961B1951C5A8000371EC /* unpay.png in Resources */,
+				6ECAF885197AA56200380771 /* GBAddImageCell.xib in Resources */,
 				6EC4C45E196AD186009BF08D /* entertainment_icon.png in Resources */,
 				6EC253931959BD5B00FC2CB6 /* GBUpdatePasswordViewController.xib in Resources */,
 				6EAC19D6196C31C90032ACD9 /* wechat.png in Resources */,
@@ -1926,6 +1976,7 @@
 				6EE342DD194C304F001E86C0 /* group_s.png in Resources */,
 				6EAC19D5196C31C90032ACD9 /* renren_icon.png in Resources */,
 				6E35806C19727419006FD6B4 /* comments_icon.png in Resources */,
+				6ECAF87F197AA0B500380771 /* GBAddGoodCell.xib in Resources */,
 				6E97D86E1949CDE50061DAA7 /* qq_btn.png in Resources */,
 				6EC253991959BDEB00FC2CB6 /* GBUpdateMailViewController.xib in Resources */,
 				6EC4C465196AD186009BF08D /* search_icon.png in Resources */,
@@ -2014,6 +2065,7 @@
 				6E35806B19727419006FD6B4 /* collection_selected.png in Resources */,
 				6E35807819727820006FD6B4 /* botton_banner.png in Resources */,
 				6EE342E5194C304F001E86C0 /* ticket.png in Resources */,
+				6ECAF87A197A9F5A00380771 /* GBAddGoodViewController.xib in Resources */,
 				6EC2EC5C195C3C45005B629C /* GBMyCollectionViewController.xib in Resources */,
 				6ECC0819197027290015E867 /* pullDownArrow.png in Resources */,
 				6EE342DF194C304F001E86C0 /* home_s.png in Resources */,
@@ -2082,15 +2134,18 @@
 				140BDC6418DADA05009881F9 /* AppUtility.m in Sources */,
 				6E7430501953148900FA404F /* GBMessageCell.m in Sources */,
 				6E2FF8B8197410B00045E29D /* YRZoomingView.m in Sources */,
+				6ECAF87E197AA0B500380771 /* GBAddGoodCell.m in Sources */,
 				6E581A53194881B200FBA739 /* AFHTTPRequestOperationManager.m in Sources */,
 				140BDC6D18DADA05009881F9 /* NSDictionary+JSON.m in Sources */,
 				6EC4C473196AE910009BF08D /* GBSearchViewController.m in Sources */,
 				6E581A58194881B200FBA739 /* AFURLRequestSerialization.m in Sources */,
+				6ECAF879197A9F5A00380771 /* GBAddGoodViewController.m in Sources */,
 				6E278B1A18E1A484001814F6 /* GBLoginViewController.m in Sources */,
 				6EC4C444196987B1009BF08D /* GBCollectionAuctionCell.m in Sources */,
 				6E99485C18DB1AD400C04106 /* GBTicketViewController.m in Sources */,
 				6E2FF8C6197417840045E29D /* GBCommentsCell.m in Sources */,
 				6ECC081019701EE10015E867 /* DropDownListView.m in Sources */,
+				6ECAF884197AA56200380771 /* GBAddImageCell.m in Sources */,
 				140BDC7718DADA05009881F9 /* UIView+ModifyFrame.m in Sources */,
 				6E35807F19727F2C006FD6B4 /* RatingView.m in Sources */,
 				6E74304B1953113F00FA404F /* GBMessageViewController.m in Sources */,

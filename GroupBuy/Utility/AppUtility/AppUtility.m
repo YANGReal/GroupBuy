@@ -145,5 +145,16 @@
     [alert show];
 }
 
++(NSInteger)numberNotInArray:(NSArray *)array
+{
+    //DLog(@"array = %@",array);
+    int number = arc4random()%100+1;
+    NSNumber *num = @(number);
+    if ([array containsObject:num])
+    {
+        return 0;
+    }
+    return num.integerValue;
+}
 
 @end

@@ -86,7 +86,7 @@
 
 #define LIGHT_GRAY    [UIColor colorWithHexString:@"#e0e0e0"] //浅紫色
 #define YELLOW_COLOR  [UIColor colorWithHexString:@"#feaa24"] //明黄色
-#define BG_COLOR      [UIColor colorWithHexString:@"#ededed"] //粉红色
+#define BG_COLOR      [UIColor colorWithHexString:@"#ededed"] //
 
 //定义字体大小
 #define F1   [UIFont systemFontOfSize:9]

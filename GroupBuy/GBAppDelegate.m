@@ -43,6 +43,8 @@
     [[UINavigationBar appearance] setBarTintColor:C6];
     /*设置导航栏字体颜色和字体*/
     [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName: C1,NSFontAttributeName:F5}];
+    
+    
 
     return YES;
 }

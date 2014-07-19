@@ -50,6 +50,6 @@
 
 
 + (void)showAlertWithMessage:(NSString *)message;
-
++ (NSInteger)numberNotInArray:(NSArray *)array;
 
 @end

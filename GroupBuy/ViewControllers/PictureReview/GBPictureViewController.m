@@ -68,7 +68,16 @@
     }
     zoomingView.contentMode = UIViewContentModeScaleAspectFit;
     zoomingView.tag = index;
-    zoomingView.imgView.image = [UIImage imageNamed:_dataArray[index]];
+    
+    if ([_dataArray[0] isKindOfClass:[UIImage class]])
+    {
+        zoomingView.imgView.image =_dataArray[index];
+    }
+    else
+    {
+        zoomingView.imgView.image = [UIImage imageNamed:_dataArray[index]];
+
+    }
     return zoomingView;
     
 }
