@@ -14,6 +14,7 @@
 #import "GBGoodsRulesCell.h"
 #import "GBGoodsCommentsInfoCell.h"
 #import "GBCommentsViewController.h"
+#import "GBSubmitOrderViewController.h"
 @interface GBGoodsDetailViewController ()<UITableViewDelegate,UITableViewDataSource,UIScrollViewDelegate,GBShareViewDelegate,GBGoodsCommentsInfoCellDelegate>
 {
     BOOL didCollection;
@@ -23,6 +24,9 @@
 @property (weak , nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak , nonatomic) IBOutlet UILabel *pageLabel;
 @property (weak , nonatomic) IBOutlet UIButton *buyBtn;
+
+- (IBAction)buyBtnClicked:(id)sender;
+
 @end
 
 @implementation GBGoodsDetailViewController
@@ -89,6 +93,13 @@
     
     
     self.navigationItem.rightBarButtonItems = @[item2,item1];
+}
+
+- (IBAction)buyBtnClicked:(id)sender
+{
+    GBSubmitOrderViewController *vc = [[GBSubmitOrderViewController alloc] initWithNibName:@"GBSubmitOrderViewController" bundle:nil];
+    vc.price = 18.0;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)share

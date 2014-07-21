@@ -246,6 +246,16 @@
 		6EE342E3194C304F001E86C0 /* redDot.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EE342D8194C304F001E86C0 /* redDot.png */; };
 		6EE342E4194C304F001E86C0 /* ticket_s.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EE342D9194C304F001E86C0 /* ticket_s.png */; };
 		6EE342E5194C304F001E86C0 /* ticket.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EE342DA194C304F001E86C0 /* ticket.png */; };
+		6EEBA500197D528B00286D3B /* GBSubmitOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EEBA4FE197D528B00286D3B /* GBSubmitOrderViewController.m */; };
+		6EEBA501197D528B00286D3B /* GBSubmitOrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EEBA4FF197D528B00286D3B /* GBSubmitOrderViewController.xib */; };
+		6EEBA505197D565600286D3B /* add_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EEBA503197D565600286D3B /* add_icon.png */; };
+		6EEBA506197D565600286D3B /* minus_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EEBA504197D565600286D3B /* minus_icon.png */; };
+		6EEBA50B197D5CDB00286D3B /* GBPayOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EEBA509197D5CDB00286D3B /* GBPayOrderViewController.m */; };
+		6EEBA50C197D5CDB00286D3B /* GBPayOrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EEBA50A197D5CDB00286D3B /* GBPayOrderViewController.xib */; };
+		6EEBA50E197D5F4A00286D3B /* paypal_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EEBA50D197D5F4A00286D3B /* paypal_icon.png */; };
+		6EEBA513197D60F100286D3B /* GBOrderTicketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EEBA511197D60F100286D3B /* GBOrderTicketViewController.m */; };
+		6EEBA514197D60F100286D3B /* GBOrderTicketViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EEBA512197D60F100286D3B /* GBOrderTicketViewController.xib */; };
+		6EEBA516197D63DB00286D3B /* barCode.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6EEBA515197D63DB00286D3B /* barCode.jpg */; };
 		6EEEE26718DB272B00030C86 /* arrow1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EEEE26518DB272B00030C86 /* arrow1.png */; };
 		6EEEE26818DB272B00030C86 /* arrow2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EEEE26618DB272B00030C86 /* arrow2.png */; };
 		6EEEE26A18DB27DA00030C86 /* banner.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EEEE26918DB27DA00030C86 /* banner.png */; };
@@ -617,6 +627,19 @@
 		6EE342D8194C304F001E86C0 /* redDot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redDot.png; sourceTree = "<group>"; };
 		6EE342D9194C304F001E86C0 /* ticket_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ticket_s.png; sourceTree = "<group>"; };
 		6EE342DA194C304F001E86C0 /* ticket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ticket.png; sourceTree = "<group>"; };
+		6EEBA4FD197D528B00286D3B /* GBSubmitOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBSubmitOrderViewController.h; sourceTree = "<group>"; };
+		6EEBA4FE197D528B00286D3B /* GBSubmitOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBSubmitOrderViewController.m; sourceTree = "<group>"; };
+		6EEBA4FF197D528B00286D3B /* GBSubmitOrderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GBSubmitOrderViewController.xib; sourceTree = "<group>"; };
+		6EEBA503197D565600286D3B /* add_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_icon.png; sourceTree = "<group>"; };
+		6EEBA504197D565600286D3B /* minus_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minus_icon.png; sourceTree = "<group>"; };
+		6EEBA508197D5CDB00286D3B /* GBPayOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBPayOrderViewController.h; sourceTree = "<group>"; };
+		6EEBA509197D5CDB00286D3B /* GBPayOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBPayOrderViewController.m; sourceTree = "<group>"; };
+		6EEBA50A197D5CDB00286D3B /* GBPayOrderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GBPayOrderViewController.xib; sourceTree = "<group>"; };
+		6EEBA50D197D5F4A00286D3B /* paypal_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paypal_icon.png; sourceTree = "<group>"; };
+		6EEBA510197D60F100286D3B /* GBOrderTicketViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBOrderTicketViewController.h; sourceTree = "<group>"; };
+		6EEBA511197D60F100286D3B /* GBOrderTicketViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBOrderTicketViewController.m; sourceTree = "<group>"; };
+		6EEBA512197D60F100286D3B /* GBOrderTicketViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GBOrderTicketViewController.xib; sourceTree = "<group>"; };
+		6EEBA515197D63DB00286D3B /* barCode.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = barCode.jpg; sourceTree = "<group>"; };
 		6EEEE26518DB272B00030C86 /* arrow1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow1.png; sourceTree = "<group>"; };
 		6EEEE26618DB272B00030C86 /* arrow2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow2.png; sourceTree = "<group>"; };
 		6EEEE26918DB27DA00030C86 /* banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banner.png; sourceTree = "<group>"; };
@@ -720,6 +743,9 @@
 				6E2FF8AF19740F7E0045E29D /* 图片浏览 */,
 				6E2FF8BD197416A10045E29D /* 评论 */,
 				6ECAF875197A9F0200380771 /* 添加商品 */,
+				6EEBA4FC197D525900286D3B /* 提交订单 */,
+				6EEBA507197D5CC500286D3B /* 支付订单 */,
+				6EEBA50F197D60CC00286D3B /* 订单券 */,
 				140BDBFA18DAD84E009881F9 /* Images.xcassets */,
 				140BDBEF18DAD84E009881F9 /* Supporting Files */,
 			);
@@ -1379,6 +1405,7 @@
 				6E97D85C1949CDE50061DAA7 /* login */,
 				6E97D8681949CDE50061DAA7 /* register */,
 				6EEEE25818DB261F00030C86 /* Profile */,
+				6EEBA502197D565600286D3B /* PayFlow */,
 				6E99485618DB19FE00C04106 /* Global */,
 				6E99483518DB0A2500C04106 /* TabBarIcon */,
 			);
@@ -1847,6 +1874,50 @@
 			path = GroupBuy;
 			sourceTree = "<group>";
 		};
+		6EEBA4FC197D525900286D3B /* 提交订单 */ = {
+			isa = PBXGroup;
+			children = (
+				6EEBA4FD197D528B00286D3B /* GBSubmitOrderViewController.h */,
+				6EEBA4FE197D528B00286D3B /* GBSubmitOrderViewController.m */,
+				6EEBA4FF197D528B00286D3B /* GBSubmitOrderViewController.xib */,
+			);
+			name = "提交订单";
+			path = ViewControllers/submitOrder;
+			sourceTree = "<group>";
+		};
+		6EEBA502197D565600286D3B /* PayFlow */ = {
+			isa = PBXGroup;
+			children = (
+				6EEBA503197D565600286D3B /* add_icon.png */,
+				6EEBA50D197D5F4A00286D3B /* paypal_icon.png */,
+				6EEBA515197D63DB00286D3B /* barCode.jpg */,
+				6EEBA504197D565600286D3B /* minus_icon.png */,
+			);
+			path = PayFlow;
+			sourceTree = "<group>";
+		};
+		6EEBA507197D5CC500286D3B /* 支付订单 */ = {
+			isa = PBXGroup;
+			children = (
+				6EEBA508197D5CDB00286D3B /* GBPayOrderViewController.h */,
+				6EEBA509197D5CDB00286D3B /* GBPayOrderViewController.m */,
+				6EEBA50A197D5CDB00286D3B /* GBPayOrderViewController.xib */,
+			);
+			name = "支付订单";
+			path = ViewControllers/PayOrder;
+			sourceTree = "<group>";
+		};
+		6EEBA50F197D60CC00286D3B /* 订单券 */ = {
+			isa = PBXGroup;
+			children = (
+				6EEBA510197D60F100286D3B /* GBOrderTicketViewController.h */,
+				6EEBA511197D60F100286D3B /* GBOrderTicketViewController.m */,
+				6EEBA512197D60F100286D3B /* GBOrderTicketViewController.xib */,
+			);
+			name = "订单券";
+			path = ViewControllers/OrderTicket;
+			sourceTree = "<group>";
+		};
 		6EEEE25818DB261F00030C86 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
@@ -1944,6 +2015,7 @@
 				6EE342E1194C304F001E86C0 /* profile_s.png in Resources */,
 				6E2FF8B419740FA10045E29D /* GBPictureViewController.xib in Resources */,
 				6E97D8751949CDE50061DAA7 /* weibo_btn.png in Resources */,
+				6EEBA501197D528B00286D3B /* GBSubmitOrderViewController.xib in Resources */,
 				6E97D86D1949CDE50061DAA7 /* qq.png in Resources */,
 				6E581A6D1948824400FBA739 /* NZAlertView.xib in Resources */,
 				6E2FF8A8197299A90045E29D /* 003.jpg in Resources */,
@@ -1954,6 +2026,7 @@
 				6E74304C1953113F00FA404F /* GBMessageViewController.xib in Resources */,
 				6E35807919727820006FD6B4 /* clock_icon.png in Resources */,
 				6EC4C45D196AD186009BF08D /* barCode.png in Resources */,
+				6EEBA514197D60F100286D3B /* GBOrderTicketViewController.xib in Resources */,
 				6EC4C462196AD186009BF08D /* map_icon.png in Resources */,
 				6EC2539F1959BEA700FC2CB6 /* GBAccountBalanceViewController.xib in Resources */,
 				6ECC0817197026C40015E867 /* sort_icon.png in Resources */,
@@ -1968,6 +2041,7 @@
 				6EAC19D8196C31C90032ACD9 /* weibo_icon.png in Resources */,
 				6EE342E4194C304F001E86C0 /* ticket_s.png in Resources */,
 				6E6851F818E1C976003DC5CB /* zbar-helpicons.png in Resources */,
+				6EEBA50E197D5F4A00286D3B /* paypal_icon.png in Resources */,
 				6EC253751959AFE600FC2CB6 /* GBUserInfoViewController.xib in Resources */,
 				6EC4C460196AD186009BF08D /* hot_icon.png in Resources */,
 				6EE342E2194C304F001E86C0 /* profile.png in Resources */,
@@ -2008,6 +2082,7 @@
 				6EE342DE194C304F001E86C0 /* group.png in Resources */,
 				6E97D8721949CDE50061DAA7 /* renren_btn_s.png in Resources */,
 				6EC4C46A196AD96B009BF08D /* GBHomeCell.xib in Resources */,
+				6EEBA506197D565600286D3B /* minus_icon.png in Resources */,
 				6E6851CD18E1C7A6003DC5CB /* GBScanViewController.xib in Resources */,
 				6E97D8701949CDE50061DAA7 /* renren.png in Resources */,
 				6E278B2618E1A603001814F6 /* btn.png in Resources */,
@@ -2038,6 +2113,7 @@
 				6E97D8791949CDE50061DAA7 /* mailIcon.png in Resources */,
 				6E97D86C1949CDE50061DAA7 /* key.png in Resources */,
 				6EC253871959BC9700FC2CB6 /* GBUpdateGenderViewController.xib in Resources */,
+				6EEBA505197D565600286D3B /* add_icon.png in Resources */,
 				6EEEE26818DB272B00030C86 /* arrow2.png in Resources */,
 				6EAC19D7196C31C90032ACD9 /* wechat_circle.png in Resources */,
 				6E358088197282E6006FD6B4 /* star_normal.png in Resources */,
@@ -2046,10 +2122,12 @@
 				6EC4C474196AE910009BF08D /* GBSearchViewController.xib in Resources */,
 				6EE342DC194C304F001E86C0 /* auction.png in Resources */,
 				6E35805C19717C42006FD6B4 /* add_icon.png in Resources */,
+				6EEBA50C197D5CDB00286D3B /* GBPayOrderViewController.xib in Resources */,
 				6E99485418DB194800C04106 /* GBHomeViewController.xib in Resources */,
 				6E35809419728980006FD6B4 /* GBPackageInfoCell.xib in Resources */,
 				6E35807B19727820006FD6B4 /* sold_icon.png in Resources */,
 				6EC4C46E196AE512009BF08D /* greenLine.png in Resources */,
+				6EEBA516197D63DB00286D3B /* barCode.jpg in Resources */,
 				6E2FF8AE1974096E0045E29D /* GBShareView.xib in Resources */,
 				6E35806D19727419006FD6B4 /* share_icon.png in Resources */,
 				6E581A6B1948824400FBA739 /* NZAlertView-Icons.bundle in Resources */,
@@ -2101,6 +2179,7 @@
 				6E2FF8BC197411040045E29D /* SwipeView.m in Sources */,
 				6E3580831972800D006FD6B4 /* GBGoodsRationCell.m in Sources */,
 				140BDCC418DAE02C009881F9 /* NBBaseViewController.m in Sources */,
+				6EEBA500197D528B00286D3B /* GBSubmitOrderViewController.m in Sources */,
 				6EAC19AF196C13BF0032ACD9 /* GBSettingViewController.m in Sources */,
 				140BDC7418DADA05009881F9 /* UIView+Joggle.m in Sources */,
 				6E2FF8AC197409510045E29D /* GBShareView.m in Sources */,
@@ -2159,10 +2238,12 @@
 				6E35809F19728FA4006FD6B4 /* GBGoodsCommentsInfoCell.m in Sources */,
 				6EC2539E1959BEA700FC2CB6 /* GBAccountBalanceViewController.m in Sources */,
 				6E3580711972769C006FD6B4 /* GGoodIntroCell.m in Sources */,
+				6EEBA50B197D5CDB00286D3B /* GBPayOrderViewController.m in Sources */,
 				140BDC6618DADA05009881F9 /* Circle.m in Sources */,
 				6EC253861959BC9700FC2CB6 /* GBUpdateGenderViewController.m in Sources */,
 				6E35808D19728424006FD6B4 /* GBMerchantInfoCell.m in Sources */,
 				6E581A5A194881B200FBA739 /* AFURLSessionManager.m in Sources */,
+				6EEBA513197D60F100286D3B /* GBOrderTicketViewController.m in Sources */,
 				6EC253981959BDEB00FC2CB6 /* GBUpdateMailViewController.m in Sources */,
 				6E581A54194881B200FBA739 /* AFHTTPSessionManager.m in Sources */,
 				6EAC19BE196C25D60032ACD9 /* GBAboutViewController.m in Sources */,

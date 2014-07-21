@@ -68,6 +68,9 @@
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="buyBtnClicked:" destination="-1" eventType="touchUpInside" id="4f8-3U-fhV"/>
+                            </connections>
                         </button>
                         <view contentMode="scaleToFill" id="tnB-Hr-XyI">
                             <rect key="frame" x="0.0" y="232" width="320" height="2"/>
