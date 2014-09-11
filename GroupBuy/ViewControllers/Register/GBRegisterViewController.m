@@ -52,6 +52,8 @@
 
 - (void)setupViews
 {
+    [self hideBanner];
+    
     line1.backgroundColor =line2.backgroundColor = LIGHT_GRAY;
     line1.height = line2.height = 0.5;
     [loginBtn setupBorder:CLEAR_COLOR cornerRadius:19];
@@ -60,14 +62,19 @@
     
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideKeyboard)];
     [self.view addGestureRecognizer:tap];
-
 }
 
 
 #pragma mark -IBAction method
 -(IBAction)registerButtonClicked:(id)sender
 {
-    [self registerAccount];
+    if (checked) {
+       [self registerAccount];
+    }
+    else
+    {
+        [AppUtility showAlertWithMessage:@"请阅读并同意用户协议"];
+    }
 }
 
 - (IBAction)checkBtnClicked:(id)sender
@@ -96,14 +103,27 @@
 #pragma mark - 注册回调方法
 - (void)doRigster
 {
-    return;
-    /*
-    NSDictionary *params = @{@"username": accountField.text,@"userpwd":passwordField.text};
-    DLog(@"params = %@",params);
-    [NBNetworkEngine loadDataWithURL:kRegister_url params:params completeHander:^(id jsonObject, BOOL success) {
+    
+    NSDictionary *params = @{@"user_name": accountField.text,@"password":passwordField.text, @"email": mailField.text};
+
+    [NBNetworkEngine loadDataWithURL:REGISTER_URL params:params completeHander:^(id jsonObject, BOOL success) {
+
         DLog(@"%@",jsonObject);
+        
+        if ([jsonObject isKindOfClass:[NSDictionary class]]) {
+            NSDictionary *dic = (NSDictionary *)jsonObject;
+            if ([[dic stringAttribute:@"error"] isEqualToString:@"success"]) {
+                [self back];
+            }
+            else
+            {
+                NSString *error = [dic stringAttribute:@"error"];
+                [AppUtility showAlertWithMessage:error];
+            }
+        }
+        
     }];
-     */
+    
 }
 
 

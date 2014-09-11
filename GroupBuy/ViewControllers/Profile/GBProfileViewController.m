@@ -7,8 +7,8 @@
 //
 
 #import "GBProfileViewController.h"
- #import "GBSettingViewController.h"
-
+#import "GBSettingViewController.h"
+#import "GBLoginViewController.h"
 #import "GBScanViewController.h"
 #import "GBMessageViewController.h"
 #import "GBUserInfoViewController.h"
@@ -19,8 +19,11 @@
 @property (weak , nonatomic) IBOutlet UITableView *tableView;
 @property (weak , nonatomic) IBOutlet UIView *headerView;
 @property (strong , nonatomic) NSArray *configData;
+@property (nonatomic, weak) IBOutlet UIButton *loginBtn;
 
 - (IBAction)gotoUserInfo:(id)sender;
+
+- (IBAction)loginBtnClicked:(id)sender;
 
 @end
 
@@ -76,6 +79,14 @@
     [settingBtn setBackgroundImage:[UIImage imageFromMainBundleFile:@"profile_setting.png"] forState:UIControlStateNormal];
     [settingBtn addTarget:self action:@selector(settingBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:settingBtn];
+}
+
+#pragma mark - 登录
+
+- (IBAction)loginBtnClicked:(id)sender
+{
+    GBLoginViewController *lVC = [[GBLoginViewController alloc] initWithNibName:@"GBLoginViewController" bundle:nil];
+    [self.navigationController pushViewController:lVC animated:YES];
 }
 
 #pragma mark - 进入个人账户

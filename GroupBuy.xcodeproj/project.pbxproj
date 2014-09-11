@@ -643,6 +643,7 @@
 		6EEEE26518DB272B00030C86 /* arrow1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow1.png; sourceTree = "<group>"; };
 		6EEEE26618DB272B00030C86 /* arrow2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow2.png; sourceTree = "<group>"; };
 		6EEEE26918DB27DA00030C86 /* banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banner.png; sourceTree = "<group>"; };
+		A11E797119C20F50007DBEF2 /* InterfaceUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterfaceUrl.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -785,6 +786,7 @@
 			isa = PBXGroup;
 			children = (
 				140BDC3918DADA05009881F9 /* Global.h */,
+				A11E797119C20F50007DBEF2 /* InterfaceUrl.h */,
 				6E2FF8B9197411040045E29D /* SwipeView */,
 				6E2FF8B5197410B00045E29D /* YRZoomingView */,
 				6E2FF8A91974092C0045E29D /* GBShareView */,
@@ -826,7 +828,6 @@
 			children = (
 				140BDC2D18DADA05009881F9 /* DXAlertView.h */,
 				140BDC2E18DADA05009881F9 /* DXAlertView.m */,
-				140BDC2F18DADA05009881F9 /* ETActivityIndicatorView */,
 			);
 			path = DXAlertView;
 			sourceTree = "<group>";

@@ -49,12 +49,14 @@
     [self.view addGestureRecognizer:tap];
     [self setupViews];
     [self setupRightBarButtonItem];
+    
     // Do any additional setup after loading the view from its nib.
 }
 
 
 - (void)setupViews
 {
+    [self hideBanner];
     [bgView setupBorder:LIGHT_GRAY cornerRadius:0];
     line1.backgroundColor =line2.backgroundColor = LIGHT_GRAY;
     line1.height = line2.height = 0.5;
@@ -113,18 +115,28 @@
 {
     if ([self checkInput])
     {
-        NSDictionary *params = @{@"username":accountField.text,@"userpwd":passwordField.text};
+        NSDictionary *params = @{@"email":accountField.text,@"password":passwordField.text};
         DLog(@"params = %@",params);
-        [NBNetworkEngine  loadDataWithURL:kLogin_url params:params completeHander:^(id jsonObject, BOOL success) {
+        [NBNetworkEngine  loadDataWithURL:LOGIN_URL params:params completeHander:^(id jsonObject, BOOL success) {
             DLog(@"json obj = %@",jsonObject);
+            if ([jsonObject isKindOfClass:[NSDictionary class]]) {
+                NSDictionary *dic = (NSDictionary *)jsonObject;
+                if ([[dic stringAttribute:@"error"] isEqualToString:@"success"]) {
+                    GBAppDelegate *app = [[UIApplication sharedApplication] delegate];
+                    app.mainVC = [[GBMainViewController alloc] init];
+                    app.mainVC.tabBar.hidden = YES;
+                    app.window.rootViewController = app.mainVC;
+                    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:DID_LOGIN];
+                    [self back];
+                }
+                else
+                {
+                    NSString *error = [dic stringAttribute:@"error"];
+                    [AppUtility showAlertWithMessage:error];
+                }
+            }
             
         }];
-        return;
-        GBAppDelegate *app = [[UIApplication sharedApplication] delegate];
-        app.mainVC = [[GBMainViewController alloc] init];
-        app.mainVC.tabBar.hidden = YES;
-        app.window.rootViewController = app.mainVC;
-        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:DID_LOGIN];
     }
 }
 
