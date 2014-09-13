@@ -150,7 +150,12 @@
         [alert show];
         return NO;
     }
-    
+    if (!checked)
+    {
+        NZAlertView *alert = [[NZAlertView alloc] initWithStyle:NZAlertStyleError title:@"提示" message:@"请勾选同意用户协议"];
+        [alert show];
+        return NO;
+    }
     
     return YES;
 }
