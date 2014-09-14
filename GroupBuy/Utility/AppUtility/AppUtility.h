@@ -34,6 +34,10 @@
 /*从UserDefault删除数据*/
 + (void)removeObjectForkey:(NSString *)key;
 
++ (void)setBool:(BOOL) value forkey:(NSString *)key;
+
++ (BOOL)getBoolForkey:(NSString *)key;
+
 /*计算给定字符串的高度*/
 + (CGSize)getLabelSizeWithText:(NSString *)text font:(int)fontSize width:(float)width;
 
@@ -47,9 +51,10 @@
 + (BOOL)isNetworkAvaliable;
 
 
-
-
 + (void)showAlertWithMessage:(NSString *)message;
+
++ (void)showNZAlertWithMessage:(NSString *)message andStyle:(NZAlertStyle) style;
+
 + (NSInteger)numberNotInArray:(NSArray *)array;
 
 @end

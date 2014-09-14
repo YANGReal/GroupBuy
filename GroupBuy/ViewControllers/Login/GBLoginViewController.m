@@ -121,12 +121,10 @@
             DLog(@"json obj = %@",jsonObject);
             if ([jsonObject isKindOfClass:[NSDictionary class]]) {
                 NSDictionary *dic = (NSDictionary *)jsonObject;
-                if ([[dic stringAttribute:@"error"] isEqualToString:@"success"]) {
-                    GBAppDelegate *app = [[UIApplication sharedApplication] delegate];
-                    app.mainVC = [[GBMainViewController alloc] init];
-                    app.mainVC.tabBar.hidden = YES;
-                    app.window.rootViewController = app.mainVC;
-                    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:DID_LOGIN];
+                if ([[dic stringAttribute:@"result"] isEqualToString:@"success"]) {
+                    [AppUtility setBool:YES forkey:DID_LOGIN];
+                    [AppUtility storeObject:[dic stringAttribute:@"uid"] forKey:UID];
+                    [AppUtility storeObject:[dic stringAttribute:@"nick"] forKey:USER_NAME];
                     [self back];
                 }
                 else

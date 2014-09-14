@@ -112,7 +112,8 @@
         
         if ([jsonObject isKindOfClass:[NSDictionary class]]) {
             NSDictionary *dic = (NSDictionary *)jsonObject;
-            if ([[dic stringAttribute:@"error"] isEqualToString:@"success"]) {
+            if ([[dic stringAttribute:@"result"] isEqualToString:@"success"]) {
+                
                 [self back];
             }
             else

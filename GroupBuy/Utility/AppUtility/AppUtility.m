@@ -85,6 +85,17 @@
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
++ (void)setBool:(BOOL) value forkey:(NSString *)key
+{
+    [[NSUserDefaults standardUserDefaults] setBool:value forKey:key];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
++ (BOOL)getBoolForkey:(NSString *)key
+{
+    return [[NSUserDefaults standardUserDefaults] boolForKey:key];
+}
+
 #pragma mark - 计算文字的高度
 + (CGSize)getLabelSizeWithText:(NSString *)text font:(int)fontSize width:(float)width
 {
@@ -142,6 +153,12 @@
 +(void)showAlertWithMessage:(NSString *)message
 {
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:message delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
+    [alert show];
+}
+
++ (void)showNZAlertWithMessage:(NSString *)message andStyle:(NZAlertStyle)style
+{
+    NZAlertView *alert = [[NZAlertView alloc] initWithStyle:style message:message];
     [alert show];
 }
 

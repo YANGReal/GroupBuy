@@ -2385,7 +2385,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/GroupBuy/ThirdPartFrameWork/ZBarSDK",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -2404,7 +2406,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/GroupBuy/ThirdPartFrameWork/ZBarSDK",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -20,6 +20,8 @@
 @property (weak , nonatomic) IBOutlet UIView *headerView;
 @property (strong , nonatomic) NSArray *configData;
 @property (nonatomic, weak) IBOutlet UIButton *loginBtn;
+@property (nonatomic, assign) BOOL isLogined;
+@property (nonatomic, assign) IBOutlet UIView *loginedView;
 
 - (IBAction)gotoUserInfo:(id)sender;
 
@@ -40,6 +42,8 @@
         NSArray *arr1 = @[dict1];
         NSArray *arr2 = @[dict2,dict3];
         self.configData = @[arr1,arr2];
+        
+        self.isLogined = [AppUtility getBoolForkey:DID_LOGIN];
     }
     return self;
 }
@@ -60,6 +64,15 @@
     self.tableView.y = 64;
     self.tableView.tableHeaderView = self.headerView;
     self.headerView.backgroundColor = CLEAR_COLOR;
+    [self.loginBtn setBackgroundColor:C6];
+    [self.loginBtn.layer setBorderWidth:2.0f];
+    [self.loginBtn.layer setBorderColor:C8.CGColor];
+    [self.loginBtn.layer setCornerRadius:25];
+    
+    if (_isLogined) {
+        [self.loginedView setHidden:NO];
+        [self.loginBtn setHidden:YES];
+    }
 }
 
 - (void)setupLeftBarButtonItem

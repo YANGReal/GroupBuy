@@ -12,8 +12,14 @@
 #import "GBFeedbackViewController.h"
 #import "GBInviteFriendViewController.h"
 @interface GBSettingViewController ()<UITableViewDataSource,UITableViewDelegate>
+
 @property (weak , nonatomic) IBOutlet UITableView *tableView;
 @property (strong , nonatomic) NSArray *dataArray;
+@property (nonatomic, weak) IBOutlet UIView *footerView;
+@property (nonatomic, weak) IBOutlet UIButton *logoutBtn;
+
+- (IBAction)logout:(id)sender;
+
 @end
 
 @implementation GBSettingViewController
@@ -48,6 +54,18 @@
 {
     self.tableView.y = 64;
     self.tableView.height = self.view.height-64;
+    
+    [self.logoutBtn setBackgroundColor:[UIColor redColor]];
+    [self.logoutBtn.layer setCornerRadius:25];
+    [self.logoutBtn.layer setBorderColor:C8.CGColor];
+    [self.logoutBtn.layer setBorderWidth:2.0f];
+    
+    [self.tableView setTableFooterView:_footerView];
+    
+
+    if ([AppUtility getBoolForkey:DID_LOGIN]) {
+        [self.footerView setHidden:NO];
+    }
 }
 
 - (void)setupLeftBarButtonItem
@@ -63,6 +81,17 @@
 - (void)backBtnClicked
 {
     [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (IBAction)logout:(id)sender
+{
+    [AppUtility setBool:NO forkey:DID_LOGIN];
+    
+    DLog(@"login = %d", [AppUtility getBoolForkey:DID_LOGIN]);
+    
+    [AppUtility storeObject:@"" forKey:UID];
+    [AppUtility storeObject:@"" forKey:USER_NAME];
+    [self backBtnClicked];
 }
 
 
