@@ -86,11 +86,11 @@
 - (IBAction)logout:(id)sender
 {
     [AppUtility setBool:NO forkey:DID_LOGIN];
-    
-    DLog(@"login = %d", [AppUtility getBoolForkey:DID_LOGIN]);
-    
     [AppUtility storeObject:@"" forKey:UID];
     [AppUtility storeObject:@"" forKey:USER_NAME];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:LOGIN_STATUS object:nil];
+    
     [self backBtnClicked];
 }
 

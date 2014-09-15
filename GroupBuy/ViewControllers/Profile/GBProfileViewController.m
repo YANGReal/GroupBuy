@@ -22,6 +22,8 @@
 @property (nonatomic, weak) IBOutlet UIButton *loginBtn;
 @property (nonatomic, assign) BOOL isLogined;
 @property (nonatomic, assign) IBOutlet UIView *loginedView;
+@property (nonatomic, weak) IBOutlet UILabel *nameLabel;
+@property (nonatomic, weak) IBOutlet UILabel *balanceLabel;
 
 - (IBAction)gotoUserInfo:(id)sender;
 
@@ -43,7 +45,7 @@
         NSArray *arr2 = @[dict2,dict3];
         self.configData = @[arr1,arr2];
         
-        self.isLogined = [AppUtility getBoolForkey:DID_LOGIN];
+//        self.isLogined = [AppUtility getBoolForkey:DID_LOGIN];
     }
     return self;
 }
@@ -57,6 +59,7 @@
     [self setupRightBarButtonItem];
    // [self.navigationController setNavigationBarHidden:YES animated:NO];
     // Do any additional setup after loading the view from its nib.
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeUiStatus) name:LOGIN_STATUS object:nil];
 }
 
 - (void)setupViews
@@ -69,9 +72,23 @@
     [self.loginBtn.layer setBorderColor:C8.CGColor];
     [self.loginBtn.layer setCornerRadius:25];
     
-    if (_isLogined) {
+    [self changeUiStatus];
+}
+
+- (void)changeUiStatus
+{
+    self.isLogined = [AppUtility getBoolForkey:DID_LOGIN];
+    if (_isLogined)
+    {
         [self.loginedView setHidden:NO];
         [self.loginBtn setHidden:YES];
+        
+        
+    }
+    else
+    {
+        [self.loginedView setHidden:YES];
+        [self.loginBtn setHidden:NO];
     }
 }
 

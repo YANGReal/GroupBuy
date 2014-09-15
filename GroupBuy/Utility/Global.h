@@ -43,6 +43,7 @@
 #import "SwipeView.h"
 #import "GBPictureViewController.h"
 #import "InterfaceUrl.h"
+#import "MBProgressHUD.h"
 
 #pragma mark --定义常用宏
 
@@ -51,8 +52,10 @@
 #define USER_NAME @"username"
 #define PASS_WORD @"password"
 #define UID @"uid"
-
+#define BALANCE @"balance"
 #define DID_LOGIN @"login"
+
+#define LOGIN_STATUS @"loginStatus"
 
 /*********************
  几何尺寸
