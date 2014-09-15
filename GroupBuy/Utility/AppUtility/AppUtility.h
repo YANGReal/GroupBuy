@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NZAlertView.h"
 
 @interface AppUtility : NSObject
 

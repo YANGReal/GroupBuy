@@ -159,6 +159,7 @@
 + (void)showNZAlertWithMessage:(NSString *)message andStyle:(NZAlertStyle)style
 {
     NZAlertView *alert = [[NZAlertView alloc] initWithStyle:style message:message];
+    [alert setStatusBarColor:CLEAR_COLOR];
     [alert show];
 }
 

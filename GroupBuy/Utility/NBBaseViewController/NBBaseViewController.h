@@ -13,4 +13,10 @@
 - (void)setupLeftBarButtonItem;
 - (void)back;
 - (void)hideBanner;
+
+- (void)showMBLoding;
+- (void)hideMBLoding;
+
+- (void)showMBLodingWithMessage:(NSString *)msg;
+
 @end

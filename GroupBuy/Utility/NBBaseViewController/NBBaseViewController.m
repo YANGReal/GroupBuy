@@ -8,7 +8,7 @@
 
 #import "NBBaseViewController.h"
 
-@interface NBBaseViewController ()
+@interface NBBaseViewController () <MBProgressHUDDelegate>
 @property (strong , nonatomic) UIImageView *navBanner;
 @end
 
@@ -70,6 +70,70 @@
 {
     [self.navigationController popViewControllerAnimated:YES];
 }
+
+- (void)showMBLoding
+{
+    UIView *view = nil;
+    UIWindow *window = [[UIApplication sharedApplication] keyWindow];
+    if (window == nil)
+    {
+        view = self.navigationController.view;
+    }
+    else
+    {
+        view = window;
+    }
+    
+    MBProgressHUD *hud = [[MBProgressHUD alloc] initWithView:view];
+    hud.animationType = MBProgressHUDAnimationZoom;
+    hud.margin = 20;
+    hud.tag = -10001;
+    hud.delegate = self;
+    
+    //    hud.dimBackground = YES;
+    //    hud.color = DEEP_GREEN;
+    hud.mode = MBProgressHUDModeIndeterminate;
+    
+    // UIWindow *window = [UIApplication sharedApplication].keyWindow;
+    [view addSubview:hud];
+    [hud show:YES];
+}
+
+- (void)hideMBLoding
+{
+    UIWindow *window = [[UIApplication sharedApplication] keyWindow];
+    UIView *view = self.navigationController.view;
+    MBProgressHUD *hud = (MBProgressHUD *)[window viewWithTag:-10001];
+    if (hud == nil)
+    {
+        hud = (MBProgressHUD *)[view viewWithTag:-10001];
+    }
+    [hud hide:YES];
+    
+}
+
+- (void)showMBLodingWithMessage:(NSString *)msg
+{
+    UIWindow *window = [[UIApplication sharedApplication] keyWindow];
+    MBProgressHUD *hud = [[MBProgressHUD alloc] initWithView:window];
+    hud.animationType = MBProgressHUDAnimationZoom;
+    hud.tag = -10001;
+    hud.delegate = self;
+    //hud.darkBlur = YES;
+    hud.mode = MBProgressHUDModeText;
+    hud.labelText = msg;
+    [window addSubview:hud];
+    [hud show:YES];
+    [hud hide:YES afterDelay:2.0];
+}
+
+#pragma mark -MBProgressHUDDelegate method
+
+- (void)hudWasHidden:(MBProgressHUD *)hud
+{
+    [hud removeFromSuperview];
+}
+
 
 - (void)didReceiveMemoryWarning
 {

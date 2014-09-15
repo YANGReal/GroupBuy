@@ -259,6 +259,7 @@
 		6EEEE26718DB272B00030C86 /* arrow1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EEEE26518DB272B00030C86 /* arrow1.png */; };
 		6EEEE26818DB272B00030C86 /* arrow2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EEEE26618DB272B00030C86 /* arrow2.png */; };
 		6EEEE26A18DB27DA00030C86 /* banner.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EEEE26918DB27DA00030C86 /* banner.png */; };
+		A12139CB19C6D66A00D6568A /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A12139CA19C6D66A00D6568A /* MBProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -644,6 +645,8 @@
 		6EEEE26618DB272B00030C86 /* arrow2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow2.png; sourceTree = "<group>"; };
 		6EEEE26918DB27DA00030C86 /* banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banner.png; sourceTree = "<group>"; };
 		A11E797119C20F50007DBEF2 /* InterfaceUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterfaceUrl.h; sourceTree = "<group>"; };
+		A12139C919C6D66A00D6568A /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		A12139CA19C6D66A00D6568A /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -966,6 +969,7 @@
 		140BDC7818DADA39009881F9 /* ThirdPartFrameWork */ = {
 			isa = PBXGroup;
 			children = (
+				A12139C819C6D66A00D6568A /* MBProgressHUD */,
 				6E581A631948824400FBA739 /* NZAlertView */,
 				6E581A2C194881B200FBA739 /* AFNetworking */,
 				6E581A40194881B200FBA739 /* UIKit+AFNetworking */,
@@ -1932,6 +1936,15 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
+		A12139C819C6D66A00D6568A /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				A12139C919C6D66A00D6568A /* MBProgressHUD.h */,
+				A12139CA19C6D66A00D6568A /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2190,6 +2203,7 @@
 				6EC4C469196AD96B009BF08D /* GBHomeCell.m in Sources */,
 				6E581A56194881B200FBA739 /* AFSecurityPolicy.m in Sources */,
 				6EC253921959BD5B00FC2CB6 /* GBUpdatePasswordViewController.m in Sources */,
+				A12139CB19C6D66A00D6568A /* MBProgressHUD.m in Sources */,
 				6E2FF8B319740FA10045E29D /* GBPictureViewController.m in Sources */,
 				140BDC7018DADA05009881F9 /* UIColor+HexString.m in Sources */,
 				6E581A61194881B200FBA739 /* UIRefreshControl+AFNetworking.m in Sources */,

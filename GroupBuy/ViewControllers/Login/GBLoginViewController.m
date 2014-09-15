@@ -115,6 +115,7 @@
 {
     if ([self checkInput])
     {
+        [self showMBLoding];
         NSDictionary *params = @{@"email":accountField.text,@"password":passwordField.text};
         DLog(@"params = %@",params);
         [NBNetworkEngine  loadDataWithURL:LOGIN_URL params:params completeHander:^(id jsonObject, BOOL success) {
@@ -125,15 +126,16 @@
                     [AppUtility setBool:YES forkey:DID_LOGIN];
                     [AppUtility storeObject:[dic stringAttribute:@"uid"] forKey:UID];
                     [AppUtility storeObject:[dic stringAttribute:@"nick"] forKey:USER_NAME];
+                    [[NSNotificationCenter defaultCenter] postNotificationName:LOGIN_STATUS object:nil];
                     [self back];
                 }
                 else
                 {
                     NSString *error = [dic stringAttribute:@"error"];
-                    [AppUtility showAlertWithMessage:error];
+                    [self showMBLodingWithMessage:error];
                 }
             }
-            
+            [self hideMBLoding];
         }];
     }
 }
@@ -151,14 +153,12 @@
 {
     if (accountField.text.length == 0)
     {
-        NZAlertView *alert = [[NZAlertView alloc] initWithStyle:NZAlertStyleError title:@"提示" message:@"请输入用户名"];
-        [alert show];
+        [AppUtility showNZAlertWithMessage:@"请输入用户名" andStyle:NZAlertStyleError];
         return NO;
     }
     if (passwordField.text.length == 0)
     {
-        NZAlertView *alert = [[NZAlertView alloc] initWithStyle:NZAlertStyleError title:@"提示" message:@"请输入密码"];
-        [alert show];
+        [AppUtility showNZAlertWithMessage:@"请输入密码" andStyle:NZAlertStyleError];
         return NO;
     }
     return YES;
