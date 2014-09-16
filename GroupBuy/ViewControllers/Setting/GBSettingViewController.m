@@ -56,7 +56,7 @@
     self.tableView.height = self.view.height-64;
     
     [self.logoutBtn setBackgroundColor:[UIColor redColor]];
-    [self.logoutBtn.layer setCornerRadius:25];
+    [self.logoutBtn.layer setCornerRadius:20];
     [self.logoutBtn.layer setBorderColor:C8.CGColor];
     [self.logoutBtn.layer setBorderWidth:2.0f];
     
@@ -88,7 +88,7 @@
     [AppUtility setBool:NO forkey:DID_LOGIN];
     [AppUtility storeObject:@"" forKey:UID];
     [AppUtility storeObject:@"" forKey:USER_NAME];
-    
+    [AppUtility storeObject:@"" forKey:BALANCE];
     [[NSNotificationCenter defaultCenter] postNotificationName:LOGIN_STATUS object:nil];
     
     [self backBtnClicked];

@@ -103,7 +103,7 @@
 #pragma mark - 注册回调方法
 - (void)doRigster
 {
-    
+    [self showMBLoding];
     NSDictionary *params = @{@"user_name": accountField.text,@"password":passwordField.text, @"email": mailField.text};
 
     [NBNetworkEngine loadDataWithURL:REGISTER_URL params:params completeHander:^(id jsonObject, BOOL success) {
@@ -113,16 +113,16 @@
         if ([jsonObject isKindOfClass:[NSDictionary class]]) {
             NSDictionary *dic = (NSDictionary *)jsonObject;
             if ([[dic stringAttribute:@"result"] isEqualToString:@"success"]) {
-                
+                [self showMBLodingWithMessage:@"注册成功"];
                 [self back];
             }
             else
             {
                 NSString *error = [dic stringAttribute:@"error"];
-                [AppUtility showAlertWithMessage:error];
+                [self showMBLodingWithMessage:error];
             }
         }
-        
+        [self hideMBLoding];
     }];
     
 }

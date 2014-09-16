@@ -82,8 +82,8 @@
     {
         [self.loginedView setHidden:NO];
         [self.loginBtn setHidden:YES];
-        
-        
+        [self.nameLabel setText:[AppUtility getObjectForKey:USER_NAME]];
+        [self.balanceLabel setText:[NSString stringWithFormat:@"账户余额:%@", [AppUtility getObjectForKey:BALANCE]]];
     }
     else
     {

@@ -126,7 +126,9 @@
                     [AppUtility setBool:YES forkey:DID_LOGIN];
                     [AppUtility storeObject:[dic stringAttribute:@"uid"] forKey:UID];
                     [AppUtility storeObject:[dic stringAttribute:@"nick"] forKey:USER_NAME];
+                    [AppUtility storeObject:[dic stringAttribute:@"balance"] forKey:BALANCE];
                     [[NSNotificationCenter defaultCenter] postNotificationName:LOGIN_STATUS object:nil];
+                    [self showMBLodingWithMessage:@"登录成功"];
                     [self back];
                 }
                 else
