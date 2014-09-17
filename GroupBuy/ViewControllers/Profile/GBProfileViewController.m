@@ -90,6 +90,7 @@
         [self.loginedView setHidden:YES];
         [self.loginBtn setHidden:NO];
     }
+    [self.tableView reloadData];
 }
 
 - (void)setupLeftBarButtonItem
@@ -167,6 +168,13 @@
     
     UILabel *label = [[UILabel alloc] initWithFrame:RECT(45, 0, 100, 43)];
     label.textColor = C4;
+    if (indexPath.section == 1) {
+        if (!_isLogined) {
+            label.textColor = C2;
+            iconView.image = [UIImage imageFromMainBundleFile:@"paid_d.png"];
+            [cell setUserInteractionEnabled:NO];
+        }
+    }
     label.font = F5;
     label.text = data[@"title"];
     [cell.contentView addSubview:label];

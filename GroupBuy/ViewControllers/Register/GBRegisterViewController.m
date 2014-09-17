@@ -109,7 +109,7 @@
     [NBNetworkEngine loadDataWithURL:REGISTER_URL params:params completeHander:^(id jsonObject, BOOL success) {
 
         DLog(@"%@",jsonObject);
-        
+        [self hideMBLoding];
         if ([jsonObject isKindOfClass:[NSDictionary class]]) {
             NSDictionary *dic = (NSDictionary *)jsonObject;
             if ([[dic stringAttribute:@"result"] isEqualToString:@"success"]) {
@@ -122,7 +122,6 @@
                 [self showMBLodingWithMessage:error];
             }
         }
-        [self hideMBLoding];
     }];
     
 }

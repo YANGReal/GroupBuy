@@ -159,6 +159,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
         [self.navigationController pushViewController:aboutVC animated:YES];
         return;
     }
+    
     if (indexPath.section == 0&&indexPath.row == 2)
     {
         GBInviteFriendViewController *inviteVC = [[GBInviteFriendViewController alloc] initWithNibName:@"GBInviteFriendViewController" bundle:nil];

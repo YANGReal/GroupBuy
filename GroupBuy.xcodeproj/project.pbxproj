@@ -259,6 +259,7 @@
 		6EEEE26718DB272B00030C86 /* arrow1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EEEE26518DB272B00030C86 /* arrow1.png */; };
 		6EEEE26818DB272B00030C86 /* arrow2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EEEE26618DB272B00030C86 /* arrow2.png */; };
 		6EEEE26A18DB27DA00030C86 /* banner.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EEEE26918DB27DA00030C86 /* banner.png */; };
+		A11FBBED19C97B2100F5CB0D /* paid_d.png in Resources */ = {isa = PBXBuildFile; fileRef = A11FBBEC19C97B2100F5CB0D /* paid_d.png */; };
 		A12139CB19C6D66A00D6568A /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A12139CA19C6D66A00D6568A /* MBProgressHUD.m */; };
 /* End PBXBuildFile section */
 
@@ -645,6 +646,7 @@
 		6EEEE26618DB272B00030C86 /* arrow2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow2.png; sourceTree = "<group>"; };
 		6EEEE26918DB27DA00030C86 /* banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banner.png; sourceTree = "<group>"; };
 		A11E797119C20F50007DBEF2 /* InterfaceUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterfaceUrl.h; sourceTree = "<group>"; };
+		A11FBBEC19C97B2100F5CB0D /* paid_d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paid_d.png; sourceTree = "<group>"; };
 		A12139C919C6D66A00D6568A /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		A12139CA19C6D66A00D6568A /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1932,6 +1934,7 @@
 				6E1096131951C5A8000371EC /* profile_msg.png */,
 				6E1096141951C5A8000371EC /* profile_setting.png */,
 				6E1096151951C5A8000371EC /* unpay.png */,
+				A11FBBEC19C97B2100F5CB0D /* paid_d.png */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -2128,6 +2131,7 @@
 				6E97D86C1949CDE50061DAA7 /* key.png in Resources */,
 				6EC253871959BC9700FC2CB6 /* GBUpdateGenderViewController.xib in Resources */,
 				6EEBA505197D565600286D3B /* add_icon.png in Resources */,
+				A11FBBED19C97B2100F5CB0D /* paid_d.png in Resources */,
 				6EEEE26818DB272B00030C86 /* arrow2.png in Resources */,
 				6EAC19D7196C31C90032ACD9 /* wechat_circle.png in Resources */,
 				6E358088197282E6006FD6B4 /* star_normal.png in Resources */,

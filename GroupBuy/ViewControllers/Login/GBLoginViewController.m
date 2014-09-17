@@ -26,8 +26,6 @@
 
 - (IBAction)loginButtonClicked:(id)sender;
 
--(IBAction)registerButtonClicked:(id)sender;
-
 @end
 
 @implementation GBLoginViewController
@@ -105,10 +103,6 @@
 {
     [self registerAccount];
 }
-- (void)setupLeftBarButtonItem
-{
-    //
-}
 
 #pragma mark - 登录
 - (void)login
@@ -120,6 +114,7 @@
         DLog(@"params = %@",params);
         [NBNetworkEngine  loadDataWithURL:LOGIN_URL params:params completeHander:^(id jsonObject, BOOL success) {
             DLog(@"json obj = %@",jsonObject);
+            [self hideMBLoding];
             if ([jsonObject isKindOfClass:[NSDictionary class]]) {
                 NSDictionary *dic = (NSDictionary *)jsonObject;
                 if ([[dic stringAttribute:@"result"] isEqualToString:@"success"]) {
@@ -137,7 +132,6 @@
                     [self showMBLodingWithMessage:error];
                 }
             }
-            [self hideMBLoding];
         }];
     }
 }
