@@ -25,8 +25,8 @@
     self.bgView.backgroundColor = WHITE_COLOR;
     self.backgroundColor = CLEAR_COLOR;
     
-    UIView *line = [[UIView alloc] initWithFrame:RECT(0, _bgView.height, _bgView.width, 0.5)];
-    line.backgroundColor = C2;
+    UIView *line = [[UIView alloc] initWithFrame:RECT(0, _bgView.height-2, _bgView.width, 0.5)];
+    line.backgroundColor = [UIColor colorWithHexString:@"#c3c3c3"];
     [_bgView addSubview:line];
     
     self.selectionStyle = UITableViewCellSelectionStyleNone;

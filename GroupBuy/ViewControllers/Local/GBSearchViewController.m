@@ -40,6 +40,7 @@
     self.searchView.backgroundColor = WHITE_COLOR;
     [self.searchView setupBorder:WHITE_COLOR cornerRadius:18];
     [self loadTags];
+    
 }
 
 

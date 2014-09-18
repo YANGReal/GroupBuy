@@ -7,16 +7,22 @@
 //
 
 #import "GBHomeViewController.h"
-
+#import "GBSpecialCell.h"
 #import "GBHomeCell.h"
 #import "GBScanViewController.h"
 #import "GBSearchViewController.h"
 #import "GBGoodsDetailViewController.h"
-@interface GBHomeViewController ()<UITableViewDelegate,UITableViewDataSource>
+#import "GBHomeSectionView.h"
+#import "GBHomeSectionFooterView.h"
+@interface GBHomeViewController ()<UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate>
 
 @property (weak , nonatomic) IBOutlet UITableView *tableView;
 @property (weak , nonatomic) IBOutlet UIView *headerView;
-
+@property (weak , nonatomic) IBOutlet UIView *searchView;
+@property (weak , nonatomic) IBOutlet UITextField *searchField;
+@property  (weak , nonatomic) IBOutlet UIImageView *coverImageView;
+@property (strong , nonatomic) NSArray *sectionArray;
+- (IBAction)barCodeClicked:(id)sender;
 //- (IBAction)barCodeBtnClicked:(id)sender;
 //
 //- (IBAction)searchBtnClicked:(id)sender;
@@ -30,6 +36,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        self.sectionArray = @[@"专题活动",@"社团A",@"推荐社团"];
        
     }
     return self;
@@ -39,7 +46,7 @@
 {
     [super viewDidLoad];
     [self setupViews];
-    [self setLeftButton];
+    //[self setLeftButton];
     [self setRightButton];
     
     
@@ -51,6 +58,9 @@
     self.tableView.tableHeaderView = self.headerView;
     self.tableView.y = 64;
     self.tableView.height = self.view.height-64-49;
+    [self.searchView setupBorder:WHITE_COLOR cornerRadius:18];
+    self.coverImageView.clipsToBounds = YES;
+    
 }
 
 - (void)setLeftButton
@@ -58,7 +68,7 @@
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.frame = RECT(15, 30, 25, 25);
     [button setBackgroundImage:[UIImage imageFromMainBundleFile:@"barCode.png"] forState:UIControlStateNormal];
-    [button addTarget:self action:@selector(barCodeClicked) forControlEvents:UIControlEventTouchUpInside];
+    [button addTarget:self action:@selector(barCodeClicked:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
 }
 
@@ -71,7 +81,7 @@
     [self.view addSubview:button];
 }
 
-- (void)barCodeClicked
+- (IBAction)barCodeClicked:(id)sender
 {
     GBScanViewController *vc = [[GBScanViewController alloc] initWithNibName:@"GBScanViewController" bundle:nil];
     [self.navigationController pushViewController:vc animated:YES];
@@ -85,16 +95,34 @@
 
 #pragma mark - UITableViewDelegate,UITableViewDataSource method
 
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 3;
+}
+
 - (NSInteger)tableView:(UITableView *)tableView
  numberOfRowsInSection:(NSInteger)section
 {
-    return 10;
+    return 3;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    if (indexPath.section == 0)
+    {
+        static NSString *identifier = @"specialCell";
+        GBSpecialCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+        if (cell == nil)
+        {
+            cell = [[[NSBundle mainBundle] loadNibNamed:@"GBSpecialCell" owner:self options:nil] lastObject];
+        }
+        
+        return cell;
+
+        
+    }
     static NSString *identifier = @"cell";
     GBHomeCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     if (cell == nil)
@@ -116,7 +144,43 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 - (CGFloat)tableView:(UITableView *)tableView
 heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 96;
+    if (indexPath.section == 0)
+    {
+        return 123;
+    }
+    return 62;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    GBHomeSectionView *headerView = [[[NSBundle mainBundle] loadNibNamed:@"GBHomeSectionView" owner:self options:nil]
+                                     lastObject];
+    headerView.title = _sectionArray[section];
+    return headerView;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 41;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
+{
+    GBHomeSectionFooterView *footerView = [[[NSBundle mainBundle] loadNibNamed:@"GBHomeSectionFooterView" owner:self options:nil] lastObject];
+    return footerView;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+{
+    return 53;
+}
+
+#pragma mark - UITextFieldDelegate method
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
 }
 
 #pragma mark - 内存管理

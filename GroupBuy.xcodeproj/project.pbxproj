@@ -134,6 +134,13 @@
 		6E6851F718E1C976003DC5CB /* zbar-help.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E6851F218E1C976003DC5CB /* zbar-help.html */; };
 		6E6851F818E1C976003DC5CB /* zbar-helpicons.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E6851F318E1C976003DC5CB /* zbar-helpicons.png */; };
 		6E6851F918E1C976003DC5CB /* zbar-samples.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E6851F418E1C976003DC5CB /* zbar-samples.png */; };
+		6E68C2A019CB16D50004C72D /* scan_code.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E68C29F19CB16D50004C72D /* scan_code.png */; };
+		6E68C2A619CB1F7B0004C72D /* GBHomeSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E68C2A519CB1F7B0004C72D /* GBHomeSectionView.m */; };
+		6E68C2A819CB1FA20004C72D /* GBHomeSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E68C2A719CB1FA20004C72D /* GBHomeSectionView.xib */; };
+		6E68C2AC19CB22D20004C72D /* GBHomeSectionFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E68C2AB19CB22D20004C72D /* GBHomeSectionFooterView.m */; };
+		6E68C2AE19CB23060004C72D /* GBHomeSectionFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E68C2AD19CB23060004C72D /* GBHomeSectionFooterView.xib */; };
+		6E68C2B319CB26220004C72D /* GBSpecialCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E68C2B119CB26220004C72D /* GBSpecialCell.m */; };
+		6E68C2B419CB26220004C72D /* GBSpecialCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E68C2B219CB26220004C72D /* GBSpecialCell.xib */; };
 		6E74304B1953113F00FA404F /* GBMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7430491953113F00FA404F /* GBMessageViewController.m */; };
 		6E74304C1953113F00FA404F /* GBMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E74304A1953113F00FA404F /* GBMessageViewController.xib */; };
 		6E7430501953148900FA404F /* GBMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E74304E1953148900FA404F /* GBMessageCell.m */; };
@@ -484,6 +491,16 @@
 		6E6851F218E1C976003DC5CB /* zbar-help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "zbar-help.html"; sourceTree = "<group>"; };
 		6E6851F318E1C976003DC5CB /* zbar-helpicons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-helpicons.png"; sourceTree = "<group>"; };
 		6E6851F418E1C976003DC5CB /* zbar-samples.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-samples.png"; sourceTree = "<group>"; };
+		6E68C29F19CB16D50004C72D /* scan_code.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scan_code.png; sourceTree = "<group>"; };
+		6E68C2A419CB1F7B0004C72D /* GBHomeSectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBHomeSectionView.h; sourceTree = "<group>"; };
+		6E68C2A519CB1F7B0004C72D /* GBHomeSectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBHomeSectionView.m; sourceTree = "<group>"; };
+		6E68C2A719CB1FA20004C72D /* GBHomeSectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GBHomeSectionView.xib; sourceTree = "<group>"; };
+		6E68C2AA19CB22D20004C72D /* GBHomeSectionFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBHomeSectionFooterView.h; sourceTree = "<group>"; };
+		6E68C2AB19CB22D20004C72D /* GBHomeSectionFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBHomeSectionFooterView.m; sourceTree = "<group>"; };
+		6E68C2AD19CB23060004C72D /* GBHomeSectionFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GBHomeSectionFooterView.xib; sourceTree = "<group>"; };
+		6E68C2B019CB26220004C72D /* GBSpecialCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBSpecialCell.h; sourceTree = "<group>"; };
+		6E68C2B119CB26220004C72D /* GBSpecialCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBSpecialCell.m; sourceTree = "<group>"; };
+		6E68C2B219CB26220004C72D /* GBSpecialCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GBSpecialCell.xib; sourceTree = "<group>"; };
 		6E7430481953113F00FA404F /* GBMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBMessageViewController.h; sourceTree = "<group>"; };
 		6E7430491953113F00FA404F /* GBMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBMessageViewController.m; sourceTree = "<group>"; };
 		6E74304A1953113F00FA404F /* GBMessageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GBMessageViewController.xib; sourceTree = "<group>"; };
@@ -1342,6 +1359,39 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		6E68C2A319CB1F660004C72D /* GBHomeSectionView */ = {
+			isa = PBXGroup;
+			children = (
+				6E68C2A419CB1F7B0004C72D /* GBHomeSectionView.h */,
+				6E68C2A519CB1F7B0004C72D /* GBHomeSectionView.m */,
+				6E68C2A719CB1FA20004C72D /* GBHomeSectionView.xib */,
+			);
+			name = GBHomeSectionView;
+			path = ViewControllers/Local/GBHomeSectionView;
+			sourceTree = "<group>";
+		};
+		6E68C2A919CB22C10004C72D /* GBHomeSectionFooterView */ = {
+			isa = PBXGroup;
+			children = (
+				6E68C2AA19CB22D20004C72D /* GBHomeSectionFooterView.h */,
+				6E68C2AB19CB22D20004C72D /* GBHomeSectionFooterView.m */,
+				6E68C2AD19CB23060004C72D /* GBHomeSectionFooterView.xib */,
+			);
+			name = GBHomeSectionFooterView;
+			path = ViewControllers/Local/GBHomeSectionFooterView;
+			sourceTree = "<group>";
+		};
+		6E68C2AF19CB26070004C72D /* GBSpecialCell */ = {
+			isa = PBXGroup;
+			children = (
+				6E68C2B019CB26220004C72D /* GBSpecialCell.h */,
+				6E68C2B119CB26220004C72D /* GBSpecialCell.m */,
+				6E68C2B219CB26220004C72D /* GBSpecialCell.xib */,
+			);
+			name = GBSpecialCell;
+			path = ViewControllers/Local/GBSpecialCell;
+			sourceTree = "<group>";
+		};
 		6E7430471953108100FA404F /* GBMessageViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -1443,6 +1493,9 @@
 				6E99485018DB194800C04106 /* GBHomeViewController.h */,
 				6E99485118DB194800C04106 /* GBHomeViewController.m */,
 				6E99485218DB194800C04106 /* GBHomeViewController.xib */,
+				6E68C2AF19CB26070004C72D /* GBSpecialCell */,
+				6E68C2A919CB22C10004C72D /* GBHomeSectionFooterView */,
+				6E68C2A319CB1F660004C72D /* GBHomeSectionView */,
 				6EC4C46B196AD96F009BF08D /* GBHomeCell */,
 			);
 			name = GBHomeViewController;
@@ -1790,6 +1843,7 @@
 		6EC4C453196AD186009BF08D /* home */ = {
 			isa = PBXGroup;
 			children = (
+				6E68C29F19CB16D50004C72D /* scan_code.png */,
 				6EC4C476196AEDAC009BF08D /* searrch_gray.png */,
 				6EC4C46C196AE512009BF08D /* greenLine.png */,
 				6EC4C46D196AE512009BF08D /* scan_frame.png */,
@@ -2052,9 +2106,11 @@
 				6EC4C45E196AD186009BF08D /* entertainment_icon.png in Resources */,
 				6EC253931959BD5B00FC2CB6 /* GBUpdatePasswordViewController.xib in Resources */,
 				6EAC19D6196C31C90032ACD9 /* wechat.png in Resources */,
+				6E68C2B419CB26220004C72D /* GBSpecialCell.xib in Resources */,
 				6EC2EC67195C4029005B629C /* GBMyCollectionCell.xib in Resources */,
 				6E278B2A18E1A6AC001814F6 /* loginBox.png in Resources */,
 				6EC4C477196AEDAC009BF08D /* searrch_gray.png in Resources */,
+				6E68C2A019CB16D50004C72D /* scan_code.png in Resources */,
 				6EAC19D8196C31C90032ACD9 /* weibo_icon.png in Resources */,
 				6EE342E4194C304F001E86C0 /* ticket_s.png in Resources */,
 				6E6851F818E1C976003DC5CB /* zbar-helpicons.png in Resources */,
@@ -2068,6 +2124,7 @@
 				6EAC19D5196C31C90032ACD9 /* renren_icon.png in Resources */,
 				6E35806C19727419006FD6B4 /* comments_icon.png in Resources */,
 				6ECAF87F197AA0B500380771 /* GBAddGoodCell.xib in Resources */,
+				6E68C2A819CB1FA20004C72D /* GBHomeSectionView.xib in Resources */,
 				6E97D86E1949CDE50061DAA7 /* qq_btn.png in Resources */,
 				6EC253991959BDEB00FC2CB6 /* GBUpdateMailViewController.xib in Resources */,
 				6EC4C465196AD186009BF08D /* search_icon.png in Resources */,
@@ -2140,6 +2197,7 @@
 				6EC4C474196AE910009BF08D /* GBSearchViewController.xib in Resources */,
 				6EE342DC194C304F001E86C0 /* auction.png in Resources */,
 				6E35805C19717C42006FD6B4 /* add_icon.png in Resources */,
+				6E68C2AE19CB23060004C72D /* GBHomeSectionFooterView.xib in Resources */,
 				6EEBA50C197D5CDB00286D3B /* GBPayOrderViewController.xib in Resources */,
 				6E99485418DB194800C04106 /* GBHomeViewController.xib in Resources */,
 				6E35809419728980006FD6B4 /* GBPackageInfoCell.xib in Resources */,
@@ -2211,6 +2269,8 @@
 				6E2FF8B319740FA10045E29D /* GBPictureViewController.m in Sources */,
 				140BDC7018DADA05009881F9 /* UIColor+HexString.m in Sources */,
 				6E581A61194881B200FBA739 /* UIRefreshControl+AFNetworking.m in Sources */,
+				6E68C2A619CB1F7B0004C72D /* GBHomeSectionView.m in Sources */,
+				6E68C2AC19CB22D20004C72D /* GBHomeSectionFooterView.m in Sources */,
 				6E278B1418E1A40B001814F6 /* GBRegisterViewController.m in Sources */,
 				140BDC7018DADA05009881F9 /* UIColor+HexString.m in Sources */,
 				6E581A5E194881B200FBA739 /* UIButton+AFNetworking.m in Sources */,
@@ -2267,6 +2327,7 @@
 				6E581A54194881B200FBA739 /* AFHTTPSessionManager.m in Sources */,
 				6EAC19BE196C25D60032ACD9 /* GBAboutViewController.m in Sources */,
 				140BDC6C18DADA05009881F9 /* NBNetworkEngine.m in Sources */,
+				6E68C2B319CB26220004C72D /* GBSpecialCell.m in Sources */,
 				140BDBF918DAD84E009881F9 /* GBAppDelegate.m in Sources */,
 				6E581A5D194881B200FBA739 /* UIAlertView+AFNetworking.m in Sources */,
 				140BDC7318DADA05009881F9 /* UIView+Flip.m in Sources */,

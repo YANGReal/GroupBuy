@@ -59,7 +59,7 @@
     self.myTabBar = [[UIView alloc] initWithFrame:RECT(0, DEVICE_HEIGHT-49, DEVICE_WIDTH, 49)];
     self.myTabBar.backgroundColor = WHITE_COLOR;
     [self.view addSubview:self.myTabBar];
-    self.titleArray = @[@"主页",@"团购",@"票务",@"拍卖",@"个人信息"];
+    self.titleArray = @[@"探索大学",@"吃喝玩乐",@"社团活动",@"二手交易",@"个人信息"];
     NSArray *iconArr1 = @[@"home.png",@"group.png",@"ticket.png",@"auction.png",@"profile.png"];
     NSArray *iconArr2 = @[@"home_s.png",@"group_s.png",@"ticket_s.png",@"auction_s.png",@"profile_s.png"];
     CGFloat btnWidth = rect.size.width/5.0;
@@ -97,15 +97,15 @@
 - (void)setupViewControllers
 {
     GBHomeViewController *homeVC = [[GBHomeViewController alloc] initWithNibName:@"GBHomeViewController" bundle:nil];
-    homeVC.title = @"团一发";
+    homeVC.title = @"探索大学";
     GBTicketViewController *ticketVC = [[GBTicketViewController alloc] initWithNibName:@"GBTicketViewController" bundle:nil];
-    ticketVC.title = @"票务";
+    ticketVC.title = @"吃喝玩乐";
     
     GBGroupbuyViewController *gbVC = [[GBGroupbuyViewController alloc] initWithNibName:@"GBGroupbuyViewController" bundle:nil];
-    gbVC.title = @"团购";
+    gbVC.title = @"社团活动";
     
     GBAuctionViewController *auctionVC = [[GBAuctionViewController alloc] initWithNibName:@"GBAuctionViewController" bundle:nil];
-    auctionVC.title = @"拍卖";
+    auctionVC.title = @"二手交易";
 
     GBProfileViewController *profileVC = [[GBProfileViewController alloc] initWithNibName:@"GBProfileViewController" bundle:nil];
     profileVC.title = @"个人信息";
