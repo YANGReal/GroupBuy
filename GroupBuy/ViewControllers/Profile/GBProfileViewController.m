@@ -39,7 +39,7 @@
     if (self) {
         // Custom initialization
         NSDictionary *dict1 = @{@"title": @"我的收藏",@"img":@"my_collection.png"};
-        NSDictionary *dict2 = @{@"title": @"代付款",@"img":@"unpay.png"};
+        NSDictionary *dict2 = @{@"title": @"待付款",@"img":@"unpay.png"};
         NSDictionary *dict3 = @{@"title": @"已付款",@"img":@"paid.png"};
         NSArray *arr1 = @[dict1];
         NSArray *arr2 = @[dict2,dict3];
