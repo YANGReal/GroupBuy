@@ -57,7 +57,7 @@
     [self setupViews];
     [self setupLeftBarButtonItem];
     [self setupRightBarButtonItem];
-   // [self.navigationController setNavigationBarHidden:YES animated:NO];
+
     // Do any additional setup after loading the view from its nib.
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeUiStatus) name:LOGIN_STATUS object:nil];
 }

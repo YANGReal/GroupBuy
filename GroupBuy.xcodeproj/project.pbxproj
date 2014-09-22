@@ -2455,7 +2455,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Lin Zeng (U344YU3QDC)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: ShiLong Luo (974ZZY76H7)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GroupBuy/GroupBuy-Prefix.pch";
 				INFOPLIST_FILE = "GroupBuy/GroupBuy-Info.plist";
@@ -2476,7 +2476,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Lin Zeng (U344YU3QDC)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: ShiLong Luo (974ZZY76H7)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GroupBuy/GroupBuy-Prefix.pch";
 				INFOPLIST_FILE = "GroupBuy/GroupBuy-Info.plist";

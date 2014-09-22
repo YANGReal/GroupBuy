@@ -27,9 +27,9 @@
 //    if (!didLogin)
     {
         self.mainVC = [[GBMainViewController alloc] init];
-        self.mainVC.tabBar.hidden = YES;
+//        self.mainVC.tabBar.hidden = YES;
         UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:self.mainVC];
-        [nav setNavigationBarHidden:YES animated:NO];
+//        [nav setNavigationBarHidden:YES animated:NO];
         self.window.rootViewController = nav;
     }
 //    else
