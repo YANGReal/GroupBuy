@@ -2466,7 +2466,7 @@
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "e09552c2-a92e-4f29-a364-4ed7a8d71fc4";
+				PROVISIONING_PROFILE = "ae5a3a60-1c03-4a62-b0b8-817ce48970cf";
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
@@ -2477,7 +2477,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: ShiLong Luo (5ZS5N8XTER)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: ShiLong Luo (974ZZY76H7)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GroupBuy/GroupBuy-Prefix.pch";
 				INFOPLIST_FILE = "GroupBuy/GroupBuy-Info.plist";
@@ -2488,7 +2488,7 @@
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "7a010d45-547f-4dfa-b30a-b52480337a38";
+				PROVISIONING_PROFILE = "ae5a3a60-1c03-4a62-b0b8-817ce48970cf";
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
